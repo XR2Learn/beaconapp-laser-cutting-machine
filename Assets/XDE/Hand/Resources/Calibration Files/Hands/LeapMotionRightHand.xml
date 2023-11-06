@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HandParameters name="LeapMotionRightHand">
+  <Palm position="0.0062264	-0.0441082	-0.00352866	-0.707107	0	-2.16489e-017	0.707107"/>
+  <Fingers>
+    <Finger id="0"	position="-0.0469033	0.0170595	-0.00529301	0.829066	-0.51239	-0.117682	0.190414"/>
+      <FingerBones>
+        <FingerBone id="0"	length="0"	radius="0.00827029"/>
+        <FingerBone id="1"	length="0.0407736"	radius="0.00827029"/>
+        <FingerBone id="2"	length="0.0278499"	radius="0.00827029"/>
+        <FingerBone id="3"	length="0.0191165"	radius="0.00827029"/>
+      </FingerBones>
+    <Finger id="1"	position="0.0204215	0.0204497	0.0017643	0.993685	-0.00626623	0.0741118	0.0840172"/>
+      <FingerBones>
+        <FingerBone id="0"	length="0"	radius="0.00789978"/>
+        <FingerBone id="1"	length="0.0350925"	radius="0.00789978"/>
+        <FingerBone id="2"	length="0.0197428"	radius="0.00789978"/>
+        <FingerBone id="3"	length="0.0139558"	radius="0.00789978"/>
+      </FingerBones>
+    <Finger id="2"	position="0.0205122	0.00246016	0.00352864	0.99437	0.0739949	0.0752779	0.00924224"/>
+      <FingerBones>
+        <FingerBone id="0"	length="0"	radius="0.00775863"/>
+        <FingerBone id="1"	length="0.039371"	radius="0.00775863"/>
+        <FingerBone id="2"	length="0.0232274"	radius="0.00775863"/>
+        <FingerBone id="3"	length="0.0153497"	radius="0.00775863"/>
+      </FingerBones>
+    <Finger id="3"	position="0.015243	-0.0153913	0.00352865	0.989814	0.104891	0.0676793	-0.0684552"/>
+      <FingerBones>
+        <FingerBone id="0"	length="0"	radius="0.00738283"/>
+        <FingerBone id="1"	length="0.0364951"	radius="0.00738283"/>
+        <FingerBone id="2"	length="0.0226275"	radius="0.00738283"/>
+        <FingerBone id="3"	length="0.0152614"	radius="0.00738283"/>
+      </FingerBones>
+    <Finger id="4"	position="0.00858232	-0.0311734	-1.9401e-008	0.973943	0.177259	0.0291457	-0.138438"/>
+      <FingerBones>
+        <FingerBone id="0"	length="0"	radius="0.00655801"/>
+        <FingerBone id="1"	length="0.028882"	radius="0.00655801"/>
+        <FingerBone id="2"	length="0.015976"	radius="0.00655801"/>
+        <FingerBone id="3"	length="0.0140793"	radius="0.00655801"/>
+      </FingerBones>
+  </Fingers>
+</HandParameters>

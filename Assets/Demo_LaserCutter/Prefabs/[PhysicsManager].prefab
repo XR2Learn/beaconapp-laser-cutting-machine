@@ -1,0 +1,903 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6235407302581828166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6235407302581828200}
+  - component: {fileID: 6235407302581828201}
+  - component: {fileID: 6235407302581828182}
+  - component: {fileID: 6235407302581828183}
+  - component: {fileID: 6235407302581828185}
+  - component: {fileID: 6235407302581828180}
+  - component: {fileID: 6235407302581828181}
+  - component: {fileID: 6235407302581828178}
+  - component: {fileID: 6235407302581828179}
+  - component: {fileID: 6235407302581828176}
+  - component: {fileID: 6235407302581828177}
+  - component: {fileID: 6235407302581828190}
+  - component: {fileID: 6235407302581828188}
+  - component: {fileID: 6235407302581828189}
+  - component: {fileID: 6235407302581828186}
+  - component: {fileID: 6235407302581828187}
+  - component: {fileID: 6235407302581828184}
+  - component: {fileID: 6235407302581828191}
+  - component: {fileID: 6235407302581828203}
+  m_Layer: 0
+  m_Name: '[PhysicsManager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6235407302581828200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6235407302581828201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 202153406, guid: f472614540894db4096fc9ab8b138d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _installers:
+  - {fileID: 6235407302581828182}
+  _installerPrefabs: []
+  _scriptableObjectInstallers: []
+  _parentNewObjectsUnderRoot: 0
+  _contractNames: []
+  _parentContractName: 
+  _autoRun: 1
+--- !u!114 &6235407302581828182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1060048783, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6235407302581828183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -348415022, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_id: 7
+  generated: 0
+  SimulationState: 0
+  autoConnect: 0
+  autoStart: 1
+  dumpScene: 0
+  timeStep: 0.01
+  evolution: 0
+  engine: 0
+  LMDmax: 0.02
+  angleTolerance: 0.05
+  obsoleteLMDThreshold: -1
+  voxelSize: 0.02
+  embedded: 0
+  contactMode: 0
+  contactMonitoring: 1
+  contactPenaltyStiffness: 50000
+  gaussSeidelTolerance: 0.000001
+  gaussSeidelMinIter: 75
+  gaussSeidelMaxIter: 150
+  ucRelaxationFactor: 1
+  fdvrFactor: 0.2
+  customServerPeriod: 0
+  directSolverType: 0
+  gravity: 9.80665
+  limiter: 0
+  enableRigidBodyVelocityMonitoring: 0
+  linearVelocityThreshold: 0
+  angularVelocityThreshold: 0
+  enableAutoSleep: 0
+  autoSleepThreshold: 0.00001
+  enableTemporalCoherency: 0
+  slaveAutoStart: 0
+  persistenceSceneCustomSubFolder: 
+--- !u!114 &6235407302581828185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2140409119, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_id: 9270
+  generated: 0
+  layers:
+  - Tools
+  - Players
+  - Machine
+  - Environment
+  - Buttons
+  matrix:
+  - interaction: 0
+    monitoring: 0
+  - interaction: 2
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 2
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 1
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  - interaction: 0
+    monitoring: 0
+  impactDectectionThreshold: 0.01
+  logImpacts: 0
+  enableMonitoringAtStartup: 1
+--- !u!114 &6235407302581828180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1633021007, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers: {fileID: 6235407302581828185}
+  tolerance: 0.00001
+  scale: 0.05
+  scaleViolated: 0.05
+  scaleActive: 0.05
+  scaleInactive: 0.05
+  affectObsoleteScaleToDedicatedOnes: 0
+  showI: 1
+  showJ: 1
+  size: 1
+  material: {fileID: 0}
+  materialViolated: {fileID: 0}
+  materialActive: {fileID: 0}
+  materialInactive: {fileID: 0}
+--- !u!114 &6235407302581828181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -529806448, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers: {fileID: 6235407302581828185}
+  kColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+--- !u!114 &6235407302581828178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -833990832, guid: f29f6a35db9792e49a8e053901ae53bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_selectedObjects: []
+  m_currentSelection: {fileID: 0}
+  m_selectionLevel: 0
+  m_selectionTree: []
+  m_blink: 1
+  m_outlineColor: {r: 1, g: 0.64, b: 0, a: 0.9}
+  m_blinkPeriod: 1
+  m_lineThickness: 0.005
+  m_lineIntensity: 0
+  m_maxfillAmount: 0.9
+  m_outlineMaterial: {fileID: 2100000, guid: 2093cee915a35f64fb4caf949f01f97c, type: 2}
+--- !u!114 &6235407302581828179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1611860418, guid: f29f6a35db9792e49a8e053901ae53bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_noteList: []
+--- !u!114 &6235407302581828176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -603820131, guid: e3f219039459963498eefb3095b2e232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 0.01
+--- !u!114 &6235407302581828177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -446477385, guid: f29f6a35db9792e49a8e053901ae53bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_myModeManager: {fileID: 6235407302581828190}
+--- !u!114 &6235407302581828190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -137197469, guid: f29f6a35db9792e49a8e053901ae53bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6235407302581828188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27991c206a5e66147bb8ee3ef31c8bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionSet:
+    actionSetPath: /actions/interact
+  forSources: 0
+  disableAllOtherActionSets: 0
+  activateOnStart: 1
+  deactivateOnDestroy: 1
+  initialPriority: 0
+--- !u!114 &6235407302581828189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 156708112, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laws:
+  - materialA: Aluminum
+    materialB: Aluminum
+    type: 1
+    friction: 1.4
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Nylon
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Rubber
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Steel
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Wood
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Zinc
+    type: 1
+    friction: 0.1
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Cast Iron
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Rubber
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Steel
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Wood
+    type: 1
+    friction: 0.1
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Zinc
+    type: 1
+    friction: 0.21
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Nylon
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Rubber
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Steel
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Wood
+    type: 1
+    friction: 1.15
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Rubber
+    type: 1
+    friction: 1
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Steel
+    type: 1
+    friction: 0.64
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Wood
+    type: 1
+    friction: 0.65
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Zinc
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Steel
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Wood
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Zinc
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Wood
+    materialB: Wood
+    type: 1
+    friction: 0.3
+    radius: 0
+    compliance: 0
+  - materialA: Wood
+    materialB: Zinc
+    type: 1
+    friction: 0.2
+    radius: 0
+    compliance: 0
+  - materialA: Zinc
+    materialB: Zinc
+    type: 1
+    friction: 0.38
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Aluminum
+    type: 1
+    friction: 1.4
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Nylon
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Rubber
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Steel
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Wood
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Zinc
+    type: 1
+    friction: 0.1
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Cast Iron
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Rubber
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Steel
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Wood
+    type: 1
+    friction: 0.1
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Zinc
+    type: 1
+    friction: 0.21
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Nylon
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Rubber
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Steel
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Wood
+    type: 1
+    friction: 1.15
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Rubber
+    type: 1
+    friction: 1
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Steel
+    type: 1
+    friction: 0.64
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Wood
+    type: 1
+    friction: 0.65
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Zinc
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Steel
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Wood
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Zinc
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Wood
+    materialB: Wood
+    type: 1
+    friction: 0.3
+    radius: 0
+    compliance: 0
+  - materialA: Wood
+    materialB: Zinc
+    type: 1
+    friction: 0.2
+    radius: 0
+    compliance: 0
+  - materialA: Zinc
+    materialB: Zinc
+    type: 1
+    friction: 0.38
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Aluminum
+    type: 1
+    friction: 1.4
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Nylon
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Rubber
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Steel
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Wood
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Aluminum
+    materialB: Zinc
+    type: 1
+    friction: 0.1
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Cast Iron
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Rubber
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Steel
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Wood
+    type: 1
+    friction: 0.1
+    radius: 0
+    compliance: 0
+  - materialA: Cast Iron
+    materialB: Zinc
+    type: 1
+    friction: 0.21
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Nylon
+    type: 1
+    friction: 0.15
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Rubber
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Steel
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Nylon
+    materialB: Wood
+    type: 1
+    friction: 1.15
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Rubber
+    type: 1
+    friction: 1
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Steel
+    type: 1
+    friction: 0.64
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Wood
+    type: 1
+    friction: 0.65
+    radius: 0
+    compliance: 0
+  - materialA: Rubber
+    materialB: Zinc
+    type: 1
+    friction: 0.5
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Steel
+    type: 1
+    friction: 0.76
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Wood
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Steel
+    materialB: Zinc
+    type: 1
+    friction: 0.06
+    radius: 0
+    compliance: 0
+  - materialA: Wood
+    materialB: Wood
+    type: 1
+    friction: 0.3
+    radius: 0
+    compliance: 0
+  - materialA: Wood
+    materialB: Zinc
+    type: 1
+    friction: 0.2
+    radius: 0
+    compliance: 0
+  - materialA: Zinc
+    materialB: Zinc
+    type: 1
+    friction: 0.38
+    radius: 0
+    compliance: 0
+--- !u!114 &6235407302581828186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 899547571, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_id: 7112
+  generated: 0
+  IntegrationStatus: 0
+  TS: 0
+  CD: 0
+  Solver: 0
+  Contacts: 0
+  XsmSubscribe: 0
+  XsmIntegrate: 0
+  XsmPublish: 0
+  XsmWaitTime: 0
+  XsmFrameSize: 0
+  XsmClientMpbs: 0
+  XsmRuntimeOperationCount: 0
+  minLatency: 1000000000
+  avgLatency: 0
+  maxLatency: 0
+  deviation: 0
+--- !u!114 &6235407302581828187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1682575785, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refreshDelay: 1
+  isConnected: 0
+  isMaster: 0
+  peerList: []
+  serverList: []
+  deviceList: []
+  inactivesList: []
+--- !u!114 &6235407302581828184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -932852234, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publishPeriod: 20
+  compressionLevel: 1
+--- !u!114 &6235407302581828191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -721206660, guid: eec868406ea6f9542bd764866e197587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_useLeap: 0
+  m_useArt: 0
+  m_useOptiTrack: 0
+  m_showConsoles: 0
+  m_XdeScene: {fileID: 0}
+  m_ClientDesc:
+    isMaster: 1
+    appName: unity.exe
+    id: master
+    role: master
+    connection: {fileID: 0}
+    unityPort: 0
+    publisherPort: 0
+    frameLockPort: 0
+    useEmbeddedServer: 0
+  m_useWan: 0
+  m_useWss: 0
+--- !u!114 &6235407302581828203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235407302581828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1496542591, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  synchronizedRPCTimeout: 30

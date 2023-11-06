@@ -1,0 +1,19 @@
+{
+    "name": "LSAddonEditor",
+    "references": [
+        "LSAddon",
+        "Pixyz.PluginUnityEditor.Editor",
+        "PixyzPluginEditor.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

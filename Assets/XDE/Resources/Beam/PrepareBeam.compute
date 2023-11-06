@@ -1,0 +1,91 @@
+﻿#pragma kernel CSMain
+#pragma kernel CSClear
+#pragma kernel CSComputeTriNormal
+#pragma kernel CSComputeVertexNormal
+
+#define thread_group_size_x 4
+#define thread_group_size_y 4
+
+//A struct that simple holds a position
+
+struct TriangleStruct
+{
+	int A;
+	int B;
+	int C;
+};
+
+
+RWStructuredBuffer<float3> output;
+RWStructuredBuffer<TriangleStruct> triangles;
+RWStructuredBuffer<float4> vertices;
+
+RWStructuredBuffer<int> vNeighbours;
+RWStructuredBuffer<float3> triNormals;
+
+int _PosOffset = 0;
+
+[numthreads(8,8,1)]
+
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+   int idx = id.x;
+   TriangleStruct ts = triangles[idx];
+   float3 pA = vertices[ts.A+_PosOffset].xyz;
+   float3 pB = vertices[ts.B+_PosOffset].xyz;
+   float3 pC = vertices[ts.C+_PosOffset].xyz;
+   float3 nD = cross(pB-pA, pC-pA);
+   float l = length(nD);
+   if (l > 0.0)
+   {
+	float3 N = 1.0/l *nD;
+	output[ts.A] = N;
+	output[ts.B] = N;
+	output[ts.C] = N;
+   }
+
+}
+[numthreads(8,8,1)]
+void CSClear (uint3 id : SV_DispatchThreadID)
+{
+   output[id.x] = float3(0,0,0);
+}
+
+[numthreads(8,8,1)]
+void CSComputeTriNormal (uint3 id : SV_DispatchThreadID)
+{
+   int idx = id.x;
+   TriangleStruct ts = triangles[idx];
+   float3 pA = vertices[ts.A+_PosOffset].xyz;
+   float3 pB = vertices[ts.B+_PosOffset].xyz;
+   float3 pC = vertices[ts.C+_PosOffset].xyz;
+   float3 nD = cross(pB-pA, pC-pA);
+   float l = length(nD);
+   if (l > 0.0)
+   {
+	float3 N = 1.0/l *nD;
+	triNormals[idx] = N;
+   }
+   else
+	triNormals[idx] = float3(0,0,0);
+
+}
+
+[numthreads(8,8,1)]
+void CSComputeVertexNormal (uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x;
+	int index = 8*idx;
+	int nTri = vNeighbours[index];
+	float3 N = float3(0,0,0);
+	for (int i = 0; i< nTri; ++i)
+	{
+		index++;
+		int iTri = vNeighbours[index];
+		N += triNormals[iTri];
+	}
+	N = normalize(N);
+	output[idx] = N;
+
+}
+

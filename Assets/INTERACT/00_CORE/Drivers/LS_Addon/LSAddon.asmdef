@@ -1,0 +1,16 @@
+{
+    "name": "LSAddon",
+    "references": [
+        "GUID:5539a1eed9386d84aa046e41144807d4",
+        "GUID:c6f90da3620cde94a977416976263bb5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

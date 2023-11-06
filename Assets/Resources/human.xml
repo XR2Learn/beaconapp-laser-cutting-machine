@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MorphologicalParameters name="Human">
+  <Lengths stature="1.7">
+    <topHead value="1.7"/>
+    <footLength value="0.2584"/>
+    <armSpan value="1.853"/>
+    <ankleHeight value="0.068"/>
+    <kneeHeight value="0.476"/>
+    <hipHeight value="0.901"/>
+    <hipWidth value="0.204"/>
+    <shoulderHeight value="1.394"/>
+    <upperArmLength value="0.323"/>
+    <foreArmLength value="0.255"/>
+    <handLength value="0.153"/>
+  </Lengths>
+  <Masses mass="80">
+    <headMass value="5.08656"/>
+    <handMass value="0.468223"/>
+    <foreArmMass value="1.27858"/>
+    <upperArmMass value="2.19695"/>
+    <footMass value="1.0263"/>
+    <shankMass value="3.35224"/>
+    <thighMass value="11.3651"/>
+    <upperTrunkMass value="13.1606"/>
+    <middleTrunkMass value="13.7592"/>
+    <lowerTrunkMass value="8.61889"/>
+  </Masses>
+</MorphologicalParameters>

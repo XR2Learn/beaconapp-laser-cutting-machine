@@ -1,0 +1,201 @@
+TextInput {
+	background-color: #ffffff;
+}
+
+.licenseView {
+    height: 320px;
+}
+
+.detailView {
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.panel {
+    flex-direction: row;
+    justify-content: center;
+}
+
+VisualElement.licenseContainer {
+    flex-direction: row;
+    height: 60px;
+    padding-left: 40px;
+}
+
+.licenseIcon {
+    flex-direction: row;
+    width: 230px;
+    justify-content: flex-start;
+}
+
+.licenseLogo {
+    align-self: center;
+}
+
+TextElement.licenseStatus {
+    width: 260px;
+    font-size: 16px;
+    margin-left: 35px;
+    margin-right: 35px;
+    -unity-text-align: middle-left;
+}
+
+Button {
+    color: #ffffff;
+    background-image: none;
+    background-color: #35A8E0;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.smallButton {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+}
+
+.bigButton {
+    width: 186px;
+    height: 56px;
+    font-size: 13px;
+}
+
+.licenseStatusContainer {
+    width: 260px;
+    background-color: rgb(0, 255, 0);
+}
+
+.licenseModeContainer {
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.licenseModeContainer Button {
+    flex-grow: 0.15;
+}
+
+.licenseTypeContainer {
+    /*margin: 20px;*/
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.serverInput {
+    flex-grow: 1;
+    padding-left: 32px;
+    padding-top: 20px;
+}
+
+.serverInput Label {
+    width: 60px;/*54;*/
+    font-size: 20px;
+    -unity-text-align: middle-left;
+}
+
+.serverInput TextField {
+    width: 334px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-color: #707070;
+    border-width: 1px;
+}
+
+.serverInput TextInput {
+    color: #000000;
+    font-size: 14px;
+    background-image: none;
+}
+
+.serverInput .serverToggleContainer {
+    flex-direction: row;
+    justify-content: center;
+    width: 334px;
+    margin-top: 13px;
+    margin-left: 60px;
+}
+
+.serverToggleContainer Toggle {
+    border-color: #707070;
+    /* border-width: 2px; */
+    width: 26px;
+    height: 26px;
+}
+
+.unity-toggle__input {
+    margin: 0;
+}
+
+.unity-toggle__checkmark {
+    color: #000000;
+    font-size: 14px;
+    background-image: none;
+    border-color: #707070;
+    border-width: 1px;
+    flex-grow: 1;
+    height: 26px;
+    /* -unity-slice-top: 26; */
+}
+
+.serverValidate {
+    justify-content: flex-end;
+    padding-right: 25px;
+    padding-bottom: 20px;
+
+    /*width: 300px;*/
+}
+
+.userPaswwordInput Label {
+    width: 120px;
+    font-size: 20px;
+    -unity-text-align: middle-left;
+}
+
+.keyInput {
+    flex-grow: 1;
+    padding-left: 32px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.keyInput Label {
+    font-size: 18px;
+    -unity-text-align: middle-left;
+}
+
+.keyInput TextField {
+    width: 334px;
+    height: 17px;
+    background-color: #FFFFFF;
+    border-color: #707070;
+    border-width: 1px;
+}
+
+.keyInput TextInput {
+    color: #000000;
+    font-size: 14px;
+    background-image: none;
+}
+
+.keyInput TextElement {
+    color: #6D6B6B;
+    font-size: 9px;
+}
+
+#contactMessage {
+    padding-top: 25px;
+    display: none;
+    font-size: 12px;
+    position: absolute;
+}
+
+.token {
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 3px;
+}

@@ -1,0 +1,63 @@
+/* ButtonsFooter component styles */
+ButtonsFooter {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	align-items: flex-end;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+ButtonsFooter Button {
+	flex-wrap: wrap;
+	flex-grow: 0.25;
+	color: #ffffff;
+	background-image: resource("InteractUI/ButtonsFooter");
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-right: 23px;
+	-unity-text-align: middle-center;
+}
+
+/* TitleHeader component styles */
+TitleHeader {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+TitleHeader TextElement {
+	margin-left: 17px;
+	height: 36px;
+	font-size: 18;
+	color: #ffffff;
+	-unity-text-align: middle-left;
+}
+
+TitleHeader .additionalButton {
+	height: 36px;
+	flex-direction: row;
+	margin-right: 16;
+	align-self: center;
+}
+
+TitleHeader .additionalButton Button {
+	flex-direction: row;
+	background-color: transparent;
+}
+
+TitleHeader .additionalButton Button Image {
+	margin-right: 6;
+	width: 24px;
+	height: 24px;
+	background-image: resource("InteractUI/left-arrow");
+	-unity-background-image-tint-color: #6D6B6B;	
+}
+
+TitleHeader .additionalButton Button Label {
+	font-size: 12;
+	color: #6D6B6B;
+	background-color: transparent;
+}
+
+/* Other components styles... */

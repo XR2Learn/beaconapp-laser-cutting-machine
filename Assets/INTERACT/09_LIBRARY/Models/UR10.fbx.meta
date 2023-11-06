@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: bc4d43e518e8358438f217041efdfd28
+timeCreated: 1430206556
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Base
+    100002: Base_Part1
+    100004: Base_Part2
+    100006: Base_Part3
+    100008: Base_Part4
+    100010: Base_Part4 1
+    100012: Lower arm
+    100014: Lower arm_Part1
+    100016: Lower arm_Part2
+    100018: Lower arm_Part3
+    100020: Lower arm_Part3 1
+    100022: Size 2 Joint
+    100024: Size 2 Joint 1
+    100026: Size 2 Joint 2
+    100028: Size 2 Joint_Part1
+    100030: Size 2 Joint_Part1 1
+    100032: Size 2 Joint_Part1 2
+    100034: Size 2 Joint_Part2
+    100036: Size 2 Joint_Part2 1
+    100038: Size 2 Joint_Part2 2
+    100040: Size 2 Joint_Part3
+    100042: Size 2 Joint_Part3 1
+    100044: Size 2 Joint_Part3 2
+    100046: Size 2 Joint_Part4
+    100048: Size 2 Joint_Part4 1
+    100050: Size 2 Joint_Part4 2
+    100052: Size 2 Joint_Part5
+    100054: Size 2 Joint_Part5 1
+    100056: Size 2 Joint_Part5 2
+    100058: Size 2 Joint_Part6
+    100060: Size 2 Joint_Part6 1
+    100062: Size 2 Joint_Part6 2
+    100064: Size 2 Joint_Part6 3
+    100066: Size 2 Joint_Part6 4
+    100068: Size 2 Joint_Part6 5
+    100070: Size 3 Elbow
+    100072: Size 3 Elbow_Part1
+    100074: Size 3 Elbow_Part2
+    100076: Size 3 Elbow_Part3
+    100078: Size 3 Elbow_Part4
+    100080: Size 3 Elbow_Part5
+    100082: Size 3 Elbow_Part6
+    100084: Size 3 Elbow_Part6 1
+    100086: Size 3 Joint
+    100088: Size 3 Joint_Part1
+    100090: Size 3 Joint_Part2
+    100092: Size 3 Joint_Part3
+    100094: Size 3 Joint_Part4
+    100096: Size 3 Joint_Part5
+    100098: Size 3 Joint_Part6
+    100100: Size 3 Joint_Part7
+    100102: Size 3 Joint_Part7 1
+    100104: Size 4 Joint
+    100106: Size 4 Joint 1
+    100108: Size 4 Joint_Part1
+    100110: Size 4 Joint_Part1 1
+    100112: Size 4 Joint_Part2
+    100114: Size 4 Joint_Part2 1
+    100116: Size 4 Joint_Part3
+    100118: Size 4 Joint_Part3 1
+    100120: Size 4 Joint_Part4
+    100122: Size 4 Joint_Part4 1
+    100124: Size 4 Joint_Part5
+    100126: Size 4 Joint_Part5 1
+    100128: Size 4 Joint_Part6
+    100130: Size 4 Joint_Part6 1
+    100132: Size 4 Joint_Part7
+    100134: Size 4 Joint_Part7 1
+    100136: Size 4 Joint_Part8
+    100138: Size 4 Joint_Part8 1
+    100140: Size 4 Joint_Part8 2
+    100142: Size 4 Joint_Part8 3
+    100144: Tool flange
+    100146: Tool flange_Part1
+    100148: Tool flange_Part2
+    100150: Tool flange_Part3
+    100152: Tool flange_Part3 1
+    100154: Upper arm
+    100156: Upper arm_Part1
+    100158: Upper arm_Part2
+    100160: Upper arm_Part3
+    100162: Upper arm_Part3 1
+    100164: //RootNode
+    400000: Base
+    400002: Base_Part1
+    400004: Base_Part2
+    400006: Base_Part3
+    400008: Base_Part4
+    400010: Base_Part4 1
+    400012: Lower arm
+    400014: Lower arm_Part1
+    400016: Lower arm_Part2
+    400018: Lower arm_Part3
+    400020: Lower arm_Part3 1
+    400022: Size 2 Joint
+    400024: Size 2 Joint 1
+    400026: Size 2 Joint 2
+    400028: Size 2 Joint_Part1
+    400030: Size 2 Joint_Part1 1
+    400032: Size 2 Joint_Part1 2
+    400034: Size 2 Joint_Part2
+    400036: Size 2 Joint_Part2 1
+    400038: Size 2 Joint_Part2 2
+    400040: Size 2 Joint_Part3
+    400042: Size 2 Joint_Part3 1
+    400044: Size 2 Joint_Part3 2
+    400046: Size 2 Joint_Part4
+    400048: Size 2 Joint_Part4 1
+    400050: Size 2 Joint_Part4 2
+    400052: Size 2 Joint_Part5
+    400054: Size 2 Joint_Part5 1
+    400056: Size 2 Joint_Part5 2
+    400058: Size 2 Joint_Part6
+    400060: Size 2 Joint_Part6 1
+    400062: Size 2 Joint_Part6 2
+    400064: Size 2 Joint_Part6 3
+    400066: Size 2 Joint_Part6 4
+    400068: Size 2 Joint_Part6 5
+    400070: Size 3 Elbow
+    400072: Size 3 Elbow_Part1
+    400074: Size 3 Elbow_Part2
+    400076: Size 3 Elbow_Part3
+    400078: Size 3 Elbow_Part4
+    400080: Size 3 Elbow_Part5
+    400082: Size 3 Elbow_Part6
+    400084: Size 3 Elbow_Part6 1
+    400086: Size 3 Joint
+    400088: Size 3 Joint_Part1
+    400090: Size 3 Joint_Part2
+    400092: Size 3 Joint_Part3
+    400094: Size 3 Joint_Part4
+    400096: Size 3 Joint_Part5
+    400098: Size 3 Joint_Part6
+    400100: Size 3 Joint_Part7
+    400102: Size 3 Joint_Part7 1
+    400104: Size 4 Joint
+    400106: Size 4 Joint 1
+    400108: Size 4 Joint_Part1
+    400110: Size 4 Joint_Part1 1
+    400112: Size 4 Joint_Part2
+    400114: Size 4 Joint_Part2 1
+    400116: Size 4 Joint_Part3
+    400118: Size 4 Joint_Part3 1
+    400120: Size 4 Joint_Part4
+    400122: Size 4 Joint_Part4 1
+    400124: Size 4 Joint_Part5
+    400126: Size 4 Joint_Part5 1
+    400128: Size 4 Joint_Part6
+    400130: Size 4 Joint_Part6 1
+    400132: Size 4 Joint_Part7
+    400134: Size 4 Joint_Part7 1
+    400136: Size 4 Joint_Part8
+    400138: Size 4 Joint_Part8 1
+    400140: Size 4 Joint_Part8 2
+    400142: Size 4 Joint_Part8 3
+    400144: Tool flange
+    400146: Tool flange_Part1
+    400148: Tool flange_Part2
+    400150: Tool flange_Part3
+    400152: Tool flange_Part3 1
+    400154: Upper arm
+    400156: Upper arm_Part1
+    400158: Upper arm_Part2
+    400160: Upper arm_Part3
+    400162: Upper arm_Part3 1
+    400164: //RootNode
+    2300000: Base_Part1
+    2300002: Base_Part2
+    2300004: Base_Part3
+    2300006: Base_Part4 1
+    2300008: Lower arm_Part1
+    2300010: Lower arm_Part2
+    2300012: Lower arm_Part3
+    2300014: Size 2 Joint_Part1
+    2300016: Size 2 Joint_Part1 1
+    2300018: Size 2 Joint_Part1 2
+    2300020: Size 2 Joint_Part2
+    2300022: Size 2 Joint_Part2 1
+    2300024: Size 2 Joint_Part2 2
+    2300026: Size 2 Joint_Part3
+    2300028: Size 2 Joint_Part3 1
+    2300030: Size 2 Joint_Part3 2
+    2300032: Size 2 Joint_Part4
+    2300034: Size 2 Joint_Part4 1
+    2300036: Size 2 Joint_Part4 2
+    2300038: Size 2 Joint_Part5
+    2300040: Size 2 Joint_Part5 1
+    2300042: Size 2 Joint_Part5 2
+    2300044: Size 2 Joint_Part6 1
+    2300046: Size 2 Joint_Part6 2
+    2300048: Size 2 Joint_Part6 5
+    2300050: Size 3 Elbow_Part1
+    2300052: Size 3 Elbow_Part2
+    2300054: Size 3 Elbow_Part3
+    2300056: Size 3 Elbow_Part4
+    2300058: Size 3 Elbow_Part5
+    2300060: Size 3 Elbow_Part6 1
+    2300062: Size 3 Joint_Part1
+    2300064: Size 3 Joint_Part2
+    2300066: Size 3 Joint_Part3
+    2300068: Size 3 Joint_Part4
+    2300070: Size 3 Joint_Part5
+    2300072: Size 3 Joint_Part6
+    2300074: Size 3 Joint_Part7
+    2300076: Size 4 Joint_Part1
+    2300078: Size 4 Joint_Part1 1
+    2300080: Size 4 Joint_Part2
+    2300082: Size 4 Joint_Part2 1
+    2300084: Size 4 Joint_Part3
+    2300086: Size 4 Joint_Part3 1
+    2300088: Size 4 Joint_Part4
+    2300090: Size 4 Joint_Part4 1
+    2300092: Size 4 Joint_Part5
+    2300094: Size 4 Joint_Part5 1
+    2300096: Size 4 Joint_Part6
+    2300098: Size 4 Joint_Part6 1
+    2300100: Size 4 Joint_Part7
+    2300102: Size 4 Joint_Part7 1
+    2300104: Size 4 Joint_Part8 1
+    2300106: Size 4 Joint_Part8 3
+    2300108: Tool flange_Part1
+    2300110: Tool flange_Part2
+    2300112: Tool flange_Part3
+    2300114: Upper arm_Part1
+    2300116: Upper arm_Part2
+    2300118: Upper arm_Part3
+    3300000: Base_Part1
+    3300002: Base_Part2
+    3300004: Base_Part3
+    3300006: Base_Part4 1
+    3300008: Lower arm_Part1
+    3300010: Lower arm_Part2
+    3300012: Lower arm_Part3
+    3300014: Size 2 Joint_Part1
+    3300016: Size 2 Joint_Part1 1
+    3300018: Size 2 Joint_Part1 2
+    3300020: Size 2 Joint_Part2
+    3300022: Size 2 Joint_Part2 1
+    3300024: Size 2 Joint_Part2 2
+    3300026: Size 2 Joint_Part3
+    3300028: Size 2 Joint_Part3 1
+    3300030: Size 2 Joint_Part3 2
+    3300032: Size 2 Joint_Part4
+    3300034: Size 2 Joint_Part4 1
+    3300036: Size 2 Joint_Part4 2
+    3300038: Size 2 Joint_Part5
+    3300040: Size 2 Joint_Part5 1
+    3300042: Size 2 Joint_Part5 2
+    3300044: Size 2 Joint_Part6 1
+    3300046: Size 2 Joint_Part6 2
+    3300048: Size 2 Joint_Part6 5
+    3300050: Size 3 Elbow_Part1
+    3300052: Size 3 Elbow_Part2
+    3300054: Size 3 Elbow_Part3
+    3300056: Size 3 Elbow_Part4
+    3300058: Size 3 Elbow_Part5
+    3300060: Size 3 Elbow_Part6 1
+    3300062: Size 3 Joint_Part1
+    3300064: Size 3 Joint_Part2
+    3300066: Size 3 Joint_Part3
+    3300068: Size 3 Joint_Part4
+    3300070: Size 3 Joint_Part5
+    3300072: Size 3 Joint_Part6
+    3300074: Size 3 Joint_Part7
+    3300076: Size 4 Joint_Part1
+    3300078: Size 4 Joint_Part1 1
+    3300080: Size 4 Joint_Part2
+    3300082: Size 4 Joint_Part2 1
+    3300084: Size 4 Joint_Part3
+    3300086: Size 4 Joint_Part3 1
+    3300088: Size 4 Joint_Part4
+    3300090: Size 4 Joint_Part4 1
+    3300092: Size 4 Joint_Part5
+    3300094: Size 4 Joint_Part5 1
+    3300096: Size 4 Joint_Part6
+    3300098: Size 4 Joint_Part6 1
+    3300100: Size 4 Joint_Part7
+    3300102: Size 4 Joint_Part7 1
+    3300104: Size 4 Joint_Part8 1
+    3300106: Size 4 Joint_Part8 3
+    3300108: Tool flange_Part1
+    3300110: Tool flange_Part2
+    3300112: Tool flange_Part3
+    3300114: Upper arm_Part1
+    3300116: Upper arm_Part2
+    3300118: Upper arm_Part3
+    4300000: Size 4 Joint_Part1
+    4300002: Size 4 Joint_Part2
+    4300004: Size 4 Joint_Part3
+    4300006: Size 4 Joint_Part4
+    4300008: Size 4 Joint_Part5
+    4300010: Size 4 Joint_Part6
+    4300012: Size 4 Joint_Part7
+    4300014: Size 4 Joint_Part8
+    4300016: Size 4 Joint_Part1
+    4300018: Size 4 Joint_Part2
+    4300020: Size 4 Joint_Part3
+    4300022: Size 4 Joint_Part4
+    4300024: Size 4 Joint_Part5
+    4300026: Size 4 Joint_Part6
+    4300028: Size 4 Joint_Part7
+    4300030: Size 4 Joint_Part8
+    4300032: Size 2 Joint_Part1
+    4300034: Size 2 Joint_Part2
+    4300036: Size 2 Joint_Part3
+    4300038: Size 2 Joint_Part4
+    4300040: Size 2 Joint_Part5
+    4300042: Size 2 Joint_Part6
+    4300044: Size 3 Joint_Part1
+    4300046: Size 3 Joint_Part2
+    4300048: Size 3 Joint_Part3
+    4300050: Size 3 Joint_Part4
+    4300052: Size 3 Joint_Part5
+    4300054: Size 3 Joint_Part6
+    4300056: Size 3 Joint_Part7
+    4300058: Size 2 Joint_Part1
+    4300060: Size 2 Joint_Part2
+    4300062: Size 2 Joint_Part3
+    4300064: Size 2 Joint_Part4
+    4300066: Size 2 Joint_Part5
+    4300068: Size 2 Joint_Part6
+    4300070: Tool flange_Part1
+    4300072: Tool flange_Part2
+    4300074: Tool flange_Part3
+    4300076: Lower arm_Part1
+    4300078: Lower arm_Part2
+    4300080: Lower arm_Part3
+    4300082: Base_Part1
+    4300084: Base_Part2
+    4300086: Base_Part3
+    4300088: Base_Part4
+    4300090: Upper arm_Part1
+    4300092: Upper arm_Part2
+    4300094: Upper arm_Part3
+    4300096: Size 2 Joint_Part1
+    4300098: Size 2 Joint_Part2
+    4300100: Size 2 Joint_Part3
+    4300102: Size 2 Joint_Part4
+    4300104: Size 2 Joint_Part5
+    4300106: Size 2 Joint_Part6
+    4300108: Size 3 Elbow_Part1
+    4300110: Size 3 Elbow_Part2
+    4300112: Size 3 Elbow_Part3
+    4300114: Size 3 Elbow_Part4
+    4300116: Size 3 Elbow_Part5
+    4300118: Size 3 Elbow_Part6
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
