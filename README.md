@@ -1,19 +1,19 @@
 ![XR2Learn](https://github.com/XR2Learn/.github/blob/main/images/XR2Learn%20logo.png)
 
-# Beacon Application 1
+# Beacon Application "Laser Cutting Machine"
 
-The Beacon Application 1 "Laser Cutting Machine" is a sandbox application that demonstrates the creation of a virtual reality training scenario (maintenance tasks of a machine) through the use of the enabler 1 "INTERACT". With the application, the user is taught how to clean an industrial Laser cutting machine in a step by step process and also validated with a score in the end. The application also illustrates the numerous possibilities such as creating interaction with objects, ease of configuring a scenario, visual effects to the machine etc 
+The Beacon Application "Laser Cutting Machine" is a sandbox application that demonstrates the creation of a virtual reality training scenario (maintenance tasks of a machine) through the use of the Enabler "INTERACT". With the application, the user is taught how to clean an industrial laser cutting machine in a step by step process and also validated with a score in the end. The application also illustrates the numerous possibilities such as creating interaction with objects, ease of configuring a scenario, visual effects to the machine etc 
 
 ## Dependencies
 
 Executable: the built application requires a VR-Ready PC on Windows with SteamVR installed, up-to-date drivers, and a PC VR headset.
-Unity Project: the Beacon Application 1 Unity project requires the 3D engine Unity, and the Enabler 1 "INTERACT" as a plugin to Unity.
+Unity Project: this Beacon Application project requires Unity the 3D engine, and the Enabler "INTERACT" as a plugin to Unity.
 
 ## HARDWARE Prerequisites
 A fairly recent VR-ready laptop or desktop computer running Windows 10/11
 A Meta Quest 2 VR headset and its Touch controllers
 (if any other SteamVR compatible headset is used, please disregard each step about Oculus / Meta specific installations)
-An Oculus Link cable (or any compatible USB-C cable with enough bandwidth)
+An Oculus Link cable (or any compatible USB-C cable with enough bandwidth).
 
 ## SOFTWARE Prerequisites
 Install SteamVR. An offline version (which doesn’t require a Steam account) is proposed.
@@ -28,7 +28,7 @@ In the VR headset, open the “Quick Settings” by clicking on the clock on the
 Then, click on “Quest Link / Rift” button, then “Start”. After a short loading time, you should find yourself in a white virtual environment, with a different menu layout.
 
 (Back on the computer, if not done already : Unzip “DemoLaserCutter_XR2Learn.zip”
-Then launch Demo XR2Learn Laser.exe
+Then launch "Demo XR2Learn Laser.exe".
 
 Put the VR headset back on, and take the Touch controllers. You should be able to see a virtual room with a laser cutting machine, and see the hands of your virtual avatar moving with the controllers.
 
