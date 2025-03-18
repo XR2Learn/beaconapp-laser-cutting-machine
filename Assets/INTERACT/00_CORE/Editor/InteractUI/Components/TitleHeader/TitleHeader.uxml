@@ -1,0 +1,10 @@
+<UXML xmlns="UnityEngine.UIElements" 
+    xmlns:ui="UnityEngine.UIElements">
+    <TextElement text="Default title"/>
+    <VisualElement class="additionalButton">
+        <Button>
+            <Image/>
+            <Label text="Back"/>
+        </Button>
+    </VisualElement>
+</UXML>

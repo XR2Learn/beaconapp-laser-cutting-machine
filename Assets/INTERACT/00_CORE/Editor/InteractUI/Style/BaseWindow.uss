@@ -1,0 +1,62 @@
+VisualElement {
+	font-size: 11px;
+}
+
+Label {
+	color: rgb(0, 0, 0);
+}
+
+TextElement {
+	color: rgb(0, 0, 0);
+}
+
+Button, TextInput {
+	border-left-width: 0;
+	border-top-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.centeredText {
+    flex-wrap: wrap;
+    width: 410px;
+    margin-bottom: 10px;
+    -unity-text-align: middle-center;
+}
+
+VisualElement.separator {
+	width: 500px;
+	height: 30px;
+}
+
+.mainContainer {
+	display: flex;
+	/* flex-direction: row; */
+	flex-grow: 1;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.smallFieldLabel {
+	flex-wrap: wrap;
+	width: 110px;
+}
+
+.formLabel {
+	flex-wrap: wrap;
+	width: 190px;
+}
+
+.formField {
+	flex-wrap: wrap;
+	width: 190px;	
+}
+
+.largeFieldInput {
+	flex-wrap: wrap;
+	width: 270px;	
+}

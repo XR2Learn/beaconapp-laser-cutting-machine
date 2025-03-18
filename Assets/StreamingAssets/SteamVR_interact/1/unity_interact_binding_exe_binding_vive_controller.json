@@ -1,0 +1,197 @@
+{
+  
+  "bindings": {
+    "/actions/default": {
+      "chords": [],
+      "poses": [
+        {
+          "output": "/actions/default/in/pose",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/default/in/pose",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/interact": {
+      "chords": [],
+      "poses": [
+        {
+          "output": "/actions/interact/in/pose",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/interact/in/pose",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "haptics": [
+        {
+          "output": "/actions/interact/out/controllervibration",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/interact/out/controllervibration",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ],
+      "sources": [
+        {
+          "path": "/user/hand/left/input/trigger",
+          "mode": "trigger",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/istriggerclicked"
+            },
+            "pull": {
+              "output": "/actions/interact/in/triggerpressvalue"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/thumbstick",
+          "mode": "joystick",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ispadclicked"
+            },
+            "touch": {
+              "output": "/actions/interact/in/ispadtouched"
+            },
+            "position": {
+              "output": "/actions/interact/in/padpose"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/thumbstick",
+          "mode": "joystick",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ispadclicked"
+            },
+            "position": {
+              "output": "/actions/interact/in/padpose"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/system",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ismenuclicked"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/isgripclicked"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/joystick",
+          "mode": "joystick",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ispadclicked"
+            },
+            "position": {
+              "output": "/actions/interact/in/padpose"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/grip",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/isgripclicked"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/joystick",
+          "mode": "joystick",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ispadclicked"
+            },
+            "position": {
+              "output": "/actions/interact/in/padpose"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/system",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ismenuclicked"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trigger",
+          "mode": "trigger",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/istriggerclicked"
+            },
+            "pull": {
+              "output": "/actions/interact/in/triggerpressvalue"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trackpad",
+          "mode": "trackpad",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ispadclicked"
+            },
+            "position": {
+              "output": "/actions/interact/in/padpose"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trackpad",
+          "mode": "trackpad",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/interact/in/ispadclicked"
+            },
+            "position": {
+              "output": "/actions/interact/in/padpose"
+            }
+          }
+        }
+      ],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive_controller",
+  "description": "Default binding input for Interact with Vive Controller",
+  "name": "Vive_Controller_Interact_Input"
+}

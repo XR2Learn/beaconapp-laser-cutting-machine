@@ -1,0 +1,85 @@
+{
+	"pattern_count"	: 8,
+	//patterns test V-Machina de Bibi
+	"pattern_1" :{
+		"pattern_name" : "InfoAlert",
+		"pattern_desc" : "information alert or nudge, to look at the display or instructions - alternating left/right",
+		"pattern" : [
+		//each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		[0.15,1,50,"left"],
+		[0.15,1,50,"right"],
+		[0.20,0,0,"right"],
+		[0.15,0.8,50,"left"]
+		[0.15,0.8,50,"right"],
+		]
+	},
+	"pattern_2" :{
+		"pattern_name" : "InfoBis",
+		"pattern_desc" : "alert for information - 3 short bips",
+		"pattern" : [
+		//each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		[0.15,0.6,30,"both"],
+		[0.15, 0,50,"both"],
+		[0.15,0.6,30,"both"],
+		[0.15, 0,50,"both"],
+		[0.15,0.6,30,"both"],
+		]
+	},
+	"pattern_3" :{
+		"pattern_name" : "Error",
+		"pattern_desc" : "error message for wrong action or step forgotten / wrong order",
+		"pattern" : [
+		[0.6,1,200,"both"] //each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		]
+	},
+	"pattern_4" :{
+		"pattern_name" : "Left",
+		"pattern_desc" : "Guidance on the left",
+		"pattern" : [
+		//each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		[0.2,0.5,100,"left"],
+		]
+	},
+	"pattern_5" :{
+		"pattern_name" : "Right",
+		"pattern_desc" : "Guidance on the right",
+		"pattern" : [
+		//each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		[0.2,0.5,100,"right"],
+		]
+	},
+	"pattern_6" :{
+		"pattern_name" : "ProximityBeep",
+		"pattern_desc" : "Beep for proximity to a target",
+		"pattern" : [
+		//each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		[0.2,0.7,20,"both"],
+		]
+	},
+	"pattern_7" :{
+		"pattern_name" : "Good",
+		"pattern_desc" : "Confirmation of good action",
+		"pattern" : [
+		//each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		[0.25,1,10,"both"],
+		[0.25,1,20,"both"],
+		[0.25,1,40,"both"],
+		[0.25,1,80,"both"]
+		//[0.25,1,160,"both"],
+		]
+	},
+
+	"pattern_8" :{
+		"pattern_name" : "GoodBis",
+		"pattern_desc" : "Confirmation of success",
+		"pattern" : [
+		//each element is a array : [duration, amplidude, frequency, source] dura:(in seconds), ampl: (0 - 1), freq : (0 - 320 in hz. The lower end being more useful), source (both, right, left)
+		[0.15,0.6,70,"right"],
+		[0.15,0.7,85,"left"],
+		[0.25,0.8,100,"right"],
+		[0.30,0,80,"both"] //pause
+		[0.15,0.7,85,"left"]
+		[0.25,0.8,100,"right"]
+		]
+	},
+}

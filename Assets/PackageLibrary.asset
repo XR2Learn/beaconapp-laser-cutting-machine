@@ -1,0 +1,2202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da2cadfed2a4f39aab2c4b5f6de2f79, type: 3}
+  m_Name: PackageLibrary
+  m_EditorClassIdentifier: 
+  m_names:
+  - Assets/INTERACT
+  m_entries:
+  - m_name: Assets/INTERACT
+    m_assemblies:
+    - m_name: NC_Drivers
+      m_sources:
+      - m_className: BebopTouchDevice
+        m_guid: 7863ff056b8667a47969f11be3a5608f
+        m_fileId: 11500000
+      - m_className: GloveController
+        m_guid: 96df05f0071484df9b017cf914c19734
+        m_fileId: 11500000
+      - m_className: HapticController
+        m_guid: 9ec94c0fb220cbb43a7138e4531c3fbf
+        m_fileId: 11500000
+      - m_className: Triggers
+        m_guid: 36ed3172ad2c94765abe6226262e14b0
+        m_fileId: 11500000
+      - m_className: BebopWaveController
+        m_guid: a5b2ed6642d4a8549b2647a6ad2bb984
+        m_fileId: 11500000
+      - m_className: CalibrationSequence
+        m_guid: 7d2cc75513641d34d910a9378eb05e5e
+        m_fileId: 11500000
+      - m_className: CoreHaptics
+        m_guid: 24e310e6d0f314a45a9a8cf6e9b3bda3
+        m_fileId: 11500000
+      - m_className: BebopTransformFollow
+        m_guid: 0e7f9281aad57f44b878c667d149ff13
+        m_fileId: 11500000
+      - m_className: XdeEngine.Assembly.XdeAsbBebopHandGrasping
+        m_guid: 1cc5b4afcc7568048898ea2fd4a008ca
+        m_fileId: 11500000
+      - m_className: XdeBebopManager
+        m_guid: 76c0cedcb2912f6419d2128f0a3a00bf
+        m_fileId: 11500000
+      - m_className: XdeBebopTrackingManager
+        m_guid: d471a1dd14b98ef4fbf28ed1a8f77cc3
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.CursorUtil
+        m_guid: 32bbc559a4a1eb14ebe682bd8ba97c46
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.FollowCursor
+        m_guid: bb912dbaed64f854ca2a730d1f5351ef
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverCursorData
+        m_guid: e301966260d08e447af6e6ac7589f6fa
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverCursorDataProvider
+        m_guid: 488e29c70986bf64fa88b21d73032bfb
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverCursorFollower
+        m_guid: 078d71dbae50866409fe1215322c225f
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverCursorIdleState
+        m_guid: ac523acad4c542a4082cead27946966a
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverCursorRenderersBuilder
+        m_guid: f7d3b239bcb45cb408280845eab4b7a3
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverCursorRendererUpdater
+        m_guid: e3faee9f2c67a4d30bd52b01a870ddff
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverIdleRendererUpdater
+        m_guid: c830995b28530ff409b2ea2085e80df0
+        m_fileId: 11500000
+      - m_className: Hover.Core.Cursors.HoverInteractionSettings
+        m_guid: 105c6ad2463691f49a5f764f28d63f34
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.HoverItem
+        m_guid: 1bb5d850a569d084fae287729b652247
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.HoverItemBuilder
+        m_guid: 0a7eb8803eb7aa44091b166ce312230e
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.HoverItemData
+        m_guid: ec780595bc7857746940bf96733c7d06
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.HoverItemRendererUpdater
+        m_guid: 58a51a61eecc6034aa2e13623287ee34
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.ItemEvents
+        m_guid: 2b956a82fe68dae42bc63a91f1d029d9
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Helpers.HoverChildItemsEnabler
+        m_guid: dcbe98d68d6dd4642a152eda8e81263f
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Helpers.HoverChildItemsFinder
+        m_guid: 6c6e62d787ecbff43887417b575fe7d0
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Helpers.HoverIndicatorOverrider
+        m_guid: a329405f383d85c49ba285c5dfabd931
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Helpers.HoverItemEventReactor
+        m_guid: 45eece8077cce0946aec27ede878888e
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Helpers.HoverRendererProximityDebugger
+        m_guid: 7f37d8adb68afac4fa259245f527bce7
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Helpers.ShowViaHoverItemBoolValue
+        m_guid: 0c04421c21ce26e4c984a8f1e453aa0d
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Managers.HoverItemHighlightState
+        m_guid: 5a3563e74098d514782fd9a08368ecab
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Managers.HoverItemSelectionState
+        m_guid: 981b7905db3988a4a8fc6842ce1fe532
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Managers.HoverItemsHighlightManager
+        m_guid: 90dc5c953d544204491f2890e08fc117
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Managers.HoverItemsManager
+        m_guid: fd3454111211c7c4798b7d2b559328eb
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Managers.HoverItemsRadioManager
+        m_guid: 0dc8aab5ce3669646b859f61532d6e91
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Managers.HoverItemsRaycastManager
+        m_guid: d9133cfb250b64b489f23035a03ca605
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Managers.HoverItemsStickyManager
+        m_guid: fd33372a5f7bc9c46b5f7dd102b04449
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataCheckbox
+        m_guid: c3f3ece0ff27e1b4693f42bbfd1404be
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataRadio
+        m_guid: 37c1b1430e522db41a4fb21de2f62517
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataSelectable
+        m_guid: d4817caf8edb2264e8c3cfc4ff0e34e9
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataSelectableBool
+        m_guid: 3919ccfa83403824f9281e996bc78ddd
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataSelectableFloat
+        m_guid: e95a88613bcd4d64d9c68a0f68747a94
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataSelector
+        m_guid: b6aef538aa024b043ae8182f3aeee109
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataSlider
+        m_guid: 0c4e701053d89d74abdbe9308269ffd4
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataSticky
+        m_guid: 0708d6c99268e644bba05963455a32a7
+        m_fileId: 11500000
+      - m_className: Hover.Core.Items.Types.HoverItemDataText
+        m_guid: 50249914f4d91a445b81cce7e37c3ab9
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.LayoutUtil
+        m_guid: f71b2a30844313d40b12c8cc5b692139
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Arc.HoverLayoutArcGroup
+        m_guid: afc0324951b241041959b637b0e278df
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Arc.HoverLayoutArcPaddingSettings
+        m_guid: 985c1060c315f48939ab1e10e551c362
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Arc.HoverLayoutArcRelativeSizer
+        m_guid: 392317c1b05018047b04d610814ca6ff
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Arc.HoverLayoutArcRow
+        m_guid: 32d79939c80c72f4f892d738625f60c9
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Arc.HoverLayoutArcStack
+        m_guid: d61fa4162d31d284fb0faa372c2163ef
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Rect.HoverLayoutRectGroup
+        m_guid: 86a3f54360410304babd9d086ea1bd29
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Rect.HoverLayoutRectPaddingSettings
+        m_guid: f4c1acf7838b8ec4d93d78c15e431293
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Rect.HoverLayoutRectRelativeSizer
+        m_guid: 0c5db585529a4e04fbd6666f9c0db977
+        m_fileId: 11500000
+      - m_className: Hover.Core.Layouts.Rect.HoverLayoutRectRow
+        m_guid: 4207c068579025b44af2583e7c50ee95
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.HoverFill
+        m_guid: 7c8307cbd1e8e014da402ece4b24cbc1
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.HoverIndicator
+        m_guid: 0005d39a3dbe3894c9731b1935103c1d
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.HoverMesh
+        m_guid: a05aea8723eecee4596f52e9dae2c478
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.HoverRenderer
+        m_guid: d9e0217aa77ff9b43a46525df80e2e79
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.CanvasElements.HoverCanvas
+        m_guid: 6bdfd4926fe980f469191c0087058bdc
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.CanvasElements.HoverCanvasDataUpdater
+        m_guid: aed3d1896681bee4fa937c62bf104095
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.CanvasElements.HoverCanvasSizeUpdater
+        m_guid: 92e9683350bdd964c9c3c92e64c5f12f
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.CanvasElements.HoverIcon
+        m_guid: 183cc9071f0132c4db3d2a9607a5a8db
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.CanvasElements.HoverLabel
+        m_guid: 3aa5f82064c3f344ea150a76ece4293d
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Cursors.HoverFillCursor
+        m_guid: d2cb3d59951fc4652ac2a943daf21b08
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Cursors.HoverFillIdle
+        m_guid: 8e4ce8388de06ab449538ff5aa543c0a
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Cursors.HoverRaycastLine
+        m_guid: b05b25a10bbcd944e84c99bcb38d3404
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Cursors.HoverRendererCursor
+        m_guid: 52944e70fc2914ef5afd420043d3dd99
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Cursors.HoverRendererIdle
+        m_guid: 9fb39235ee652e542bc7048cdd377f75
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Helpers.ColorViaHoverIndicator
+        m_guid: 5834164db1cd7f8439c6f670109954e9
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Helpers.ScaleViaHoverIndicator
+        m_guid: df0e2181134450a4a820848f974189c8
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Items.Buttons.HoverFillButton
+        m_guid: fc1f290ceb462c54280a0e6481656402
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Items.Buttons.HoverRendererButton
+        m_guid: 40bd96aa58ba1a3408c3469d64989981
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Items.Sliders.HoverFillSlider
+        m_guid: 451a70d0f0322464bb016aa4c71ddad3
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Items.Sliders.HoverFillSliderUpdater
+        m_guid: 1e5966067036547a79604a4b010fcfbc
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Items.Sliders.HoverRendererSlider
+        m_guid: 1a633a635f8790445b56b4d51d406a8c
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Items.Sliders.HoverRendererSliderSegments
+        m_guid: 3fbe8bd34731b9e4bae728bc023518bf
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Items.Sliders.HoverRendererSliderUpdater
+        m_guid: db13985cb63ba7e468622b2c4d41e178
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.HoverShape
+        m_guid: 9230a340b3ebe3149a7ba071a20f1c2a
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Arc.HoverFillButtonArcUpdater
+        m_guid: 88668f11eb40d2f4482db6fd2bad0480
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Arc.HoverFillSliderArcUpdater
+        m_guid: c8703e1b0e558ce45bf3408603ceaf56
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Arc.HoverMeshArc
+        m_guid: 940246c5a7b9f0a43b53ad73ccd4fbcb
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Arc.HoverRendererIdleArcUpdater
+        m_guid: a40105eb98dab834a922e9fb9a6c73d5
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Arc.HoverRendererSliderArcUpdater
+        m_guid: 18f9b913839e0d74fa5b24858f3ef30d
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Arc.HoverRendererSliderSegmentsArc
+        m_guid: 5a947ab29b801384f88f938fbd57ba80
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Arc.HoverShapeArc
+        m_guid: 48e87ab8bd9d7c646a597c4cd3c331c8
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverFillButtonRectUpdater
+        m_guid: 0368a6ad3040345b4abfa56d9e77c9c7
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverFillSliderRectUpdater
+        m_guid: 8c0207486b853464a89eb707c92b8f84
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverMeshRect
+        m_guid: 302d14202c5454f09a8f1386385329df
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverMeshRectHollow
+        m_guid: e1c3e537937f54de3aaab2eec4c03e28
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverMeshRectHollowTab
+        m_guid: 610020500074b2d4a84aa010ed5530d0
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverRendererSliderRectUpdater
+        m_guid: 3bb34bdf075a24a46933a91c9c6ab5d4
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverRendererSliderSegmentsRect
+        m_guid: de40afbacca174692bd6302249e2a3b9
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Shapes.Rect.HoverShapeRect
+        m_guid: 0685310e7538dca40a966ccd009f9461
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Utils.RendererUtil
+        m_guid: d903f85e77f1bb648a430435b06ea40e
+        m_fileId: 11500000
+      - m_className: Hover.Core.Renderers.Utils.SliderUtil
+        m_guid: 82b8df682a890ff4d93ef926f0fd6f3a
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.DisableWhenControlledAttribute
+        m_guid: 9056659eca68c7c489fa5a5b53a9ead6
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.DisplayUtil
+        m_guid: edf78fd1a3eb6814a8e1328130ecef2b
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.HoverInputMissing
+        m_guid: 621052c4c294f6947953d56bdb9481c0
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.HoverSceneAdjust
+        m_guid: cb5634b66652bea44ba2bd637ab0d98d
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.HoverSceneLoader
+        m_guid: 5e99608d8c38bad4f9ab31f2fc415523
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.MeshBuilder
+        m_guid: 19dd53dcdbc0002448ecb60750ed9c41
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.MeshUtil
+        m_guid: df76e1f29c5eff04d82b5f1d2ab1d5db
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.SettingsControllerMap
+        m_guid: 3e7e5a4717604054789d43fa22397eae
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.TreeUpdater
+        m_guid: 1babd2bcabac74a3c8ee5dcc8f7e6b96
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.TriggerButtonAttribute
+        m_guid: 96de60560dc7bf8428ce1492a23f0ed5
+        m_fileId: 11500000
+      - m_className: Hover.Core.Utils.UnityUtil
+        m_guid: c3df56e357268614d8d250db5c9dd30f
+        m_fileId: 11500000
+      - m_className: Hover.Editor.AutomatedBuilds
+        m_guid: 2b692e9dca162024fa38dbc2f9ce35f0
+        m_fileId: 11500000
+      - m_className: Hover.Editor.EditorUtil
+        m_guid: d918fc75697cc4d4c8f2505b072e4e2e
+        m_fileId: 11500000
+      - m_className: Hover.Editor.Input.HovercursorDataProviderEditor
+        m_guid: 03cc8dd978e60624d9316c201903c2c0
+        m_fileId: 11500000
+      - m_className: Hover.Editor.Items.HoverItemDataEditor
+        m_guid: 1896116841bb9c749830610274088904
+        m_fileId: 11500000
+      - m_className: Hover.Editor.Items.Managers.HoverItemHighlightStateEditor
+        m_guid: 6e5dc06cbdfea094ba23647bc781c03d
+        m_fileId: 11500000
+      - m_className: Hover.Editor.Items.Managers.HoverItemSelectionStateEditor
+        m_guid: 52da93f2ebb5f764db31a7b08eadaec4
+        m_fileId: 11500000
+      - m_className: Hover.Editor.Utils.DisableWhenControlledPropertyDrawer
+        m_guid: b557c5c33f53c7e4f8f178a634b6ad6e
+        m_fileId: 11500000
+      - m_className: Hover.Editor.Utils.TreeUpdaterEditor
+        m_guid: 2ca1e9ef045624608a0a66198236b533
+        m_fileId: 11500000
+      - m_className: Hover.Editor.Utils.TriggerButtonPropertyDrawer
+        m_guid: 50d7acfd8fe3dc44f98b1dae232c75da
+        m_fileId: 11500000
+      - m_className: Hover.InputModules.Follow.HoverInputFollow
+        m_guid: 36da62fb5f6850744b10781f5ba58065
+        m_fileId: 11500000
+      - m_className: Hover.InputModules.OculusTouch.HoverInputOculusTouch
+        m_guid: 0fe2806fe8572fa439c80d7fafc44862
+        m_fileId: 11500000
+      - m_className: Hover.InputModules.Vive.HoverInputVive
+        m_guid: 0ff440566f7db844fa94040914453972
+        m_fileId: 11500000
+      - m_className: Hover.InputModules.XDEHands.HoverInputXDEHands
+        m_guid: 0d9b49e0b67dd314f867a6a70bbb9221
+        m_fileId: 11500000
+      - m_className: Hover.InputModules.XDEHands.HoverInputXDEHandsAndControllers
+        m_guid: 400679bfb277c514680f60147834254f
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastActiveDirection
+        m_guid: 401e0de0d7cdf6e42a4405830bcd7992
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastAlphaUpdater
+        m_guid: 4e4556f2b21be4778b7054ad7c5902f2
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastBackCursorTrigger
+        m_guid: 9ac88c06ba026b84cb0ae1c03c972f60
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastBuilder
+        m_guid: d8bb8ba7a27bdd148928cea8ae8bd0fa
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastHighlightPreventer
+        m_guid: c72ac2fec5643dd428f52ba0f3c0f042
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastInterface
+        m_guid: ac773c2662abad74ab71b79a0fbcb734
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastMirrorSwitcher
+        m_guid: f474d050d6ae1eb4085bf21b26d6d90a
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastOpenIcons
+        m_guid: 8ece5f73bb797a94e9aa888807bdda01
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastOpenTransitioner
+        m_guid: 0c664c2f97c74404088a0ba1ac5fc392
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastRowSwitchingInfo
+        m_guid: 0c07a69cd4ce501428dd91de3bb8b1b0
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastRowTitle
+        m_guid: 15ab6f9e7d1c54541b5597d2c7ad9283
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Cast.HovercastRowTransitioner
+        m_guid: ab6f577e3a080ab4c9d5b8c993afd43f
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Key.HoverkeyBuilder
+        m_guid: b3d5af5c363cb044aaa5f61bbaa82fb0
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Key.HoverkeyBuilderData
+        m_guid: ac8b4c7b876572f48a44895c3cb3f678
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Key.HoverkeyInterface
+        m_guid: 9053f3d2d528647cba167e9c336f25b8
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Key.HoverkeyItemLabels
+        m_guid: a7fdb175e908b4a7d9ee0960702434dc
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Key.HoverkeyTextInput
+        m_guid: 99bddfabe4e3fc544a37257e89b79de6
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelActiveDirection
+        m_guid: 3fda316c23b3f9a48a579d2a123d62b8
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelAlphaUpdater
+        m_guid: e94a2c42b0b54d144aa9f4fac52a9072
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelBuilder
+        m_guid: e1b90110adb6a984d8ab979c20e0f565
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelHighlightPreventer
+        m_guid: 9033c7cd4afdf1b49b5a83c463a1ea69
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelInterface
+        m_guid: 20560c63ebb65aa418eedcd610f8dc65
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelRowSizer
+        m_guid: 922ab7d486b4f754d9066cb43b49266d
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelRowSwitchingInfo
+        m_guid: a1a097694ced6c1489e717bee776dc90
+        m_fileId: 11500000
+      - m_className: Hover.InterfaceModules.Panel.HoverpanelRowTransitioner
+        m_guid: 75c39875aa8edb843b4ea249e837d12c
+        m_fileId: 11500000
+      - m_className: Hover.RendererModules.Alpha.HoverAlphaFillTabUpdater
+        m_guid: 8b61105e0d4859d41abab7376aae0ca8
+        m_fileId: 11500000
+      - m_className: Hover.RendererModules.Alpha.HoverAlphaFillUpdater
+        m_guid: 45e2b61439d6ed2469c8581528dbd062
+        m_fileId: 11500000
+      - m_className: Hover.RendererModules.Alpha.HoverAlphaIdleRendererUpdater
+        m_guid: 5514705a97d8f774ea54d4522582a971
+        m_fileId: 11500000
+      - m_className: Hover.RendererModules.Alpha.HoverAlphaMeshUpdater
+        m_guid: 5b7978135b2508444814aff1b1aac4d8
+        m_fileId: 11500000
+      - m_className: Hover.RendererModules.Alpha.HoverAlphaRendererUpdater
+        m_guid: eccc7ef34d657a541a6c9308198c91e1
+        m_fileId: 11500000
+      - m_className: Hover.RendererModules.Opaque.HoverOpaqueMeshUpdater
+        m_guid: f70b4eb2890f1784d81670269795632c
+        m_fileId: 11500000
+      - m_className: BuildApplication
+        m_guid: 3064cdbb7518493408becbd8f74ee72f
+        m_fileId: 11500000
+      - m_className: FilePanel
+        m_guid: 1d8b8d3bc09d1f144acc8b65af2e78e7
+        m_fileId: 11500000
+      - m_className: InteractUtility
+        m_guid: f34f754e39549394989444ceb6a42646
+        m_fileId: 11500000
+      - m_className: INTERACT_Installer
+        m_guid: d8ef90ee57bd36349807a54bfc3405ac
+        m_fileId: 11500000
+      - m_className: PiXYZLicense
+        m_guid: 8b8a5a4f89d467e45a6cb0e45328d290
+        m_fileId: 11500000
+      - m_className: PiXYZMenu
+        m_guid: 600ed25e05c622c4787c990524f55a00
+        m_fileId: 11500000
+      - m_className: SubjectNerd.Utilities.EditScriptableAttribute
+        m_guid: 315cac858c8879242bc87164607c4c5d
+        m_fileId: 11500000
+      - m_className: SubjectNerd.Utilities.ReorderableAttribute
+        m_guid: 8c5391aec2743e9409851d8977727c1f
+        m_fileId: 11500000
+      - m_className: SubjectNerd.Utilities.ReorderableArrayInspector
+        m_guid: 34a3925391cde7a4fbcca8700ce387da
+        m_fileId: 11500000
+      - m_className: SubjectNerd.Utilities.SerializedPropExtension
+        m_guid: bef9147464c3b3f4b93f776fde6abed0
+        m_fileId: 11500000
+      - m_className: XdeEditor.Assembly.XdeAsbManusVRHandGraspingInspector
+        m_guid: d73544144dfacab4aadda2e85ff9c054
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Apollo.Apollo
+        m_guid: 925f1fa1ad92f494a942101b1f72578e
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Apollo.ApolloSDK
+        m_guid: bf1993a2a8e9a144ca5063f0a7ab5ac5
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Apollo.ApolloTCP
+        m_guid: a674728b4d1ccb34cbdbe37eb1238e8a
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.ApolloHandData
+        m_guid: 508ff4314a1b9ad4fbe41322b1861768
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.Finger
+        m_guid: d01258fabae59e148846bc49cd210436
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.Hand
+        m_guid: f46469b62008f7b498d38b82edc8d16f
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.HandController
+        m_guid: 8a050f6fce2c53d48ab24b5c67fd085a
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.HandDataManager
+        m_guid: 9f6a05221dc0d264c930b674ef8f4513
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.HandSettings
+        m_guid: 7ecb84b996dfe1a4ca7c66756945bd83
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.Manus
+        m_guid: 0d16007dd7150ce41a4dc0c03eecb828
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Hands.Wrist
+        m_guid: f11447a1099f2f9439875480ae599735
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.ManusRigger.HandRig
+        m_guid: be8c751bab04eea49956a47c789a4bcc
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.ManusRigger.ManusRigger
+        m_guid: a9812be26b8f2e04383a16352da9b825
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.ProjectManagement.ManusVRCoreDefines
+        m_guid: 4b6f20f1e64a95142a6f695ade6d8dd3
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.ProjectManagement.ManusVRManager
+        m_guid: 067e09cdf2e3a8f4c98cdd8d32e55785
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Tracking.TrackingManager
+        m_guid: 5ec9e1025641cc949a7792145eb94462
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Tracking.TrackingSettings
+        m_guid: 56f9c8cb9f533334d97cb2a00c7f1481
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Utilities.HandSwitchUtil
+        m_guid: 08d529ab8c3d3314faff4bda7132e498
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Utilities.HideLowerArmsUtil
+        m_guid: 86b752ef8e57de54982232a77ff0a5f3
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Utilities.JsonConverter
+        m_guid: dd03e0d5f7287f14e8282fe106737144
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Utilities.TransformDeepChildExtension
+        m_guid: fede9ad3cae339e438a7d80a9be32c7c
+        m_fileId: 11500000
+      - m_className: ManusVR.Core.Utilities.TransformFollow
+        m_guid: b66e609c6c7329a47ae0806bb31bd62f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_TrackedObject_Plus
+        m_guid: f3bc4458ec1d2914d8e6c218241953fa
+        m_fileId: 11500000
+      - m_className: XdeEngine.Assembly.XdeAsbManusVRHandGrasping
+        m_guid: 596689684ea71254a938efb6f99e080d
+        m_fileId: 11500000
+      - m_className: XdeManusTrackingManager
+        m_guid: 0a3f0f79a1066b74fa29e81c294c734e
+        m_fileId: 11500000
+      - m_className: XdeManusVRManager
+        m_guid: b2c29b5b292495443b8372c9fbbb49cf
+        m_fileId: 11500000
+      - m_className: SpaceNavigatorDriver.SpaceNavigatorWindow
+        m_guid: ef7c09094d3ecf24aba174a65757757d
+        m_fileId: 11500000
+      - m_className: SpaceNavigatorDriver.ViewportController
+        m_guid: 13158e59074494444a2604945ebd60a8
+        m_fileId: 11500000
+      - m_className: SpaceNavigatorDriver.QuaternionExtensions
+        m_guid: 9f497175004ffbe4cbb6d50652b37663
+        m_fileId: 11500000
+      - m_className: SpaceNavigatorDriver.SpaceNavigator
+        m_guid: 20e7622c62502e9429868cfd7b7a32c7
+        m_fileId: 11500000
+      - m_className: SpaceNavigatorDriver.SpaceNavigatorWindows
+        m_guid: 2dd23ec43f35f4a4e8ee53062875f106
+        m_fileId: 11500000
+      - m_className: SpaceNavigatorDriver.Locks
+        m_guid: 60068b541fe252041900e0d303e9f867
+        m_fileId: 11500000
+      - m_className: SpaceNavigatorDriver.Settings
+        m_guid: 181488744645d5e4d89ac03339c76394
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_AutoEnableVR
+        m_guid: 359dfd8d7e3732240894f33b6f6d6e56
+        m_fileId: 11500000
+      - m_className: SteamVR_Editor
+        m_guid: 5ba22c80948c94e44a82b9fd1b3abd0d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_RenderModelEditor
+        m_guid: 67867a20919f7db45a2e7034fda1c28e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_SkyboxEditor
+        m_guid: 80087fbbf7bf93a46bb4aea276b19568
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_UnitySettingsWindow
+        m_guid: d2244eee8a3a4784fb40d1123ff69301
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Update
+        m_guid: 73a0556bda803bf4e898751dcfcf21a8
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_ForceSteamVRMode
+        m_guid: c4bc5db9c652ff8408b7cda0197f87f1
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_GazeTracker
+        m_guid: 501eb8b744f73714fbe7dbdd5e3ef66e
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_LaserPointer
+        m_guid: d4e8a839a7c5b7e4580c59e305fb5f01
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_TestThrow
+        m_guid: ff4f36585e15b1942827390ff1a92502
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_TestTrackedCamera
+        m_guid: 8b18b36a995ecb04599f35c2741be8d5
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action
+        m_guid: 9f2ad3c310c8826479de4aadf38385d7
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ActionSet
+        m_guid: fff79524d13a43d4a995dccedb5085c4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ActionSet_Manager
+        m_guid: 672d3f475539e5242af05932e937908b
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Boolean
+        m_guid: 7c3d755cf6cc936488afcb037b69341e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Pose
+        m_guid: 640f5aa82bb9c714696f842cb8727241
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Single
+        m_guid: 02b1c930c612dbc469d258783cb8be34
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Skeleton
+        m_guid: 84215d4427008924ebae4389d3e197e6
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Vector2
+        m_guid: 31ab55ded67f66140977a544d93962ab
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Vector3
+        m_guid: f0d3d2010d570484eb65e1062a1b0e8e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Vibration
+        m_guid: 48b01ecd7f9020044bab37ea4ac8fca3
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ActivateActionSetOnLoad
+        m_guid: 27991c206a5e66147bb8ee3ef31c8bac
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Boolean
+        m_guid: 16a9b39235339104889bf8e9178fc630
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose
+        m_guid: 9a5fb0ca93b55ef4b8d54b512b103341
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Single
+        m_guid: 8be882076514bc846a3ee15c689d0ac4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Skeleton
+        m_guid: 00f6c0d7b5a00aa4a8d38a09a0480032
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_SkeletonCustom
+        m_guid: 9e4c0a04a2f4ee942ba9bd5d7ceb7266
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector2
+        m_guid: 882e9db3ae3cfdf4793461eada0f54b6
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector3
+        m_guid: a749ce0534daa1a4c9455e56191c9e93
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input
+        m_guid: 36fa5b356bc9b9f4792bb2c38b8d8b5f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionFile
+        m_guid: a46ca29bcb0df3e4ea80651c2220adbf
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_BindingFile
+        m_guid: 7a2acf5cecdd8444c97bc579ba230dde
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Generator_Names
+        m_guid: 1178c003dbad4854a932b7bc84000ed5
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Source
+        m_guid: edb9f777bb43d4d4e800dd8a82ba523c
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skeleton_Pose
+        m_guid: e90911e410742a1498a167540c7865bf
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skeleton_Poser
+        m_guid: e7418c7dd8f977d4e969202d3fa7e926
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_BooleanEvent
+        m_guid: 59250d64a1ce9a44891e9bb0b3d71e6b
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_PoseEvent
+        m_guid: d77e49c3174e18045ab27a1029c6a977
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose_ConnectedChangedEvent
+        m_guid: f0abecbe8a5e4e04dab8f886e1d6d070
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose_DeviceIndexChangedEvent
+        m_guid: bc42b626f4ef1264ebfc0393f40df5c9
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose_TrackingChangedEvent
+        m_guid: 62c981c44fe9a6046bb0766cb96bdf65
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_SingleEvent
+        m_guid: b8fd33c9d8ff2114a8b6a59629165318
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_SkeletonEvent
+        m_guid: c56ae57c82c46674ea85a60fd6ba9334
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Skeleton_ConnectedChangedEvent
+        m_guid: 431bf7eb5ceb24a448dc44a2ed8d8243
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Skeleton_TrackingChangedEvent
+        m_guid: 7461d65099840d840af0e25e6afda525
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector2Event
+        m_guid: 091545c123a858440b2e32a3f299a923
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector3Event
+        m_guid: 99c31ec1b21aa424987b0162f9971dc6
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_CopyExampleInputFiles
+        m_guid: 806facaa17de95d4794b0acbbad1268d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionManifest_Manager
+        m_guid: 8c0dec2678a8ce94dbdd749500441172
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionSetPropertyEditor
+        m_guid: 074d66e09af4e46429424ca09a9c3402
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Boolean_PropertyEditor
+        m_guid: 779685f855764aa449874336c160b4d0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Pose_PropertyEditor
+        m_guid: 6c580c8ee65b2064b9cecf9c8a56b126
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Single_PropertyEditor
+        m_guid: 4830402dc20240e4ea78925fdf5cb924
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Skeleton_PropertyEditor
+        m_guid: 67e9f92e8ad511b47ac9bd0e49834d0f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vector2_PropertyEditor
+        m_guid: 44945f1de2d06c843bbacc0c37a431c2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vector3_PropertyEditor
+        m_guid: 08029b867fa0bbf4bb41613c2ebb449e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vibration_PropertyEditor
+        m_guid: 6687413c4fe847b418c7a33716013e07
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_EditorWindow
+        m_guid: 03dc30b5b3080b44ab840459bbaf7b78
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Generator
+        m_guid: dcf3113e82474c541960a24c222f07b3
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_LiveWindow
+        m_guid: 4f3a55cce07b5da49ad2dfb86baea564
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_PostProcessBuild
+        m_guid: 7397a60f6d7fe3942bf26563dad77fe2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skeleton_PoserEditor
+        m_guid: 4dc9de3af3d42194abc1380cc3a5cc61
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BodyCollider
+        m_guid: 1731d642c0b250b48bb8cdfb153d9792
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.CircularDrive
+        m_guid: 1f32883eed859804dbb0c5fedac91496
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ComplexThrowable
+        m_guid: ad77666522338cf49ba83b80b25e6476
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ControllerHoverHighlight
+        m_guid: 8ca2cc563cc33f542a5d9f8f661184ba
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.CustomEvents
+        m_guid: 5f3294e06115d0047a2ac7659a11b168
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DebugUI
+        m_guid: 6f3bba2c36dd79242b3157dbcd876bf2
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DestroyOnDetachedFromHand
+        m_guid: 5240357a2468cdc4291b266bee3cb9b9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DestroyOnParticleSystemDeath
+        m_guid: 69cad530c565c714491a326c21accb90
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DestroyOnTriggerEnter
+        m_guid: 7ba84888c9d4c504cb752a3904551a6c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DistanceHaptics
+        m_guid: 65ef702aaa09d3f46a75659678b1a711
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DontDestroyOnLoad
+        m_guid: 4d1c07a6449b0ca439ee6fac5f6f7d83
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.EnumFlags
+        m_guid: 88a2ccbdad9948c45b28f5e63902705b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Equippable
+        m_guid: ecd73422fbc4be54a9f4d8f3972f8579
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.FallbackCameraController
+        m_guid: 6043f3be9a21bd74281f9770463bea00
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Hand
+        m_guid: 29e3e4511966ba94d8ba0b98c6c62f82
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.HapticRack
+        m_guid: 817521c5973e4ee45905ee97df3c38ad
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.HideOnHandFocusLost
+        m_guid: eb6d6653511aff5409d0827d4e3b79ea
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.HoverButton
+        m_guid: 2c0e35ef0cc211b408d2d7e7eb0f850d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.IgnoreHovering
+        m_guid: f5a1be5da1c87864582d778e52de4e9b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.InputModule
+        m_guid: c9e05292e0d62b542ac5bba92674a86d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Interactable
+        m_guid: b93b6a877adcbf94c89a9d6e0c0e844d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.InteractableDebug
+        m_guid: 78549ac336d4d37418a4d4e0d981f91f
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.InteractableHoverEvents
+        m_guid: c4153b26428ccf041950b92c057812a3
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ItemPackage
+        m_guid: c9f83db71b9a6764abf964ab7679f035
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ItemPackageReference
+        m_guid: 57468e6cbae21894fa42c90413c294ff
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ItemPackageSpawner
+        m_guid: 43e53a985809f0949b9a42cc2a6888c9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearAnimation
+        m_guid: 49a60120b932b59409171f5ff611b639
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearAnimator
+        m_guid: 634b98c3ef8bc6d4f834f80a4613a4a4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearAudioPitch
+        m_guid: bb07dbf09f9933e49b22c82d8428c53b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearBlendshape
+        m_guid: 5a3622562855c9a40a14846ffdc8bfe4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearDisplacement
+        m_guid: 13d876e5d485004448f3e7b57eece9ab
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearDrive
+        m_guid: 8c81a27fd18a29444be92481fe681f4b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearMapping
+        m_guid: 46f8e9e70f68ee3418ad85992778c116
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ModalThrowable
+        m_guid: d9172bbb2e6dd7e4a86c0d1ea19b7e49
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Player
+        m_guid: 202a6e24b48d1684398409c47161adcb
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.PlaySound
+        m_guid: 1a125d9df683e2a49b12babced273360
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.RenderModel
+        m_guid: 847a4fd831847974bb8d16b469b643e3
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SeeThru
+        m_guid: 7d623a50b67320940b97e93e31d0a21b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SleepOnAwake
+        m_guid: 0584375ad2f33ef4da0b276de8507487
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SoundDeparent
+        m_guid: f53662f45a4454944a06629fec9c941e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SoundPlayOneshot
+        m_guid: 32c1c9a5bbab2e54280027c0ecaf42db
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SpawnAndAttachAfterControllerIsTracking
+        m_guid: 6ad167161b0bf8e4d9c038db358e0a28
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SpawnAndAttachToHand
+        m_guid: f4a03a51c550b92478a559cf694ce118
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Throwable
+        m_guid: ffefbea063cab884ca33e5a449e5c22c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.UIElement
+        m_guid: 53cd2ef2dd3d5d64e96af4420220d1d2
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Unparent
+        m_guid: ba42448c9a2fa44409034eead650b5f4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Util
+        m_guid: d4dbb95c6efc21548ac6d079a65a2d50
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.VelocityEstimator
+        m_guid: 783750eec4c41da428b7651515146d14
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ControllerButtonHints
+        m_guid: ea1001a6626353541ab4d4b39f4c3569
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ArcheryTarget
+        m_guid: f2f2850d002f14a47bff32fdf73df53e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Arrow
+        m_guid: d520699ed41daaf48b924d994ac87378
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ArrowHand
+        m_guid: d85480da87762944399dab6c99985eef
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ArrowheadRotation
+        m_guid: f195fe0cc42f49241a3c7521a19fa350
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Balloon
+        m_guid: 429a484b95998f84eaa98fa068caa5e9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BalloonColliders
+        m_guid: 667230ade3b20b641a0ba08bdfd760fc
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BalloonHapticBump
+        m_guid: ec82b6ce2e2435444a434107cddceb0b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BalloonSpawner
+        m_guid: cc1b8e5b8c3365a49b0274fb637151d6
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ExplosionWobble
+        m_guid: 012bb97850e84ad4c890dcab506009bc
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.FireSource
+        m_guid: f86ab2e727cd09f43849955c5b35f490
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Longbow
+        m_guid: 30032368544f1a341976db391b260507
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SoundBowClick
+        m_guid: dc121f192dd724945a1998a9c1f1727d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.BuggyBuddy
+        m_guid: 68cfc2d5837cbbb4fadf8b044ca88bb1
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.BuggyController
+        m_guid: 835b6b0bed899be43a580366974d84eb
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.LockToPoint
+        m_guid: 2eafe1c4f43002f4a9ae978daba0d0f7
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.trackCam
+        m_guid: a97b732be32dc884885a1af270088489
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.trackObj
+        m_guid: 9799564b983d9664b824f7b9b2ff8d88
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.WheelDust
+        m_guid: 0ca7ca2b4b28e184ea4ecc51ddd31f36
+        m_fileId: 11500000
+      - m_className: AmbientSound
+        m_guid: 3bca11e0534f4e742846c41cf3f1ff29
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.Grenade
+        m_guid: 013214146096fa74898db952aa9b2da2
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.JoeJeff
+        m_guid: 2e6e0fb6a756a434b9faeea744a9920c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.JoeJeffController
+        m_guid: 2c178cd2631c07944bc48d4c9d824edb
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.JoeJeffGestures
+        m_guid: 4614a07f51836eb48bfe11b75633be31
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ProceduralHats
+        m_guid: d8c45beb4f5e7a949a8b61f306ff7c66
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ButtonEffect
+        m_guid: fdc6e48706c13fa4a8f807ff0f16e9de
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ButtonExample
+        m_guid: 80df3856ba408c944a3cf528cf7bad83
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ControllerHintsExample
+        m_guid: 79e7ef0af37bbcb40ab89c4cc2481018
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.CustomSkeletonHelper
+        m_guid: 294fb0b20d456c749966ea34ca82355a
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.FloppyHand
+        m_guid: 158d046322c150348bfed00c688d3142
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.FlowerPlanted
+        m_guid: 6a7c27a46b80a6445bffe44ea9e91cd0
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.InteractableExample
+        m_guid: 8bb563c4e716d2c4181e187d9be248db
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.Planting
+        m_guid: 4390f3b73c731c846a0cc863c72d7a1e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.RenderModelChangerUI
+        m_guid: f05229f3db0d24a4e9df9f11919f341a
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.SkeletonUIOptions
+        m_guid: 48c26627b0786bd489db7ad471de1a5e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.TargetHitEffect
+        m_guid: 037de2161ddbc6f4e96de7dd85ea6686
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.TargetMeasurement
+        m_guid: ec342cce029750947a79c83ea47c42b9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.SquishyToy
+        m_guid: e591913e9a140ee44b7837c4fd22aeb4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.AllowTeleportWhileAttachedToHand
+        m_guid: b8d4cc6cf300b3e4bb1411c4e041030c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ChaperoneInfo
+        m_guid: ebcc975aa3c1d5240936c86b600ca2a5
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.IgnoreTeleportTrace
+        m_guid: dc3be917a80086a48b97933694257f09
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Teleport
+        m_guid: f260935093f73f241bfaa1578e5e5506
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportArc
+        m_guid: a043c731a29ecd745a9270fbf002ee68
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportArea
+        m_guid: 84a4f15a3179f1d4993aded11f4d0232
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportMarkerBase
+        m_guid: c6bc348d47e14444f9ca466d8cf06d46
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportPoint
+        m_guid: e0135c95e70592e4fac2f29e7b78abcf
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR
+        m_guid: 7fae0ddab09ac324c85494471274d6a4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour
+        m_guid: 1aaa8a3afb932fe478757c1e89cf0cd5
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Camera
+        m_guid: 6bca9ccf900ccc84c887d783321d27e2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_CameraFlip
+        m_guid: f5be45115742b07478e21c85fcc233ec
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_CameraMask
+        m_guid: 5828f252c3c228f4b931f66c21e525c4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Ears
+        m_guid: 49a86c1078ce4314b9c4224560e031b9
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Events
+        m_guid: 44cb57742f235524189e5d8af1c4f3cc
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ExternalCamera
+        m_guid: c9da270df5147d24597cc106058c1fa7
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Fade
+        m_guid: 2ad1e469d4e3e04489f9a36419f1a4f8
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Frustum
+        m_guid: b2d1785fa0c551e408b6c94398847b76
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_IK
+        m_guid: ea22dba3baf2ecc4d886bf2444444228
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_LoadLevel
+        m_guid: a5a6a70209b6e6345bfe18b02314a54e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Menu
+        m_guid: e7afc8c74d1f73b458705e0b946292a0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Overlay
+        m_guid: 46fe9e0b23166454c8cb73040321d78c
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_PlayArea
+        m_guid: 1f0522eaef74d984591c060d05a095c8
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Render
+        m_guid: e979227f3384fac4b8ca0b3550bf005c
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_RenderModel
+        m_guid: 5890e3cad70bea64d91aef9145ba3454
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Settings
+        m_guid: b7f99b5209bd86441a74f3b0c7aab951
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skybox
+        m_guid: 13a43e992568b8e48b4bd489b9d96f40
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_SphericalProjection
+        m_guid: 7f4097fabec5d2b4da2b861750319952
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_TrackedCamera
+        m_guid: 55da3adbb5d30254c97687991608dda0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_TrackedObject
+        m_guid: d37c2cf88f7c59f4c8cf5d3812568143
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Utils
+        m_guid: be3c3a084f7b29b4880b42b4cfbf4d8f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Windows_Editor_Helper
+        m_guid: 5162205b778d01647b0d6a2c523b2518
+        m_fileId: 11500000
+      - m_className: XdeSteamVRTrackedObjects
+        m_guid: ed814a0b78716af4a86c25aa1415bdd0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionSet_default
+        m_guid: 20312f94702c4e54a950e0a4072e3c1d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionSet_interact
+        m_guid: b46414fef6403a243b9c1dda1acc5de3
+        m_fileId: 11500000
+    - m_name: NC_PiXYZMenu
+      m_sources:
+      - m_className: PiXYZMenu
+        m_guid: 600ed25e05c622c4787c990524f55a00
+        m_fileId: 11500000
+    - m_name: NC_ManusVR_Editor
+      m_sources:
+      - m_className: SubjectNerd.Utilities.ReorderableArrayInspector
+        m_guid: 34a3925391cde7a4fbcca8700ce387da
+        m_fileId: 11500000
+      - m_className: SubjectNerd.Utilities.SerializedPropExtension
+        m_guid: bef9147464c3b3f4b93f776fde6abed0
+        m_fileId: 11500000
+      - m_className: XdeEditor.Assembly.XdeAsbManusVRHandGraspingInspector
+        m_guid: d73544144dfacab4aadda2e85ff9c054
+        m_fileId: 11500000
+    - m_name: NC_SteamVR
+      m_sources:
+      - m_className: Valve.VR.SteamVR_AutoEnableVR
+        m_guid: 359dfd8d7e3732240894f33b6f6d6e56
+        m_fileId: 11500000
+      - m_className: SteamVR_Editor
+        m_guid: 5ba22c80948c94e44a82b9fd1b3abd0d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_RenderModelEditor
+        m_guid: 67867a20919f7db45a2e7034fda1c28e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_SkyboxEditor
+        m_guid: 80087fbbf7bf93a46bb4aea276b19568
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_UnitySettingsWindow
+        m_guid: d2244eee8a3a4784fb40d1123ff69301
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Update
+        m_guid: 73a0556bda803bf4e898751dcfcf21a8
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_ForceSteamVRMode
+        m_guid: c4bc5db9c652ff8408b7cda0197f87f1
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_GazeTracker
+        m_guid: 501eb8b744f73714fbe7dbdd5e3ef66e
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_LaserPointer
+        m_guid: d4e8a839a7c5b7e4580c59e305fb5f01
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_TestThrow
+        m_guid: ff4f36585e15b1942827390ff1a92502
+        m_fileId: 11500000
+      - m_className: Valve.VR.Extras.SteamVR_TestTrackedCamera
+        m_guid: 8b18b36a995ecb04599f35c2741be8d5
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action
+        m_guid: 9f2ad3c310c8826479de4aadf38385d7
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ActionSet
+        m_guid: fff79524d13a43d4a995dccedb5085c4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ActionSet_Manager
+        m_guid: 672d3f475539e5242af05932e937908b
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Boolean
+        m_guid: 7c3d755cf6cc936488afcb037b69341e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Pose
+        m_guid: 640f5aa82bb9c714696f842cb8727241
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Single
+        m_guid: 02b1c930c612dbc469d258783cb8be34
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Skeleton
+        m_guid: 84215d4427008924ebae4389d3e197e6
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Vector2
+        m_guid: 31ab55ded67f66140977a544d93962ab
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Vector3
+        m_guid: f0d3d2010d570484eb65e1062a1b0e8e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Action_Vibration
+        m_guid: 48b01ecd7f9020044bab37ea4ac8fca3
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ActivateActionSetOnLoad
+        m_guid: 27991c206a5e66147bb8ee3ef31c8bac
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Boolean
+        m_guid: 16a9b39235339104889bf8e9178fc630
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose
+        m_guid: 9a5fb0ca93b55ef4b8d54b512b103341
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Single
+        m_guid: 8be882076514bc846a3ee15c689d0ac4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Skeleton
+        m_guid: 00f6c0d7b5a00aa4a8d38a09a0480032
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_SkeletonCustom
+        m_guid: 9e4c0a04a2f4ee942ba9bd5d7ceb7266
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector2
+        m_guid: 882e9db3ae3cfdf4793461eada0f54b6
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector3
+        m_guid: a749ce0534daa1a4c9455e56191c9e93
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input
+        m_guid: 36fa5b356bc9b9f4792bb2c38b8d8b5f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionFile
+        m_guid: a46ca29bcb0df3e4ea80651c2220adbf
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_BindingFile
+        m_guid: 7a2acf5cecdd8444c97bc579ba230dde
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Generator_Names
+        m_guid: 1178c003dbad4854a932b7bc84000ed5
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Source
+        m_guid: edb9f777bb43d4d4e800dd8a82ba523c
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skeleton_Pose
+        m_guid: e90911e410742a1498a167540c7865bf
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skeleton_Poser
+        m_guid: e7418c7dd8f977d4e969202d3fa7e926
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_BooleanEvent
+        m_guid: 59250d64a1ce9a44891e9bb0b3d71e6b
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_PoseEvent
+        m_guid: d77e49c3174e18045ab27a1029c6a977
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose_ConnectedChangedEvent
+        m_guid: f0abecbe8a5e4e04dab8f886e1d6d070
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose_DeviceIndexChangedEvent
+        m_guid: bc42b626f4ef1264ebfc0393f40df5c9
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Pose_TrackingChangedEvent
+        m_guid: 62c981c44fe9a6046bb0766cb96bdf65
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_SingleEvent
+        m_guid: b8fd33c9d8ff2114a8b6a59629165318
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_SkeletonEvent
+        m_guid: c56ae57c82c46674ea85a60fd6ba9334
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Skeleton_ConnectedChangedEvent
+        m_guid: 431bf7eb5ceb24a448dc44a2ed8d8243
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Skeleton_TrackingChangedEvent
+        m_guid: 7461d65099840d840af0e25e6afda525
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector2Event
+        m_guid: 091545c123a858440b2e32a3f299a923
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour_Vector3Event
+        m_guid: 99c31ec1b21aa424987b0162f9971dc6
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_CopyExampleInputFiles
+        m_guid: 806facaa17de95d4794b0acbbad1268d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionManifest_Manager
+        m_guid: 8c0dec2678a8ce94dbdd749500441172
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionSetPropertyEditor
+        m_guid: 074d66e09af4e46429424ca09a9c3402
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Boolean_PropertyEditor
+        m_guid: 779685f855764aa449874336c160b4d0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Pose_PropertyEditor
+        m_guid: 6c580c8ee65b2064b9cecf9c8a56b126
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Single_PropertyEditor
+        m_guid: 4830402dc20240e4ea78925fdf5cb924
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Skeleton_PropertyEditor
+        m_guid: 67e9f92e8ad511b47ac9bd0e49834d0f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vector2_PropertyEditor
+        m_guid: 44945f1de2d06c843bbacc0c37a431c2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vector3_PropertyEditor
+        m_guid: 08029b867fa0bbf4bb41613c2ebb449e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vibration_PropertyEditor
+        m_guid: 6687413c4fe847b418c7a33716013e07
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_EditorWindow
+        m_guid: 03dc30b5b3080b44ab840459bbaf7b78
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Generator
+        m_guid: dcf3113e82474c541960a24c222f07b3
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_LiveWindow
+        m_guid: 4f3a55cce07b5da49ad2dfb86baea564
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_PostProcessBuild
+        m_guid: 7397a60f6d7fe3942bf26563dad77fe2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skeleton_PoserEditor
+        m_guid: 4dc9de3af3d42194abc1380cc3a5cc61
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BodyCollider
+        m_guid: 1731d642c0b250b48bb8cdfb153d9792
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.CircularDrive
+        m_guid: 1f32883eed859804dbb0c5fedac91496
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ComplexThrowable
+        m_guid: ad77666522338cf49ba83b80b25e6476
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ControllerHoverHighlight
+        m_guid: 8ca2cc563cc33f542a5d9f8f661184ba
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.CustomEvents
+        m_guid: 5f3294e06115d0047a2ac7659a11b168
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DebugUI
+        m_guid: 6f3bba2c36dd79242b3157dbcd876bf2
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DestroyOnDetachedFromHand
+        m_guid: 5240357a2468cdc4291b266bee3cb9b9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DestroyOnParticleSystemDeath
+        m_guid: 69cad530c565c714491a326c21accb90
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DestroyOnTriggerEnter
+        m_guid: 7ba84888c9d4c504cb752a3904551a6c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DistanceHaptics
+        m_guid: 65ef702aaa09d3f46a75659678b1a711
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.DontDestroyOnLoad
+        m_guid: 4d1c07a6449b0ca439ee6fac5f6f7d83
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.EnumFlags
+        m_guid: 88a2ccbdad9948c45b28f5e63902705b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Equippable
+        m_guid: ecd73422fbc4be54a9f4d8f3972f8579
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.FallbackCameraController
+        m_guid: 6043f3be9a21bd74281f9770463bea00
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Hand
+        m_guid: 29e3e4511966ba94d8ba0b98c6c62f82
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.HapticRack
+        m_guid: 817521c5973e4ee45905ee97df3c38ad
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.HideOnHandFocusLost
+        m_guid: eb6d6653511aff5409d0827d4e3b79ea
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.HoverButton
+        m_guid: 2c0e35ef0cc211b408d2d7e7eb0f850d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.IgnoreHovering
+        m_guid: f5a1be5da1c87864582d778e52de4e9b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.InputModule
+        m_guid: c9e05292e0d62b542ac5bba92674a86d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Interactable
+        m_guid: b93b6a877adcbf94c89a9d6e0c0e844d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.InteractableDebug
+        m_guid: 78549ac336d4d37418a4d4e0d981f91f
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.InteractableHoverEvents
+        m_guid: c4153b26428ccf041950b92c057812a3
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ItemPackage
+        m_guid: c9f83db71b9a6764abf964ab7679f035
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ItemPackageReference
+        m_guid: 57468e6cbae21894fa42c90413c294ff
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ItemPackageSpawner
+        m_guid: 43e53a985809f0949b9a42cc2a6888c9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearAnimation
+        m_guid: 49a60120b932b59409171f5ff611b639
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearAnimator
+        m_guid: 634b98c3ef8bc6d4f834f80a4613a4a4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearAudioPitch
+        m_guid: bb07dbf09f9933e49b22c82d8428c53b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearBlendshape
+        m_guid: 5a3622562855c9a40a14846ffdc8bfe4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearDisplacement
+        m_guid: 13d876e5d485004448f3e7b57eece9ab
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearDrive
+        m_guid: 8c81a27fd18a29444be92481fe681f4b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.LinearMapping
+        m_guid: 46f8e9e70f68ee3418ad85992778c116
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ModalThrowable
+        m_guid: d9172bbb2e6dd7e4a86c0d1ea19b7e49
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Player
+        m_guid: 202a6e24b48d1684398409c47161adcb
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.PlaySound
+        m_guid: 1a125d9df683e2a49b12babced273360
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.RenderModel
+        m_guid: 847a4fd831847974bb8d16b469b643e3
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SeeThru
+        m_guid: 7d623a50b67320940b97e93e31d0a21b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SleepOnAwake
+        m_guid: 0584375ad2f33ef4da0b276de8507487
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SoundDeparent
+        m_guid: f53662f45a4454944a06629fec9c941e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SoundPlayOneshot
+        m_guid: 32c1c9a5bbab2e54280027c0ecaf42db
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SpawnAndAttachAfterControllerIsTracking
+        m_guid: 6ad167161b0bf8e4d9c038db358e0a28
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SpawnAndAttachToHand
+        m_guid: f4a03a51c550b92478a559cf694ce118
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Throwable
+        m_guid: ffefbea063cab884ca33e5a449e5c22c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.UIElement
+        m_guid: 53cd2ef2dd3d5d64e96af4420220d1d2
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Unparent
+        m_guid: ba42448c9a2fa44409034eead650b5f4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Util
+        m_guid: d4dbb95c6efc21548ac6d079a65a2d50
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.VelocityEstimator
+        m_guid: 783750eec4c41da428b7651515146d14
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ControllerButtonHints
+        m_guid: ea1001a6626353541ab4d4b39f4c3569
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ArcheryTarget
+        m_guid: f2f2850d002f14a47bff32fdf73df53e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Arrow
+        m_guid: d520699ed41daaf48b924d994ac87378
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ArrowHand
+        m_guid: d85480da87762944399dab6c99985eef
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ArrowheadRotation
+        m_guid: f195fe0cc42f49241a3c7521a19fa350
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Balloon
+        m_guid: 429a484b95998f84eaa98fa068caa5e9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BalloonColliders
+        m_guid: 667230ade3b20b641a0ba08bdfd760fc
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BalloonHapticBump
+        m_guid: ec82b6ce2e2435444a434107cddceb0b
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.BalloonSpawner
+        m_guid: cc1b8e5b8c3365a49b0274fb637151d6
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ExplosionWobble
+        m_guid: 012bb97850e84ad4c890dcab506009bc
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.FireSource
+        m_guid: f86ab2e727cd09f43849955c5b35f490
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Longbow
+        m_guid: 30032368544f1a341976db391b260507
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.SoundBowClick
+        m_guid: dc121f192dd724945a1998a9c1f1727d
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.BuggyBuddy
+        m_guid: 68cfc2d5837cbbb4fadf8b044ca88bb1
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.BuggyController
+        m_guid: 835b6b0bed899be43a580366974d84eb
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.LockToPoint
+        m_guid: 2eafe1c4f43002f4a9ae978daba0d0f7
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.trackCam
+        m_guid: a97b732be32dc884885a1af270088489
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.trackObj
+        m_guid: 9799564b983d9664b824f7b9b2ff8d88
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.WheelDust
+        m_guid: 0ca7ca2b4b28e184ea4ecc51ddd31f36
+        m_fileId: 11500000
+      - m_className: AmbientSound
+        m_guid: 3bca11e0534f4e742846c41cf3f1ff29
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.Grenade
+        m_guid: 013214146096fa74898db952aa9b2da2
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.JoeJeff
+        m_guid: 2e6e0fb6a756a434b9faeea744a9920c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.JoeJeffController
+        m_guid: 2c178cd2631c07944bc48d4c9d824edb
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.JoeJeffGestures
+        m_guid: 4614a07f51836eb48bfe11b75633be31
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ProceduralHats
+        m_guid: d8c45beb4f5e7a949a8b61f306ff7c66
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ButtonEffect
+        m_guid: fdc6e48706c13fa4a8f807ff0f16e9de
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ButtonExample
+        m_guid: 80df3856ba408c944a3cf528cf7bad83
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.ControllerHintsExample
+        m_guid: 79e7ef0af37bbcb40ab89c4cc2481018
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.CustomSkeletonHelper
+        m_guid: 294fb0b20d456c749966ea34ca82355a
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.FloppyHand
+        m_guid: 158d046322c150348bfed00c688d3142
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.FlowerPlanted
+        m_guid: 6a7c27a46b80a6445bffe44ea9e91cd0
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.InteractableExample
+        m_guid: 8bb563c4e716d2c4181e187d9be248db
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.Planting
+        m_guid: 4390f3b73c731c846a0cc863c72d7a1e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.RenderModelChangerUI
+        m_guid: f05229f3db0d24a4e9df9f11919f341a
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.SkeletonUIOptions
+        m_guid: 48c26627b0786bd489db7ad471de1a5e
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.TargetHitEffect
+        m_guid: 037de2161ddbc6f4e96de7dd85ea6686
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.TargetMeasurement
+        m_guid: ec342cce029750947a79c83ea47c42b9
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Sample.SquishyToy
+        m_guid: e591913e9a140ee44b7837c4fd22aeb4
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.AllowTeleportWhileAttachedToHand
+        m_guid: b8d4cc6cf300b3e4bb1411c4e041030c
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.ChaperoneInfo
+        m_guid: ebcc975aa3c1d5240936c86b600ca2a5
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.IgnoreTeleportTrace
+        m_guid: dc3be917a80086a48b97933694257f09
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.Teleport
+        m_guid: f260935093f73f241bfaa1578e5e5506
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportArc
+        m_guid: a043c731a29ecd745a9270fbf002ee68
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportArea
+        m_guid: 84a4f15a3179f1d4993aded11f4d0232
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportMarkerBase
+        m_guid: c6bc348d47e14444f9ca466d8cf06d46
+        m_fileId: 11500000
+      - m_className: Valve.VR.InteractionSystem.TeleportPoint
+        m_guid: e0135c95e70592e4fac2f29e7b78abcf
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR
+        m_guid: 7fae0ddab09ac324c85494471274d6a4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Behaviour
+        m_guid: 1aaa8a3afb932fe478757c1e89cf0cd5
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Camera
+        m_guid: 6bca9ccf900ccc84c887d783321d27e2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_CameraFlip
+        m_guid: f5be45115742b07478e21c85fcc233ec
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_CameraMask
+        m_guid: 5828f252c3c228f4b931f66c21e525c4
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Ears
+        m_guid: 49a86c1078ce4314b9c4224560e031b9
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Events
+        m_guid: 44cb57742f235524189e5d8af1c4f3cc
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_ExternalCamera
+        m_guid: c9da270df5147d24597cc106058c1fa7
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Fade
+        m_guid: 2ad1e469d4e3e04489f9a36419f1a4f8
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Frustum
+        m_guid: b2d1785fa0c551e408b6c94398847b76
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_IK
+        m_guid: ea22dba3baf2ecc4d886bf2444444228
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_LoadLevel
+        m_guid: a5a6a70209b6e6345bfe18b02314a54e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Menu
+        m_guid: e7afc8c74d1f73b458705e0b946292a0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Overlay
+        m_guid: 46fe9e0b23166454c8cb73040321d78c
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_PlayArea
+        m_guid: 1f0522eaef74d984591c060d05a095c8
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Render
+        m_guid: e979227f3384fac4b8ca0b3550bf005c
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_RenderModel
+        m_guid: 5890e3cad70bea64d91aef9145ba3454
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Settings
+        m_guid: b7f99b5209bd86441a74f3b0c7aab951
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skybox
+        m_guid: 13a43e992568b8e48b4bd489b9d96f40
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_SphericalProjection
+        m_guid: 7f4097fabec5d2b4da2b861750319952
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_TrackedCamera
+        m_guid: 55da3adbb5d30254c97687991608dda0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_TrackedObject
+        m_guid: d37c2cf88f7c59f4c8cf5d3812568143
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Utils
+        m_guid: be3c3a084f7b29b4880b42b4cfbf4d8f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Windows_Editor_Helper
+        m_guid: 5162205b778d01647b0d6a2c523b2518
+        m_fileId: 11500000
+      - m_className: XdeSteamVRTrackedObjects
+        m_guid: ed814a0b78716af4a86c25aa1415bdd0
+        m_fileId: 11500000
+    - m_name: NC_SteamVR_Editor
+      m_sources:
+      - m_className: Valve.VR.SteamVR_AutoEnableVR
+        m_guid: 359dfd8d7e3732240894f33b6f6d6e56
+        m_fileId: 11500000
+      - m_className: SteamVR_Editor
+        m_guid: 5ba22c80948c94e44a82b9fd1b3abd0d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_RenderModelEditor
+        m_guid: 67867a20919f7db45a2e7034fda1c28e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_SkyboxEditor
+        m_guid: 80087fbbf7bf93a46bb4aea276b19568
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_UnitySettingsWindow
+        m_guid: d2244eee8a3a4784fb40d1123ff69301
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Update
+        m_guid: 73a0556bda803bf4e898751dcfcf21a8
+        m_fileId: 11500000
+    - m_name: NC_SteamVR_Input_Editor
+      m_sources:
+      - m_className: Valve.VR.SteamVR_CopyExampleInputFiles
+        m_guid: 806facaa17de95d4794b0acbbad1268d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionManifest_Manager
+        m_guid: 8c0dec2678a8ce94dbdd749500441172
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionSetPropertyEditor
+        m_guid: 074d66e09af4e46429424ca09a9c3402
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Boolean_PropertyEditor
+        m_guid: 779685f855764aa449874336c160b4d0
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Pose_PropertyEditor
+        m_guid: 6c580c8ee65b2064b9cecf9c8a56b126
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Single_PropertyEditor
+        m_guid: 4830402dc20240e4ea78925fdf5cb924
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Skeleton_PropertyEditor
+        m_guid: 67e9f92e8ad511b47ac9bd0e49834d0f
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vector2_PropertyEditor
+        m_guid: 44945f1de2d06c843bbacc0c37a431c2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vector3_PropertyEditor
+        m_guid: 08029b867fa0bbf4bb41613c2ebb449e
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Action_Vibration_PropertyEditor
+        m_guid: 6687413c4fe847b418c7a33716013e07
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_EditorWindow
+        m_guid: 03dc30b5b3080b44ab840459bbaf7b78
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_Generator
+        m_guid: dcf3113e82474c541960a24c222f07b3
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_LiveWindow
+        m_guid: 4f3a55cce07b5da49ad2dfb86baea564
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_PostProcessBuild
+        m_guid: 7397a60f6d7fe3942bf26563dad77fe2
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Skeleton_PoserEditor
+        m_guid: 4dc9de3af3d42194abc1380cc3a5cc61
+        m_fileId: 11500000
+    - m_name: NC_SteamVR_Windows_EditorHelper
+      m_sources:
+      - m_className: Valve.VR.SteamVR_Windows_Editor_Helper
+        m_guid: 5162205b778d01647b0d6a2c523b2518
+        m_fileId: 11500000
+    - m_name: NC_SteamVR_Actions
+      m_sources:
+      - m_className: Valve.VR.SteamVR_Input_ActionSet_default
+        m_guid: 20312f94702c4e54a950e0a4072e3c1d
+        m_fileId: 11500000
+      - m_className: Valve.VR.SteamVR_Input_ActionSet_interact
+        m_guid: b46414fef6403a243b9c1dda1acc5de3
+        m_fileId: 11500000
+    - m_name: NC_InteractUI
+      m_sources:
+      - m_className: InteractUI.Editor.Component
+        m_guid: 652f163f426f9f1469441c7a92f22a5b
+        m_fileId: 11500000
+      - m_className: InteractUI.Editor.Components.ButtonsFooter
+        m_guid: 9fb0a17f40b15a142848370ac5949fd3
+        m_fileId: 11500000
+      - m_className: InteractUI.Editor.Components.StackView
+        m_guid: 19493c8c790c2ad45a97b59a149389f5
+        m_fileId: 11500000
+      - m_className: InteractUI.Editor.Components.TitleHeader
+        m_guid: 3ab5ab9669659ce41a982897aae3e34f
+        m_fileId: 11500000
+      - m_className: InteractUI.Editor.Components.View
+        m_guid: f26b887a0a4acdd40ba6ce3b6863eda5
+        m_fileId: 11500000
+      - m_className: InteractUI.Editor.BaseWindow
+        m_guid: 87128d0ecb9d6ca40810500fb4e530a8
+        m_fileId: 11500000
+      - m_className: InteractUI.Editor.GUI.LicenseManager
+        m_guid: b22b40552210ae5478c861c17a4b39c4
+        m_fileId: 11500000
+    - m_name: NC_ImmersionEditor
+      m_sources:
+      - m_className: XdeAsbViveControllerHandGraspingInspector
+        m_guid: 2c889e864caeeee4bbbfceeaa4ec16e8
+        m_fileId: 11500000
+    - m_name: NC_PointCloud
+      m_sources:
+      - m_className: xde.unity.MeshColliderRenderer
+        m_guid: 3c3c809b4a7e7e247b9701ba8a99f9eb
+        m_fileId: 11500000
+      - m_className: INTERACT.Runtime.PointCloud.PointCloudManager
+        m_guid: daa4ddde9c6b3d7438fe69e6ea7b7e92
+        m_fileId: 11500000
+      - m_className: INTERACT.Editor.PointCloud.PointCloudSettings
+        m_guid: 77b3a228695e9a94e9b9bdf4948f197d
+        m_fileId: 11500000
+    - m_name: DataGlove
+      m_sources:
+      - m_className: DataGlove.DataGloveIO
+        m_guid: 320e1140e0698584c80c0a153437099d
+        m_fileId: -630607285
+    - m_name: TDx.TDxInput
+      m_sources: []
+    - m_name: Valve.Newtonsoft.Json
+      m_sources: []
+    - m_name: CoreEditor
+      m_sources:
+      - m_className: AboutMenu
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -932216711
+      - m_className: AddCableWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -1642761310
+      - m_className: AddEnvironmentWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -67637341
+      - m_className: AddJointEffortWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -2047489266
+      - m_className: AddJointSpringWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -2113469607
+      - m_className: AddManipulatorWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -1691918464
+      - m_className: AddPlayerWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 2109464479
+      - m_className: AssignMaterialWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 976085109
+      - m_className: BugReportWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 206160673
+      - m_className: CableGenerator
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 831541228
+      - m_className: CableGeneratorInspector
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -330655523
+      - m_className: ConveyorConfiguratorWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 1919350604
+      - m_className: INTERACT_CustomHierarchy.GuiDrawer
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 1454469507
+      - m_className: InteractPreferences
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -1071243418
+      - m_className: InteractWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 1302521597
+      - m_className: MergeMeshWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -2107553880
+      - m_className: PhysicalizeWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 1842855959
+      - m_className: INTERACT.Editor.Core.PlayerInfoInspector
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -968782467
+      - m_className: RemoveCollidersWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -814966577
+      - m_className: RemovePartsWindow
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: 330995780
+      - m_className: INTERACT.Editor.Core.ShapeDetectionInteractionEditor
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -485412585
+      - m_className: INTERACT.Editor.Core.XdeClosedLoopInspector
+        m_guid: c91830bcff891884b9a6b7b898b3190e
+        m_fileId: -1164945422
+    - m_name: Core
+      m_sources:
+      - m_className: PlayerInfo
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 585026036
+      - m_className: INTERACT.Runtime.UserManagement.UI.UserItem
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 2014654785
+      - m_className: FpsDisplay
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: -1223877955
+      - m_className: LoadingAnimation
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 726856152
+      - m_className: PDFManager
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 380636712
+      - m_className: SceneLoader
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: -263805505
+      - m_className: SceneSerializer
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 707027602
+      - m_className: INTERACT.Runtime.Core.ShapeDetection
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: -1585917683
+      - m_className: INTERACT.Runtime.Core.ShapeDetectionInteraction
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 1186345247
+      - m_className: StartServers
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: -721206660
+      - m_className: INTERACT.Runtime.UserManagement.User
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 346495670
+      - m_className: INTERACT.Runtime.UserManagement.UI.UserSelector
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 1961705664
+      - m_className: INTERACT.Runtime.Core.XdeClosedLoop
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: -1505813752
+      - m_className: XDECollisionSound
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: 1956357873
+      - m_className: XdeCustomKeyboard
+        m_guid: 70e2522c611e5f14a8f71bdfb3b93b54
+        m_fileId: -908795521
+    - m_name: Immersion
+      m_sources:
+      - m_className: CloseKeyBehaviour
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 11935944
+      - m_className: DeleteKeyBehaviour
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 111349286
+      - m_className: Timer
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 715656400
+      - m_className: ManusVibration
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 805228809
+      - m_className: AddCorrectWord
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1493425827
+      - m_className: AutocompleteWordPicker
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 2140462438
+      - m_className: AvatarIK
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1800617098
+      - m_className: BackspaceKeycodeAdder
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1619268065
+      - m_className: BebopPinchDetector
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1610665330
+      - m_className: INTERACT.Runtime.Tools.CameraController
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -328049112
+      - m_className: CameraFlash
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1893486051
+      - m_className: CollisionFeedbackController
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -162397743
+      - m_className: Controller
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1985648328
+      - m_className: ControllerResponseHandler
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1425159105
+      - m_className: CreateKeyBehaviour
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 2021361210
+      - m_className: CuttingPlane
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 964148209
+      - m_className: EditKeyBehaviour
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1038903227
+      - m_className: Exploder
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 405761244
+      - m_className: GetMode
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -472527651
+      - m_className: INTERACT.Runtime.Tools.GrabObject
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1247372316
+      - m_className: HapticMenu
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1783507919
+      - m_className: IconUpdater
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 600633334
+      - m_className: InteractSelectionManager
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -833990832
+      - m_className: Key
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1039284628
+      - m_className: KeycodeAdder
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -761956429
+      - m_className: KeycodeAdderReturn
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1657268358
+      - m_className: KeySoundController
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1711234049
+      - m_className: LaserPointer
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 418450824
+      - m_className: Levenshtein
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 397807328
+      - m_className: LookAtPlayerOne
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1163676811
+      - m_className: INTERACT.Runtime.Tools.Manipulator
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1768389861
+      - m_className: ManusPinchDetector
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 563463191
+      - m_className: Measure
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -369944080
+      - m_className: ModeDisplayController
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -2118432211
+      - m_className: ModeDisplayHand
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 437485189
+      - m_className: ModeDisplayLeap
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1949742479
+      - m_className: MyModeManager
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -137197469
+      - m_className: NGramGenerator
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1340860745
+      - m_className: NoteManager
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1611860418
+      - m_className: OutlineShaderReplacer
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1443316222
+      - m_className: Painter
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -446477385
+      - m_className: PinchDetector
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1203293792
+      - m_className: PublishHMDTransform
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 473789836
+      - m_className: Screenshot
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -401217642
+      - m_className: Selector
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1635652567
+      - m_className: ShiftKeyBehaviour
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1417325255
+      - m_className: SymbolsKeyBehaviour
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1016244804
+      - m_className: Teleporter
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1939685610
+      - m_className: TextFieldBehaviour
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1877483637
+      - m_className: TooltipManager
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 100168133
+      - m_className: VRMenuManager
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -622782737
+      - m_className: VRMenuValidationProgressBar
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1313537458
+      - m_className: VRSelectionMenu
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1910453737
+      - m_className: VRStatDisplay
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1563747064
+      - m_className: XdeAsbHandsSmartAttach
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -376460959
+      - m_className: XdeAsbOperatorHandsController
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 769886427
+      - m_className: XdeAsbViveControllerHandAnimation
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -165654627
+      - m_className: XdeAsbViveControllerHandGrasping
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -1133941418
+      - m_className: XdeAsbViveControllerHandsAttach
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: -581190433
+      - m_className: XdeHandsControllerGrasping
+        m_guid: 890cf05e3a4d8434796d2d51b14899ff
+        m_fileId: 1093358327
+    - m_name: InputSimulator
+      m_sources: []
+    - m_name: Ergonomics
+      m_sources:
+      - m_className: HumanManager
+        m_guid: bbb6aa64a98b2224e91266ae4fdb44f1
+        m_fileId: 905484708
+    - m_name: PointCloudEditor
+      m_sources: []
+    - m_name: Library
+      m_sources:
+      - m_className: RobotProgram
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: 889393307
+      - m_className: ButtonController
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: 456881120
+      - m_className: Conveyor
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: -662324491
+      - m_className: GripperController
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: -2054241621
+      - m_className: IntrusionDetector
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: 1134134449
+      - m_className: LidarScan
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: -1255596612
+      - m_className: LightCurtainScan
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: -340238246
+      - m_className: TrajectoryPoint
+        m_guid: 3ed70dfcf18c1de4dbca2e57511f905a
+        m_fileId: 954206534
+    - m_name: LibraryEditor
+      m_sources:
+      - m_className: ButtonControllerInspector
+        m_guid: 708337e4e1bb04841a0c9f5604998ced
+        m_fileId: -1668743813
+      - m_className: ConveyorInspector
+        m_guid: 708337e4e1bb04841a0c9f5604998ced
+        m_fileId: -846240309
+      - m_className: RobotProgramInspector
+        m_guid: 708337e4e1bb04841a0c9f5604998ced
+        m_fileId: -1134637883
+      - m_className: TrajectoryPointInspector
+        m_guid: 708337e4e1bb04841a0c9f5604998ced
+        m_fileId: -1098857283

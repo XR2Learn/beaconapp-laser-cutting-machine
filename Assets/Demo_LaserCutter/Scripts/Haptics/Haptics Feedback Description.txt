@@ -1,0 +1,31 @@
+"pattern_1" :
+	"pattern_name" : "InfoAlert",
+	"pattern_desc" : "information alert or nudge, to look at the display or instructions - alternating left/right",
+		
+"pattern_2" :
+	"pattern_name" : "InfoBis",
+	"pattern_desc" : "alert for information - 3 short bips",
+	
+"pattern_3" :
+	"pattern_name" : "Error",
+	"pattern_desc" : "error message for wrong action or step forgotten / wrong order",
+	
+"pattern_4" :
+	"pattern_name" : "Left",
+	"pattern_desc" : "Guidance on the left",
+	
+"pattern_5" :
+	"pattern_name" : "Right",
+	"pattern_desc" : "Guidance on the right",
+	
+"pattern_6" :
+	"pattern_name" : "ProximityBeep",
+	"pattern_desc" : "Beep for proximity to a target",
+	
+"pattern_7" :
+	"pattern_name" : "Good",
+	"pattern_desc" : "Confirmation of good action",
+	
+"pattern_8" :
+	"pattern_name" : "GoodBis",
+	"pattern_desc" : "Confirmation of success",

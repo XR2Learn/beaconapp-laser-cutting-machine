@@ -1,0 +1,84 @@
+<UXML xmlns="UnityEngine.UIElements">
+	<VisualElement class="mainContainer">
+			<VisualElement name="titleHeader" title="Interact license manager"/>
+			<VisualElement>
+				<VisualElement class="licenseContainer" style="margin-top: 35px">
+					<VisualElement class="licenseIcon">
+						<Image name="interactImage" class="licenseLogo"/>
+					</VisualElement>
+					<TextElement name="interactLicenseValidity" class="licenseStatus"/>
+					<Button name="installInteractButton" text="Install License" class="smallButton"/>
+					<Button name="updateInteractButton" text="Update" class="smallButton" style="margin-left: 5px"/>
+				</VisualElement>
+				<VisualElement name="tokenList" style="display: flex; flex-direction: row; padding: 10px; justify-content: center; align-items: flex-end;"/>
+			</VisualElement>
+
+		<VisualElement name="stack">
+			<VisualElement name="licenseModeView">
+				<VisualElement class="panel" style="margin-bottom: 22px;">
+					<Button name="modeLeftButton" text="License Server" class="bigButton" style="margin-right: 30px"/>
+					<Button name="modeRightButton" text="Standalone" class="bigButton"/>
+				</VisualElement>
+
+				<VisualElement class="panel">
+					<Label name="contactMessage" text="Contact us at interact@ls-vr.com to request a product key"/>
+					<Label name="infoMessage" text="Connexion en cours..." style="display: none; font-size: 14px;"/>
+				</VisualElement>
+			</VisualElement>
+
+			<VisualElement name="licenseServerContainer" class="licenseTypeContainer">
+				<VisualElement class="serverInput">
+					<VisualElement style="flex-direction: row;">
+						<Label text="IP:"/>
+						<TextField name="serverIPField"/>
+					</VisualElement>
+					<VisualElement style="flex-direction: row; margin-top: 40px;">
+						<Label text="Port:"/>
+						<TextField name="serverPortField"/>
+					</VisualElement>
+				</VisualElement>
+				<VisualElement class="serverValidate">
+					<Button name="licenseServerConnectButton" text="Connect" class="bigButton"/>
+				</VisualElement>
+			</VisualElement>
+
+			<VisualElement name="licenseStandaloneContainer" class="licenseTypeContainer">
+				<VisualElement class="keyInput">
+					<VisualElement>
+						<Label text="Product Key:"/>
+						<TextField name="productKeyField"/>
+						<TextElement text="Exemple product key:" style="margin-top: 8px;"/>
+						<TextElement text="AAAA-BBBB-CCCC-DDDD-EEEE"/>
+					</VisualElement>
+					<VisualElement style="padding-bottom: 20px;">
+						<Label text="Contact us at interact@ls-vr.com to request a product key" style="font-size: 12px;"/>
+					</VisualElement>
+				</VisualElement>
+				<VisualElement class="serverValidate">
+					<Button name="licenseStandaloneOnlineButton" text="Online" class="bigButton" style="margin-bottom: 10px;"/>
+					<Button name="licenseStandaloneOfflineButton" text="Offline" class="bigButton"/>
+				</VisualElement>
+			</VisualElement>
+
+			<VisualElement name="licenseServerContainer" class="licenseTypeContainer">
+				<VisualElement class="serverInput userPaswwordInput">
+					<VisualElement style="flex-direction: row;">
+						<Label text="Username:"/>
+						<TextField name="usernameField"/>
+					</VisualElement>
+					<VisualElement style="flex-direction: row; margin-top: 40px;">
+						<Label text="Password:"/>
+						<TextField name="userPasswordField"/>
+					</VisualElement>
+				</VisualElement>
+				<VisualElement class="serverValidate">
+					<Button name="licenseUserPasswordConnectButton" text="Connect" class="bigButton"/>
+				</VisualElement>
+			</VisualElement>
+
+			<VisualElement name="InformationContainer" class="licenseTypeContainer"  style="margin-left: 40px;  flex-direction: row; justify-content:center;">
+				<Label name="infoGeneralMessage" text="Updating License" style="align-content: center; font-size: 14px;"/>
+			</VisualElement>
+		</VisualElement>
+	</VisualElement>
+</UXML>

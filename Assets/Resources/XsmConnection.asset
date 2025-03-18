@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1075674555, guid: 19416af345b98a743a2cd3c4d50fc9b0, type: 3}
+  m_Name: XsmConnection
+  m_EditorClassIdentifier: 
+  serverRealm: xsm
+  serverAddress: 127.0.0.1
+  serverPort: 5555
+  location: LAN
+  proxyAddress: 
+  proxyPort: 3128
+  proxyUser: 
+  proxyPassword: 
+  useWss: 0
+  trustAllCertificates: 1
+  userName: 
+  password: 

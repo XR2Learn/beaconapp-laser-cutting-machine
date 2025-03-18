@@ -1,0 +1,27 @@
+<LaunchingSettings>
+    <Network ConnectToSkillsMove="true" ServerAdress="user.vm.bodinb.net" ServerPort="443" UseWSS="true" UseGatewayArchitercture="true" GatewayAdress="observer1.vm.bodinb.net"/>
+    <iPerf3 RunBandwidhtTest="true"/>
+    <iPerf3Servers>
+        <server iperfServer="paris.testdebit.info" Port= "9201"/>
+        <server iperfServer="speed.as208196.net" Port= "5200"/>
+        <server iperfServer="ping.online.net" Port= "5200"/>
+        <server iperfServer="ping-90ms.online.net" Port= "5200"/>
+        <server iperfServer="speedtest.serverius.net" Port= "5200"/>
+        <server iperfServer="nl.iperf.014.fr" Port= "10418"/>
+    </iPerf3Servers>
+    <gateways>
+        <gateway realm="ed" adress= "observer.vm.bodinb.net"/>
+    </gateways>
+    <RoomList>
+        <room roomId="ls1"/>
+        <room roomId="ls2"/>
+        <room roomId="cea1"/>
+        <room roomId="cea2"/>
+        <room roomId="supsi1"/>
+        <room roomId="supsi2"/>
+        <room roomId="ttb"/>
+        <room roomId="agie"/>
+    </RoomList>
+    <Application ShowConsoles="false" AllowOfflineMode="True" OfflineModePassword="@@V_Machina@@" SceneHasSmallParts="false"/>
+	<HAR Enabled="true"/>
+</LaunchingSettings>

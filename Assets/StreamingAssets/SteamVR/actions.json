@@ -1,0 +1,135 @@
+{
+  "actions": [
+    {
+      "name": "/actions/default/in/InteractUI",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Teleport",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/GrabPinch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/GrabGrip",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Pose",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/default/in/SkeletonLeftHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
+    },
+    {
+      "name": "/actions/default/in/SkeletonRightHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/default/in/Squeeze",
+      "type": "vector1",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/HeadsetOnHead",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/out/Haptic",
+      "type": "vibration"
+    },
+    {
+      "name": "/actions/interact/in/isTriggerClicked",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/interact/in/isGripClicked",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/interact/in/isMenuClicked",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/interact/in/isPadClicked",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/interact/in/PadPose",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/interact/in/Pose",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/interact/in/TriggerPressValue",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/interact/in/isPadTouched",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/interact/out/ControllerVibration",
+      "type": "vibration"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/default",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/interact",
+      "usage": "single"
+    }
+  ],
+  "default_bindings": [
+    {
+      "controller_type": "oculus_touch",
+      "binding_url": "unity_interact_binding_exe_binding_oculus_touch.json"
+    },
+    {
+      "controller_type": "vive_controller",
+      "binding_url": "unity_interact_binding_exe_binding_vive_controller.json"
+    },
+    {
+      "controller_type": "holographic_controller",
+      "binding_url": "unity_interact_binding_exe_binding_holographic_controller.json"
+    },
+    {
+      "controller_type": "knuckles",
+      "binding_url": "unity_interact_binding_exe_binding_knuckles.json"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/default/in/GrabGrip": "Grab Grip",
+      "/actions/default/in/GrabPinch": "Grab Pinch",
+      "/actions/default/in/HeadsetOnHead": "Headset on head (proximity sensor)",
+      "/actions/default/in/InteractUI": "Interact With UI",
+      "/actions/default/in/Pose": "Pose",
+      "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
+      "/actions/default/in/SkeletonRightHand": "Skeleton (Right)",
+      "/actions/default/in/Teleport": "Teleport",
+      "/actions/default/out/Haptic": "Haptic",
+      "/actions/interact/in/PadPose": "PadPose",
+      "/actions/interact/in/Pose": "Pose",
+      "/actions/interact/in/TriggerPressValue": "TriggerPressValue",
+      "/actions/interact/in/isGripClicked": "isGripClicked",
+      "/actions/interact/in/isMenuClicked": "isMenuClicked",
+      "/actions/interact/in/isPadClicked": "isPadClicked",
+      "/actions/interact/in/isPadTouched": "isPadTouched",
+      "/actions/interact/in/isTriggerClicked": "isTriggerClicked",
+      "/actions/interact/out/ControllerVibration": "ControllerVibration"
+    }
+  ]
+}
