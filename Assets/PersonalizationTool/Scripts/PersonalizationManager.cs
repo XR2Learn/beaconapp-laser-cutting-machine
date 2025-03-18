@@ -46,6 +46,8 @@ namespace PersonalizationTool.Scripts
 		private DateTime m_lastActivityTime;
 		private bool m_initialized;
 
+		private int m_currentStepInstance = 0;
+
 		private void Awake()
 		{
 			m_mainScenario.completedEvent.AddListener(OnMainScenarioComplete);
@@ -133,6 +135,7 @@ namespace PersonalizationTool.Scripts
 		
 		public void OnStepActivated(XdeAsbStep p_step)
 		{
+			m_currentStepInstance = p_step.GetInstanceID();
 			if (m_currentActivity == 0)
 			{
 				StartCoroutine(SetupActivityLevelCoroutine());
@@ -143,7 +146,11 @@ namespace PersonalizationTool.Scripts
 
 		public void OnStepDeactivated(XdeAsbStep p_step)
 		{
-			RedisStopActivity();
+			if (m_currentStepInstance == p_step.GetInstanceID())
+			{
+				Debug.Log("Step Deactivated");
+				RedisStopActivity();
+			}
 		}
 
 		private IEnumerator SetupActivityLevelCoroutine()
