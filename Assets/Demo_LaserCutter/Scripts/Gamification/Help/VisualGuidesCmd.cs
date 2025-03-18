@@ -53,6 +53,7 @@ namespace Gamification.Help
 			
 			// Display visual guides on all activated steps (There maybe are some steps without AutonomyStep)
 			DisplayVisualGuide(m_targetSteps);
+			DisplayVisualGuide(m_guidesOn);
 			m_guidesOn.AddRange(m_targetSteps);
 			
 			// Consume evaluation points
@@ -70,11 +71,11 @@ namespace Gamification.Help
 			}
 		}
 
-		private void StepCompleted(XdeAsbStep step)
+		private void StepCompleted(XdeAsbStep p_step)
 		{
-			m_visualGuides.Hide(step);
-			m_guidesOn.Remove(step);
-			step.completedEvent.RemoveListener(StepCompleted);
+			m_visualGuides.Hide(p_step);
+			m_guidesOn.Remove(p_step);
+			p_step.completedEvent.RemoveListener(StepCompleted);
 		}
 	}
 }
