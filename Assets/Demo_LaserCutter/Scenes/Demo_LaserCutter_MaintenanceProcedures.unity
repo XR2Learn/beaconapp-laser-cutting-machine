@@ -977,7 +977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &35889871
 Transform:
   m_ObjectHideFlags: 0
@@ -1364,6 +1364,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 48544900}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &53306840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Close the acrylic top lid_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 1050}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22824
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1902207030}
 --- !u!1001 &56046745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6014,6 +6036,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 239514220}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &244623206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Wipe the plate (with the sponge)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22386
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1586943623}
 --- !u!1001 &258183445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6094,6 +6138,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 258183445}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &268034023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Mount the lens back on the laser head_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22980
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 2028654110}
 --- !u!1 &273378950
 GameObject:
   m_ObjectHideFlags: 0
@@ -8141,7 +8207,7 @@ Transform:
   - {fileID: 636678236}
   - {fileID: 2120244850}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &437607229
 PrefabInstance:
@@ -9359,6 +9425,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
+--- !u!114 &508378143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Close the front panel_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 1050}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22852
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1915844872}
 --- !u!1001 &510379477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9604,6 +9692,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 518473953}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &519997186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Wipe the lens (with the fiber cloth)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 21054
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 635363815}
 --- !u!1 &522558927
 GameObject:
   m_ObjectHideFlags: 0
@@ -9984,7 +10094,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &537244417
 MonoBehaviour:
@@ -10098,6 +10208,28 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581602836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Wipe the nozzle (with the fiber cloth)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22404
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1597466432}
 --- !u!1001 &590366983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10666,6 +10798,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613450911}
   m_Mesh: {fileID: -1572543346170788068, guid: 3b5e93c277aa4a8489c2c922e0967829, type: 3}
+--- !u!114 &613818792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Vacuum the dust in the main enclosure_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 21714
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1094177808}
 --- !u!4 &618348606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6371522834335114848, guid: 8f0d4c5e1c8ff4846883953e91e1eeff,
@@ -11150,6 +11304,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 646622225}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &648664324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Put the mirror screws back_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 21372
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 840788280}
 --- !u!1001 &655197794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11787,6 +11963,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &706978041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the working table (put on table behind)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22332
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1554233868}
 --- !u!1 &726141015
 GameObject:
   m_ObjectHideFlags: 0
@@ -12038,7 +12236,7 @@ Transform:
   - {fileID: 618348606}
   - {fileID: 1142418231}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742649518
 GameObject:
@@ -12090,7 +12288,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746312147
 GameObject:
@@ -12109,7 +12307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &746312148
 Transform:
   m_ObjectHideFlags: 0
@@ -13275,6 +13473,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 800428926}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &832223787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Have the working table on the upper position_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 450}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 20220
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 104024329}
 --- !u!1 &834598808
 GameObject:
   m_ObjectHideFlags: 0
@@ -13969,6 +14189,28 @@ Transform:
   m_Father: {fileID: 668903421}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &860253196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Open the front panel_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 1050}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 21182
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 726141017}
 --- !u!1 &866692078
 GameObject:
   m_ObjectHideFlags: 0
@@ -14346,7 +14588,7 @@ PrefabInstance:
     - target: {fileID: 5372843123808830706, guid: 809903714eff50f43be78adc7eaedc49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5372843123808830706, guid: 809903714eff50f43be78adc7eaedc49,
         type: 3}
@@ -18149,6 +18391,169 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1241064336}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &1267033722
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1267173021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20140,6 +20545,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1381447755}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1392309738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Mount the nozzle back on the laser head_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22020
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1310909762}
 --- !u!1001 &1402748749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20753,7 +21180,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1460936364
 PrefabInstance:
@@ -21252,6 +21679,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
+--- !u!114 &1484854918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Turn off the switch behind the machine_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22102
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1411520794}
 --- !u!1001 &1486371723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21677,7 +22126,18 @@ MonoBehaviour:
   hideInTaskList: 0
   activationEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1874042450}
+        m_MethodName: OnStepActivated
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   deactivationEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -21689,7 +22149,18 @@ MonoBehaviour:
       m_Calls: []
   completedEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1874042450}
+        m_MethodName: OnStepDeactivated
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   StartOnHardMode: 0
   setStepsFromHierarchy: 0
   steps:
@@ -21753,7 +22224,7 @@ Transform:
   - {fileID: 1310909761}
   - {fileID: 1902207029}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1495277700
 MonoBehaviour:
@@ -22278,6 +22749,50 @@ MonoBehaviour:
   lastPlacedPart: {fileID: 0}
   lastUsedKeypoint: {fileID: 0}
   showOptions: 1
+--- !u!114 &1543325772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Open the acrylic top lid_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 1050}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 20654
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 430468699}
+--- !u!114 &1547256066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Vacuum the working table_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 21720
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1094236454}
 --- !u!1 &1554233866
 GameObject:
   m_ObjectHideFlags: 0
@@ -22674,6 +23189,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1571715582
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1577878521
 GameObject:
   m_ObjectHideFlags: 0
@@ -22999,6 +23548,28 @@ Transform:
   m_Father: {fileID: 1495277699}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1591108872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the mirror (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 23016
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 2046427795}
 --- !u!1001 &1597129410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23998,6 +24569,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
+--- !u!114 &1658815806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the lens (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 20500
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 301764878}
 --- !u!1 &1664119763
 GameObject:
   m_ObjectHideFlags: 0
@@ -25732,6 +26325,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1780254130}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1783016604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the nozzle (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 20626
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 404818954}
 --- !u!1 &1790860496
 GameObject:
   m_ObjectHideFlags: 0
@@ -26955,6 +27570,54 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!1 &1874042448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874042449}
+  - component: {fileID: 1874042450}
+  m_Layer: 0
+  m_Name: PersonalizationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1874042449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874042448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22380805, y: 1.6166078, z: 1.0494306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1874042450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874042448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d838494a372497da57e95ddf661c587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_redisServerIp: 127.0.0.1
+  m_redisServerPort: 6379
+  m_activityLevel: 1
+  m_userLevel: 1
+  m_helpController: {fileID: 770963248}
 --- !u!1001 &1874612410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27087,6 +27750,28 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885841785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Mount the mirror back on the laser head_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 22742
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1864281683}
 --- !u!1 &1887778955
 GameObject:
   m_ObjectHideFlags: 0
@@ -27655,7 +28340,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905498115
 GameObject:
@@ -30506,6 +31191,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085749461}
   m_Mesh: {fileID: 4300002, guid: c73606abb1c3a4e49b8bae82119efe29, type: 3}
+--- !u!114 &2086800187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the mirror screws (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 20724
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 456482825}
 --- !u!1 &2097740955
 GameObject:
   m_ObjectHideFlags: 0
@@ -30934,6 +31641,28 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143890298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Use the key to turn off the machine_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1694071297}
+  position: {x: 0, y: 0}
+  ports:
+    keys: []
+    values: []
+  toolTip: Enabled
+  stepId: 21770
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1163771288}
 --- !u!33 &403883074476512530
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31921,7 +32650,7 @@ PrefabInstance:
     - target: {fileID: 7720752200875775621, guid: 9aaa1745532b5b34a9bd663577264dbd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7720752200875775621, guid: 9aaa1745532b5b34a9bd663577264dbd,
         type: 3}
