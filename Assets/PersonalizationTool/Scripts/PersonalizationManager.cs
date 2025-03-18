@@ -4,10 +4,7 @@
 //
 //=============================================================================
 
-using System;
-using System.Threading.Tasks;
 using Gamification.Help;
-using Gamification.View;
 using PersonalizationTool.Redis;
 using UnityEngine;
 using XdeEngine.Assembly;
@@ -34,19 +31,20 @@ namespace PersonalizationTool.Scripts
 		private HelpController m_helpController;
 
 		[SerializeField]
-		private StartupScreen m_startupScreen;
+		private XdeAsbScenario m_mainScenario;
 		
-		[SerializeField]
-		private XdeAsbScenario m_xdeAsbScenario;
 		private RedisManager m_redisManager;
 
 		private int m_currentActivity = 0;
+		private bool m_activityFlag = false;
+		private bool m_firstActivityFlag = true;
+		
+		private bool m_mustProcessNewActivityLevel = false;
+		
 
 		private void Awake()
 		{
-			m_helpController.OnNextStepAction += OnNextStepAction;
-			m_startupScreen.StartScenarioAction += SetupActivityLevel;
-			
+			m_mainScenario.completedEvent.AddListener(OnMainScenarioComplete);
 			m_redisManager = new RedisManager();
 			if (!Application.isEditor)
 			{
@@ -57,11 +55,14 @@ namespace PersonalizationTool.Scripts
 			
 		}
 
+		private void OnMainScenarioComplete(XdeAsbStep p_arg0)
+		{
+			m_firstActivityFlag = true;
+		}
+
 		private void OnDestroy()
 		{
-			m_helpController.OnNextStepAction -= OnNextStepAction;
-			m_startupScreen.StartScenarioAction -= SetupActivityLevel;
-
+			m_mainScenario.completedEvent.RemoveListener(OnMainScenarioComplete);
 
 			if (m_currentActivity > 0)
 			{
@@ -71,11 +72,25 @@ namespace PersonalizationTool.Scripts
 			m_redisManager.DisconnectRedis();
 		}
 
+		private void Update()
+		{
+			if (m_mustProcessNewActivityLevel)
+			{
+				SetupActivityLevel();
+				m_mustProcessNewActivityLevel = false;
+			}
+		}
+
 		private void OnNewNextActivityData(RedisManager.NextActivityData p_obj)
 		{
+
+			Debug.Log("New Next Activity Data " + p_obj.next_activity_level);
 			m_activityLevel = p_obj.next_activity_level;
-		
-			SetupActivityLevel();
+			
+			if(m_activityFlag)
+				m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
+
+			m_mustProcessNewActivityLevel = true;
 		}
 
 		private void SetupActivityLevel()
@@ -89,38 +104,38 @@ namespace PersonalizationTool.Scripts
 					break;
 				case 1:
 					m_helpController.OnClickTodoList();
+					// m_helpController.DisplayTodoList(true);
 					break;
 				case 2:
+					// m_helpController.DisplayTodoList(false);
 					break;
 				default:
 					break;
 			}
 		}
-
-		private void OnNextStepAction()
-		{
-			OnStepDeactivated();
-			m_currentActivity = m_xdeAsbScenario.GetActiveStep(0).GetInstanceID();
-			Debug.Log($"SetActivityLevel: {m_currentActivity}");
-			m_activityLevel -= 1;
-			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
-		}
+		
 		public void OnStepActivated(XdeAsbStep p_step)
 		{
-			Debug.Log($"OnStepActivated: {p_step.GetInstanceID()}");
-			if (m_currentActivity != 0)
-			{
-				m_redisManager.StopActivity(m_currentActivity);
-			}
 			m_currentActivity = p_step.GetInstanceID();
-			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
+			Debug.Log($"OnStepActivated: {m_currentActivity} {p_step.name}");
+			m_activityFlag = true;
+			if (m_firstActivityFlag)
+			{
+				m_firstActivityFlag = false;
+				m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
+				m_activityFlag = false;
+				SetupActivityLevel();
+			}
 		}
 
-		public void OnStepDeactivated()
+		public void OnStepDeactivated(XdeAsbStep p_step)
 		{
-			Debug.Log($"OnStepDeactivated: {m_currentActivity}");
-			m_redisManager.StopActivity(m_currentActivity);
-			m_currentActivity = 0;
+			Debug.Log($"OnStepDeactivated: {p_step.GetInstanceID()} {p_step.name}");
+
+			if (m_currentActivity == p_step.GetInstanceID())
+			{
+				m_redisManager.StopActivity(p_step.GetInstanceID());
+			}
 		}
 
 		public void SetStartupAppLevel(int p_userLevel)

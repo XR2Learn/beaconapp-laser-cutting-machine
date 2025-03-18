@@ -48,6 +48,7 @@ namespace Gamification.View
 		private List<Todo> m_todolist;
 		private Evaluation m_evaluation;
 		public bool IsActivated { get; private set; }
+		public bool IsInitialized { get; private set; }
 		
 		public Chronometer Chrono 
 		{
@@ -71,7 +72,8 @@ namespace Gamification.View
 				{
 					Clear();
 					m_todolist = new List<Todo>();
-					
+					IsInitialized = true;
+
 					foreach (KeyValuePair<XdeAsbStep,Chronometer> l_pair in value)
 					{
 						Todo l_todo = AddTask(l_pair.Key,l_pair.Value);
@@ -79,7 +81,7 @@ namespace Gamification.View
 						l_pair.Key.completedEvent.AddListener(l_todo.OnStepComplete);
 						l_pair.Key.completedEvent.AddListener(this.OnStepComplete);
 					}
-					
+
 					DisplayContent(true);
 				}
 			}
@@ -89,6 +91,7 @@ namespace Gamification.View
 		public void Init(Evaluation p_evaluation, string p_scenarioName, Chronometer p_scenarioChronometer)
 		{
 			m_evaluation = p_evaluation;
+			IsInitialized = false;
 			DisplayContent(false);
 			m_scenarioName.text = p_scenarioName;
 			Chrono = p_scenarioChronometer;
@@ -96,6 +99,7 @@ namespace Gamification.View
 		}
 		private void DisplayContent(bool p_value)
 		{
+			Debug.Log("Display Todo List " + p_value);
 			m_content.gameObject.SetActive(p_value);
 			IsActivated = p_value;
 		}
@@ -126,10 +130,7 @@ namespace Gamification.View
 		private void OnStepComplete(XdeAsbStep p_step)
 		{
 			p_step.completedEvent.RemoveListener(OnStepComplete);
-			if (m_todolist.All(x => x.IsDone == true))
-			{
-				this.gameObject.SetActive(false);
-			}
+			DisplayContent(false);
 		}
 
 		private List<Texture2D> GetStepPictoResults(XdeAsbStep p_step)

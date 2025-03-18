@@ -89,8 +89,13 @@ namespace Gamification.Help
 			m_todoList.Init(p_evaluation, p_mainScenario.name, l_chrono);
 
 			m_mainScenario = p_mainScenario;
+			m_mainScenario.completedEvent.AddListener(OnMainScenarioCompleted);
 		}
 
+		private void OnMainScenarioCompleted(XdeAsbStep p_arg0)
+		{
+			m_todoList.gameObject.SetActive(false);
+		}
 		private void InitGuidelines(XdeAsbScenario p_mainScenario, List<XdeAsbScenario> p_optionalScenario)
 		{
 			m_visualGuides = new List<XdeAsbVisualGuide>();
@@ -154,10 +159,11 @@ namespace Gamification.Help
 			{
 				throw new NullReferenceException(nameof(m_todoListAction));
 			}
-
+			Debug.Log("click todo list");
 			m_todoListAction.Invoke();
 		}
 
+		[ContextMenu("ClickNext")]
 		public void OnClickNext()
 		{
 			if (m_nextStepAction == null)
