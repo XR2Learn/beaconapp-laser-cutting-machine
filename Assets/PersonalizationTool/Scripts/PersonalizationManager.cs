@@ -32,11 +32,14 @@ namespace PersonalizationTool.Scripts
 		private int m_userLevel = 1;
 
 		[SerializeField]
-		private HelpController m_helpController;
+		private XdeAsbScenario m_mainScenario;
 
 		[SerializeField]
-		private XdeAsbScenario m_mainScenario;
-		
+		private GameObject m_visualGuidesButton;
+
+		[SerializeField]
+		private GameObject m_todoListButton;
+
 		private RedisManager m_redisManager;
 
 		private int m_currentActivity = 0;
@@ -70,7 +73,6 @@ namespace PersonalizationTool.Scripts
 		private void OnDestroy()
 		{
 			m_mainScenario.completedEvent.RemoveListener(OnMainScenarioComplete);
-
 
 			m_redisManager.StopActivity(m_currentActivity);
 
@@ -110,18 +112,16 @@ namespace PersonalizationTool.Scripts
 			switch (m_activityLevel)
 			{
 				case 0:
-					m_helpController.OnClickVisualGuides();
-					m_helpController.OnClickTodoList();
-					m_helpController.DisplayToDoListContent(true);
+					m_todoListButton.SetActive(true);
+					m_visualGuidesButton.SetActive(true);
 					break;
 				case 1:
-					m_helpController.OnClickTodoList();
-					m_helpController.DisplayToDoListContent(true);
-					m_helpController.HideVisualGuidelines();
+					m_todoListButton.SetActive(true);
+					m_visualGuidesButton.SetActive(false);
 					break;
 				case 2:
-					m_helpController.DisplayToDoListContent(false);
-					m_helpController.HideVisualGuidelines();
+					m_todoListButton.SetActive(false);
+					m_visualGuidesButton.SetActive(false);
 					break;
 			}
 		}
