@@ -163,7 +163,6 @@ namespace Gamification.View
 
 		public void DisplayContent(bool p_value)
 		{
-			Debug.Log("Display Todo List " + p_value);
 			m_content.gameObject.SetActive(p_value);
 			IsActivated = p_value;
 		}
