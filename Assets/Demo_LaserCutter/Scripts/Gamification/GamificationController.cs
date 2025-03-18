@@ -137,6 +137,11 @@ namespace Gamification
             }
         }
 
+        private void OnDestroy()
+        {
+            m_startupScreen.StartScenarioAction -= StartSimulation;
+        }
+
         #endregion
 
         #region Logic
@@ -166,7 +171,7 @@ namespace Gamification
             Chronometer l_mainScenarioChrono = MainScenario.GetComponentInChildrenFDS<Chronometer>();
             m_endingScreen.Init();
             m_startupScreen.Init(m_evaluation.Metrics, l_mainScenarioChrono);
-            m_startupScreen.StartScenarioAction = StartSimulation;
+            m_startupScreen.StartScenarioAction += StartSimulation;
 
             m_isEnded = false;
         }

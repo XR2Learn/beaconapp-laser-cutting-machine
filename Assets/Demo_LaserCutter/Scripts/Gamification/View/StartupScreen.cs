@@ -21,7 +21,7 @@ namespace Gamification.View
 		[Header("UI - Welcome")]
 		[SerializeField]
 		private  GameObject m_welcomePanel = null;
-		public Action StartScenarioAction;
+		public event Action StartScenarioAction;
 
 		[Header("Reference")]
 		private XdeScene m_scene;
