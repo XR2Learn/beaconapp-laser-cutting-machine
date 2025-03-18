@@ -6,6 +6,7 @@
 
 
 using System;
+using System.Collections.Generic;
 using System.Text.Json;
 using StackExchange.Redis;
 using UnityEngine;
@@ -38,7 +39,10 @@ namespace PersonalizationTool.Redis
 
 			public int next_activity_level { get; set; }
 			// Add other fields as needed
+			
+			public Dictionary<string, string> emotion_information { get; set; }
 		}
+
 
 		public RedisManager()
 		{
@@ -97,7 +101,7 @@ namespace PersonalizationTool.Redis
 
 		}
 
-		public void StartActivity(string p_activityId, int p_activityLevel, int p_userLevel)
+		public void StartActivity(int p_activityId, int p_activityLevel, int p_userLevel)
 		{
 			if(!m_redis.IsConnected) return;
 			
@@ -115,7 +119,7 @@ namespace PersonalizationTool.Redis
 			Debug.Log("StartActivity:  " + l_jsonMessage);
 		}
 
-		public void StopActivity(string p_activityId)
+		public void StopActivity(int p_activityId)
 		{
 			if (!m_redis.IsConnected) return;
 			
