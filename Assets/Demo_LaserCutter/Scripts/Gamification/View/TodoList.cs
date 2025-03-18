@@ -97,12 +97,6 @@ namespace Gamification.View
 			Chrono = p_scenarioChronometer;
 			this.gameObject.SetActive(false);
 		}
-		private void DisplayContent(bool p_value)
-		{
-			Debug.Log("Display Todo List " + p_value);
-			m_content.gameObject.SetActive(p_value);
-			IsActivated = p_value;
-		}
 
 		private Todo AddTask(XdeAsbStep p_step, Chronometer p_chronometer)
 		{
@@ -126,7 +120,7 @@ namespace Gamification.View
 				GameObject.Destroy(child.gameObject);
 			}
 		}
-		
+
 		private void OnStepComplete(XdeAsbStep p_step)
 		{
 			p_step.completedEvent.RemoveListener(OnStepComplete);
@@ -142,7 +136,7 @@ namespace Gamification.View
 			}
 			return l_pictoResults;
 		}
-		
+
 		public Texture2D GetTodoBonusMalus(Type p_metric, bool p_isBonus)
 		{
 			Texture2D l_texture;
@@ -158,13 +152,31 @@ namespace Gamification.View
 			return l_texture;
 		}
 
-		void Update()
+		private void Update()
 		{
 			if (m_isSynchro)
 			{
 				TimeSpan l_timeSpan = TimeSpan.FromSeconds(m_chrono.TimeElapsed);
 				m_scenarioChrono.text = l_timeSpan.ToString(@"mm\:ss");
 			}
+		}
+
+		public void DisplayContent(bool p_value)
+		{
+			Debug.Log("Display Todo List " + p_value);
+			m_content.gameObject.SetActive(p_value);
+			IsActivated = p_value;
+		}
+
+		public bool IsEqualToTodoList(List<XdeAsbStep> p_xdeAsbSteps)
+		{
+			if(m_todolist == null)
+				return false;
+
+			List<string> l_todoNames = m_todolist.Select(p_todo => p_todo.Name).ToList();
+			List<string> l_stepsNames = p_xdeAsbSteps.Select(p_xdeAsbStep => p_xdeAsbStep.name).ToList();
+
+			return l_todoNames.SequenceEqual(l_stepsNames);
 		}
 	}
 }

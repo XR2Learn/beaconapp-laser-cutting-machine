@@ -53,6 +53,11 @@ namespace Gamification.Help
 		private void DisplayActivateSteps()
 		{
 			List<XdeAsbStep> l_activeSteps = m_scenarios.GetActiveSteps();
+
+			if (m_todoList.IsEqualToTodoList(l_activeSteps))
+			{
+				return;
+			}
 			IList<HelpConsumer> l_helpConsumers = m_evaluation.GetStepsEvaluators<HelpConsumer>(l_activeSteps);
 			List<XdeAsbStep> l_targetSteps = l_helpConsumers.Select(x => x.EvaluatedStep).ToList();
 			m_todoList.StepList = GetStepsData(l_targetSteps);

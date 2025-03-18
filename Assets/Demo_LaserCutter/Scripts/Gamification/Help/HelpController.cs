@@ -195,6 +195,17 @@ namespace Gamification.Help
 			if (m_showToDoAtStart)
 				OnClickTodoList();
 		}
+
+		public void DisplayToDoListContent(bool p_value)
+		{
+			m_todoList.DisplayContent(p_value);
+		}
+
+		public void HideVisualGuidelines()
+		{
+			m_mainScenario.GetActiveSteps().ForEach(p_step => m_visualGuides.Hide(p_step));
+			
+		}
 	}
 }
 

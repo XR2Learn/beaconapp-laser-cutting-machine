@@ -4,6 +4,7 @@
 //
 //=============================================================================
 
+using System;
 using System.Collections;
 using Gamification.Help;
 using PersonalizationTool.Redis;
@@ -14,7 +15,9 @@ namespace PersonalizationTool.Scripts
 {
 	public class PersonalizationManager : MonoBehaviour
 	{
-		
+		[SerializeField]
+		private int m_intervalInSeconds;
+
 		[SerializeField]
 		private string m_redisServerIp;
 		[SerializeField]
@@ -37,11 +40,11 @@ namespace PersonalizationTool.Scripts
 		private RedisManager m_redisManager;
 
 		private int m_currentActivity = 0;
-		
-		private bool m_firstActivityFlag = true;
-		
+
 		private bool m_mustProcessNewActivityLevel = false;
 		
+		private DateTime m_lastActivityTime;
+		private bool m_initialized;
 
 		private void Awake()
 		{
@@ -58,23 +61,28 @@ namespace PersonalizationTool.Scripts
 
 		private void OnMainScenarioComplete(XdeAsbStep p_arg0)
 		{
-			m_firstActivityFlag = true;
+			m_redisManager.StopActivity(m_currentActivity);
+			m_currentActivity = 0;
 		}
 
 		private void OnDestroy()
 		{
 			m_mainScenario.completedEvent.RemoveListener(OnMainScenarioComplete);
 
-			if (m_currentActivity > 0)
-			{
-				m_redisManager.StopActivity(m_currentActivity);
-			}
+
+			m_redisManager.StopActivity(m_currentActivity);
+
 			m_redisManager.NewNextActivityData -= OnNewNextActivityData;
 			m_redisManager.DisconnectRedis();
 		}
 
 		private void Update()
 		{
+			if(!m_initialized) return;
+			if (m_lastActivityTime < DateTime.Now.AddSeconds(-m_intervalInSeconds))
+			{
+				RedisStopActivity();
+			}
 			if (m_mustProcessNewActivityLevel)
 			{
 				SetupActivityLevel();
@@ -87,19 +95,13 @@ namespace PersonalizationTool.Scripts
 
 			Debug.Log("New Next Activity Data " + p_obj.next_activity_level);
 			m_activityLevel = p_obj.next_activity_level;
-			
-			if(!m_firstActivityFlag)
-				m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
+
+			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
 
 			m_mustProcessNewActivityLevel = true;
 		}
 
-		private IEnumerator SetupActivityLevelCoroutine()
-		{
-			yield return null;
-			SetupActivityLevel();
-		}
-		
+		[ContextMenu("Display Hints")]
 		private void SetupActivityLevel()
 		{
 			Debug.Log($"SetActvityLevel: {m_activityLevel}");
@@ -108,23 +110,31 @@ namespace PersonalizationTool.Scripts
 				case 0:
 					m_helpController.OnClickVisualGuides();
 					m_helpController.OnClickTodoList();
+					m_helpController.DisplayToDoListContent(true);
 					break;
 				case 1:
 					m_helpController.OnClickTodoList();
+					m_helpController.DisplayToDoListContent(true);
+					m_helpController.HideVisualGuidelines();
 					break;
 				case 2:
+					m_helpController.DisplayToDoListContent(false);
+					m_helpController.HideVisualGuidelines();
 					break;
 			}
+		}
+
+		private void RedisStopActivity()
+		{
+			m_lastActivityTime = DateTime.Now;
+			m_redisManager.StopActivity(m_currentActivity);
+			m_currentActivity++;
 		}
 		
 		public void OnStepActivated(XdeAsbStep p_step)
 		{
-			m_currentActivity = p_step.GetInstanceID();
-			Debug.Log($"OnStepActivated: {m_currentActivity} {p_step.name}");
-			if (m_firstActivityFlag)
+			if (m_currentActivity == 0)
 			{
-				m_firstActivityFlag = false;
-				m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
 				StartCoroutine(SetupActivityLevelCoroutine());
 			}
 		}
@@ -133,19 +143,24 @@ namespace PersonalizationTool.Scripts
 
 		public void OnStepDeactivated(XdeAsbStep p_step)
 		{
-			Debug.Log($"OnStepDeactivated: {p_step.GetInstanceID()} {p_step.name}");
-
-			if (m_currentActivity == p_step.GetInstanceID())
-			{
-				m_redisManager.StopActivity(p_step.GetInstanceID());
-			}
+			RedisStopActivity();
 		}
+
+		private IEnumerator SetupActivityLevelCoroutine()
+		{
+			yield return null;
+			SetupActivityLevel();
+		}
+
 
 		public void SetStartupAppLevel(int p_userLevel)
 		{
 			Debug.Log($"SetStartupAppLevel: {p_userLevel}");
 			m_userLevel = p_userLevel;
 			m_activityLevel = p_userLevel;
+			m_lastActivityTime = DateTime.Now;
+			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
+			m_initialized = true;
 		}
 
 	
