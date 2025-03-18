@@ -29,7 +29,7 @@ namespace Gamification.Help
 		{
 			if (!m_todoList.IsActivated) 
 			{
-				Debug.Log("[TodoListDisplayCmd] Execute ");
+				Debug.Log("[TodoListDisplayCmd] Execute");
 				DisplayActivateSteps();
 			}
 		}
@@ -53,12 +53,9 @@ namespace Gamification.Help
 		private void DisplayActivateSteps()
 		{
 			List<XdeAsbStep> l_activeSteps = m_scenarios.GetActiveSteps();
-			Debug.Log("Display Activated Steps "+ l_activeSteps.Count);
 			IList<HelpConsumer> l_helpConsumers = m_evaluation.GetStepsEvaluators<HelpConsumer>(l_activeSteps);
 			List<XdeAsbStep> l_targetSteps = l_helpConsumers.Select(x => x.EvaluatedStep).ToList();
 			m_todoList.StepList = GetStepsData(l_targetSteps);
-			Debug.Log("consume help");
-
 			// Consume evaluation points
 			foreach (HelpConsumer l_helpConsumer in l_helpConsumers)
 			{

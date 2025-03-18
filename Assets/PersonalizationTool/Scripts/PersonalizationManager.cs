@@ -4,6 +4,7 @@
 //
 //=============================================================================
 
+using System.Collections;
 using Gamification.Help;
 using PersonalizationTool.Redis;
 using UnityEngine;
@@ -36,7 +37,7 @@ namespace PersonalizationTool.Scripts
 		private RedisManager m_redisManager;
 
 		private int m_currentActivity = 0;
-		private bool m_activityFlag = false;
+		
 		private bool m_firstActivityFlag = true;
 		
 		private bool m_mustProcessNewActivityLevel = false;
@@ -87,12 +88,18 @@ namespace PersonalizationTool.Scripts
 			Debug.Log("New Next Activity Data " + p_obj.next_activity_level);
 			m_activityLevel = p_obj.next_activity_level;
 			
-			if(m_activityFlag)
+			if(!m_firstActivityFlag)
 				m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
 
 			m_mustProcessNewActivityLevel = true;
 		}
 
+		private IEnumerator SetupActivityLevelCoroutine()
+		{
+			yield return null;
+			SetupActivityLevel();
+		}
+		
 		private void SetupActivityLevel()
 		{
 			Debug.Log($"SetActvityLevel: {m_activityLevel}");
@@ -104,12 +111,8 @@ namespace PersonalizationTool.Scripts
 					break;
 				case 1:
 					m_helpController.OnClickTodoList();
-					// m_helpController.DisplayTodoList(true);
 					break;
 				case 2:
-					// m_helpController.DisplayTodoList(false);
-					break;
-				default:
 					break;
 			}
 		}
@@ -118,15 +121,15 @@ namespace PersonalizationTool.Scripts
 		{
 			m_currentActivity = p_step.GetInstanceID();
 			Debug.Log($"OnStepActivated: {m_currentActivity} {p_step.name}");
-			m_activityFlag = true;
 			if (m_firstActivityFlag)
 			{
 				m_firstActivityFlag = false;
 				m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
-				m_activityFlag = false;
-				SetupActivityLevel();
+				StartCoroutine(SetupActivityLevelCoroutine());
 			}
 		}
+
+	
 
 		public void OnStepDeactivated(XdeAsbStep p_step)
 		{
