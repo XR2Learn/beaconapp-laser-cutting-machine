@@ -149,7 +149,6 @@ namespace PersonalizationTool
 			m_activityLevel = p_userLevel;
 			m_lastActivityTime = DateTime.Now;
 			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
-			m_mustProcessNewActivityLevel = true;
 			m_initialized = true;
 		}
 	}
