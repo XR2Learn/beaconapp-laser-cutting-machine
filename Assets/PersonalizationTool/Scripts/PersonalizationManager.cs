@@ -6,15 +6,16 @@
 
 using System;
 using System.Collections;
-using Gamification.Help;
-using PersonalizationTool.Redis;
 using UnityEngine;
+using PersonalizationTool.Redis;
 using XdeEngine.Assembly;
 
-namespace PersonalizationTool.Scripts
+namespace PersonalizationTool
 {
 	public class PersonalizationManager : MonoBehaviour
 	{
+		public event Action<int> DifficultyChanged;
+		
 		[SerializeField]
 		private int m_intervalInSeconds;
 
@@ -31,14 +32,9 @@ namespace PersonalizationTool.Scripts
 		[Tooltip("0 = novice, 1 = confirmed, 2 = expert")]
 		private int m_userLevel = 1;
 
+
 		[SerializeField]
 		private XdeAsbScenario m_mainScenario;
-
-		[SerializeField]
-		private GameObject m_visualGuidesButton;
-
-		[SerializeField]
-		private GameObject m_todoListButton;
 
 		private RedisManager m_redisManager;
 
@@ -109,23 +105,11 @@ namespace PersonalizationTool.Scripts
 		private void SetupActivityLevel()
 		{
 			Debug.Log($"SetActvityLevel: {m_activityLevel}");
-			switch (m_activityLevel)
-			{
-				case 0:
-					m_todoListButton.SetActive(true);
-					m_visualGuidesButton.SetActive(true);
-					break;
-				case 1:
-					m_todoListButton.SetActive(true);
-					m_visualGuidesButton.SetActive(false);
-					break;
-				case 2:
-					m_todoListButton.SetActive(false);
-					m_visualGuidesButton.SetActive(false);
-					break;
-			}
+
+			DifficultyChanged?.Invoke(m_activityLevel);
 		}
 
+		
 		private void RedisStopActivity()
 		{
 			m_lastActivityTime = DateTime.Now;
@@ -142,8 +126,6 @@ namespace PersonalizationTool.Scripts
 			}
 		}
 
-	
-
 		public void OnStepDeactivated(XdeAsbStep p_step)
 		{
 			if (m_currentStepInstance == p_step.GetInstanceID())
@@ -159,7 +141,6 @@ namespace PersonalizationTool.Scripts
 			SetupActivityLevel();
 		}
 
-
 		public void SetStartupAppLevel(int p_userLevel)
 		{
 			Debug.Log($"SetStartupAppLevel: {p_userLevel}");
@@ -169,7 +150,5 @@ namespace PersonalizationTool.Scripts
 			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
 			m_initialized = true;
 		}
-
-	
 	}
 }
