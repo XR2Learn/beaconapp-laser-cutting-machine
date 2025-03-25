@@ -31,6 +31,8 @@ namespace PersonalizationTool.Redis
 		private readonly RedisChannel m_startActivityChannel;
 		private readonly RedisChannel m_endActivityChannel;
 		private readonly RedisChannel m_nextActivityChannel;
+		
+		private NextActivityData m_lastObject;
 
 		// Define a class to represent the structure of your JSON object
 		public class NextActivityData
@@ -51,6 +53,11 @@ namespace PersonalizationTool.Redis
 			m_startActivityChannel = new RedisChannel(m_startActivityChannelName, RedisChannel.PatternMode.Literal);
 			m_endActivityChannel = new RedisChannel(m_endActivityChannelName, RedisChannel.PatternMode.Literal);
 			m_nextActivityChannel = new RedisChannel(m_nextActivityChannelName, RedisChannel.PatternMode.Literal);
+			m_lastObject = new NextActivityData
+			{
+				id = -1,
+				next_activity_level = 1,
+			};
 		}
 
 		public void SetConnectionData(string p_redisIp = "localhost", string p_redisPort = "6379")
@@ -90,13 +97,14 @@ namespace PersonalizationTool.Redis
 			{
 				// Deserialize the JSON string into an instance of YourJsonObject
 				NextActivityData l_jsonObject = JsonSerializer.Deserialize<NextActivityData>(p_message);
-
+				m_lastObject = l_jsonObject;
 				NewNextActivityData?.Invoke(l_jsonObject);
 			}
 			catch (JsonException l_ex)
 			{
 				// Handle JSON parsing errors
 				Debug.Log($"Error parsing JSON: {l_ex.Message}");
+				NewNextActivityData?.Invoke(m_lastObject);
 			}
 
 		}
