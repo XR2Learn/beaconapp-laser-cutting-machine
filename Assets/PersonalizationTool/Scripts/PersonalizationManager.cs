@@ -6,15 +6,16 @@
 
 using System;
 using System.Collections;
-using Gamification.Help;
-using PersonalizationTool.Redis;
 using UnityEngine;
+using PersonalizationTool.Redis;
 using XdeEngine.Assembly;
 
-namespace PersonalizationTool.Scripts
+namespace PersonalizationTool
 {
 	public class PersonalizationManager : MonoBehaviour
 	{
+		public event Action<int> DifficultyChanged;
+		
 		[SerializeField]
 		private int m_intervalInSeconds;
 
@@ -31,12 +32,10 @@ namespace PersonalizationTool.Scripts
 		[Tooltip("0 = novice, 1 = confirmed, 2 = expert")]
 		private int m_userLevel = 1;
 
-		[SerializeField]
-		private HelpController m_helpController;
 
 		[SerializeField]
 		private XdeAsbScenario m_mainScenario;
-		
+
 		private RedisManager m_redisManager;
 
 		private int m_currentActivity = 0;
@@ -107,25 +106,11 @@ namespace PersonalizationTool.Scripts
 		private void SetupActivityLevel()
 		{
 			Debug.Log($"SetActvityLevel: {m_activityLevel}");
-			switch (m_activityLevel)
-			{
-				case 0:
-					m_helpController.OnClickVisualGuides();
-					m_helpController.OnClickTodoList();
-					m_helpController.DisplayToDoListContent(true);
-					break;
-				case 1:
-					m_helpController.OnClickTodoList();
-					m_helpController.DisplayToDoListContent(true);
-					m_helpController.HideVisualGuidelines();
-					break;
-				case 2:
-					m_helpController.DisplayToDoListContent(false);
-					m_helpController.HideVisualGuidelines();
-					break;
-			}
+
+			DifficultyChanged?.Invoke(m_activityLevel);
 		}
 
+		
 		private void RedisStopActivity()
 		{
 			m_lastActivityTime = DateTime.Now;
@@ -142,8 +127,6 @@ namespace PersonalizationTool.Scripts
 			}
 		}
 
-	
-
 		public void OnStepDeactivated(XdeAsbStep p_step)
 		{
 			if (m_currentStepInstance == p_step.GetInstanceID())
@@ -159,7 +142,6 @@ namespace PersonalizationTool.Scripts
 			SetupActivityLevel();
 		}
 
-
 		public void SetStartupAppLevel(int p_userLevel)
 		{
 			Debug.Log($"SetStartupAppLevel: {p_userLevel}");
@@ -167,9 +149,8 @@ namespace PersonalizationTool.Scripts
 			m_activityLevel = p_userLevel;
 			m_lastActivityTime = DateTime.Now;
 			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
+			m_mustProcessNewActivityLevel = true;
 			m_initialized = true;
 		}
-
-	
 	}
 }
