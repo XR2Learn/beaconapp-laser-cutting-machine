@@ -5,7 +5,7 @@
 	<vr>
 		<config samplingRate="10" samplingBufferSize="50" />
 	</vr>
-	<shimmer enabled="true" deviceName="Shimmer3">
+	<shimmer enabled="false" deviceName="Shimmer3">
 		<config heartbeatsToAverage="1" trainingPeriodPPG="10" samplingRate="10" samplingBufferSize="50" />
 		<sensors enableAccelerator="true" enableGSR="true" enablePPG="true" />
 	</shimmer>
