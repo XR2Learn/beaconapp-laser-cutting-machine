@@ -9,6 +9,7 @@ using System.Collections;
 using UnityEngine;
 using PersonalizationTool.Redis;
 using XdeEngine.Assembly;
+using XR2Learn.DataCollection.Managers;
 
 namespace PersonalizationTool
 {
@@ -35,6 +36,9 @@ namespace PersonalizationTool
 
 		[SerializeField]
 		private XdeAsbScenario m_mainScenario;
+
+		[SerializeField]
+		private MainDataCollectionManager m_mainDataCollectionManager;
 
 		private RedisManager m_redisManager;
 
@@ -64,10 +68,12 @@ namespace PersonalizationTool
 		{
 			m_redisManager.StopActivity(m_currentActivity);
 			m_currentActivity = 0;
+			m_mainDataCollectionManager.StopDataCollection();
 		}
 
 		private void OnDestroy()
 		{
+			m_mainDataCollectionManager.StopDataCollection();
 			m_mainScenario.completedEvent.RemoveListener(OnMainScenarioComplete);
 
 
@@ -142,7 +148,7 @@ namespace PersonalizationTool
 			SetupActivityLevel();
 		}
 
-		public void SetStartupAppLevel(int p_userLevel)
+		public void StartPersonalization(int p_userLevel)
 		{
 			Debug.Log($"SetStartupAppLevel: {p_userLevel}");
 			m_userLevel = p_userLevel;
@@ -150,6 +156,8 @@ namespace PersonalizationTool
 			m_lastActivityTime = DateTime.Now;
 			m_redisManager.StartActivity(m_currentActivity, m_activityLevel, m_userLevel);
 			m_initialized = true;
+			
+			m_mainDataCollectionManager.StartDataCollection();
 		}
 	}
 }

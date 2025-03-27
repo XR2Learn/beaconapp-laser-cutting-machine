@@ -1,4 +1,4 @@
-/*********** Copyright © 2024 University of Applied Sciences of Southern Switzerland (SUPSI) ***********\
+/*********** Copyright 2024 University of Applied Sciences of Southern Switzerland (SUPSI) ***********\
  
  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -54,6 +54,8 @@ namespace XR2Learn.DataCollection.Managers
         [ContextMenu("Start Data Collection")]
         public void StartDataCollection()
         {
+            if(IsRunning) return;
+            
             SoundManager.PlaySound("DataCollectionToggle");
             HapticsManager.Vibrate(HapticsManager.Controller.BOTH, 0, 0.1f, 120f, 0.8f);
 
@@ -82,6 +84,8 @@ namespace XR2Learn.DataCollection.Managers
         [ContextMenu("Stop Data Collection")]
         public void StopDataCollection()
         {
+            if (!IsRunning) return;
+            
             SoundManager.PlaySound("DataCollectionToggle", true);
             HapticsManager.Vibrate(HapticsManager.Controller.BOTH, 0, 0.1f, 120f, 0.8f);
 
