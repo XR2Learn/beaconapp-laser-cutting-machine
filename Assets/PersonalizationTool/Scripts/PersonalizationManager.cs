@@ -73,7 +73,6 @@ namespace PersonalizationTool
 
 		private void OnDestroy()
 		{
-			m_mainDataCollectionManager.StopDataCollection();
 			m_mainScenario.completedEvent.RemoveListener(OnMainScenarioComplete);
 
 

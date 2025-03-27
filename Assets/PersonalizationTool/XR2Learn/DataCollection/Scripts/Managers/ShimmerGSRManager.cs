@@ -228,7 +228,7 @@ namespace XR2Learn.DataCollection.Managers
             if (State == ConnectionState.CONNECTED)
             {
                 LogUtils.LogShimmer("Disconnecting from Shimmer device");
-                Shimmer.Disconnect();
+                Shimmer?.Disconnect();
                 State = ConnectionState.DISCONNECTED;
             }
             else LogUtils.LogShimmer("Shimmer Disconnect called but device is not CONNECTED (current state is " + State.ToString() + ")");
@@ -252,10 +252,10 @@ namespace XR2Learn.DataCollection.Managers
             if (State == ConnectionState.STREAMING)
             { 
                 LogUtils.LogShimmer("Shimmer device Stop streaming");
-                Task.Run(() => Shimmer.StopStreaming());
+                Task.Run(() => Shimmer?.StopStreaming());
                 State = ConnectionState.CONNECTED;
 
-                _stopwatch.Reset();
+                _stopwatch?.Reset();
             }
             else LogUtils.LogShimmer("Shimmer StopStreaming called but device is not STREAMING (current state is " + State.ToString() + ")");
         }

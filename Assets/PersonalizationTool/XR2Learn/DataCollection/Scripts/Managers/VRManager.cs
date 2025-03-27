@@ -98,7 +98,6 @@ namespace XR2Learn.DataCollection.Managers
 
         private void OnDestroy()
         {
-            OpenVR.Shutdown();
             StopCollection();
         }
 
@@ -150,10 +149,10 @@ namespace XR2Learn.DataCollection.Managers
                 return;
             }
 
-            CollectionManager.Instance.StopCollection();
             _isStreaming = false;
             _stopwatch.Reset();
-            _dataBuffer.Clear();
+            CollectionManager.Instance?.StopCollection();
+            _dataBuffer?.Clear();
         }
 
         public int GetSamplingRate()

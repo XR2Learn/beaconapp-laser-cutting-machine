@@ -71,11 +71,11 @@ namespace XR2Learn.DataCollection.Managers
                 IOManager.AppendHeader(IOManager.Sensor.FACE, IData.Headers.LIP);
 
             VRManager?.StartCollection();
-            if (ShimmerManager.IsEnabled())
+            if (ShimmerManager != null && ShimmerManager.IsEnabled())
                 ShimmerManager?.StartStreaming();
-            if (EyeManager.IsEnabled())
+            if (EyeManager != null && EyeManager.IsEnabled())
                 EyeManager?.StartCollection();
-            if (LipManager.IsEnabled())
+            if (LipManager != null && LipManager.IsEnabled())
                 LipManager?.StartCollection();
 
             IsRunning = true;
@@ -90,12 +90,13 @@ namespace XR2Learn.DataCollection.Managers
             HapticsManager.Vibrate(HapticsManager.Controller.BOTH, 0, 0.1f, 120f, 0.8f);
 
             VRManager?.StopCollection();
-            if (ShimmerManager.IsEnabled())
+            if (ShimmerManager != null && ShimmerManager.IsEnabled())
                 ShimmerManager?.StopStreaming();
-            if (EyeManager.IsEnabled())
+            if (EyeManager != null && EyeManager.IsEnabled())
                 EyeManager?.StopCollection();
-            if (LipManager.IsEnabled())
+            if (LipManager != null && LipManager.IsEnabled())
                 LipManager?.StopCollection();
+
 
             IsRunning = false;
 
