@@ -7,6 +7,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using XR2Learn.Common;
 
 namespace PersonalizationTool
 {
@@ -36,8 +37,11 @@ namespace PersonalizationTool
 		
 		private Coroutine m_displayCoroutine;
 
+		private int m_currentActivityLevel;
+
 		private void Awake()
 		{
+			m_currentActivityLevel = -1;
 			m_popup.SetActive(false);
 		}
 		private void OnEnable()
@@ -52,6 +56,11 @@ namespace PersonalizationTool
 
 		private void OnDifficultyChanged(int p_difficultyLevel)
 		{
+			if (m_currentActivityLevel == p_difficultyLevel)
+				return;
+
+			m_currentActivityLevel = p_difficultyLevel;
+
 			switch (p_difficultyLevel)
 			{
 				case 0:
@@ -68,6 +77,7 @@ namespace PersonalizationTool
 					break;
 			}
 
+			SoundManager.PlaySound("ActivityLevelChanged");
 			m_popup.SetActive(true);
 
 			if(m_displayCoroutine != null)
