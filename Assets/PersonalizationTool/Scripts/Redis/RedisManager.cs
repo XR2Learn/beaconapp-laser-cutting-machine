@@ -66,15 +66,17 @@ namespace PersonalizationTool.Redis
 			m_redisPort = System.Convert.ToInt32(p_redisPort);
 		}
 		
-		public void ConnectRedis()
+		public bool ConnectRedis()
 		{
 			Debug.Log($"Connecting to redis: {m_redisIp}:{m_redisPort}");
 			m_redis = ConnectionMultiplexer.Connect($"{m_redisIp}:{m_redisPort}");
+			if(!m_redis.IsConnected) return false;
 			m_db = m_redis.GetDatabase();
 			m_nextActivitySub = m_redis.GetSubscriber();
 
 			m_nextActivitySub.Subscribe(m_nextActivityChannel,
 									  (p_channel, p_message) => { ProcessMessageNextActivityLevel((string)p_message); });
+			return true;
 		}
 
 		public void DisconnectRedis()

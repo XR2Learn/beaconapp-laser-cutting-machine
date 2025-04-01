@@ -39,6 +39,9 @@ namespace PersonalizationTool
 
 		[SerializeField]
 		private MainDataCollectionManager m_mainDataCollectionManager;
+		
+		[SerializeField]
+		private GameObject m_redisConnectionPanel;
 
 		private RedisManager m_redisManager;
 
@@ -50,6 +53,10 @@ namespace PersonalizationTool
 		private bool m_initialized;
 
 		private int m_currentStepInstance = 0;
+		
+		private bool m_redisIsConnected;
+		
+		
 
 		private void Awake()
 		{
@@ -59,9 +66,10 @@ namespace PersonalizationTool
 			{
 				m_redisManager.SetConnectionData(m_redisServerIp, m_redisServerPort);
 			}
-			m_redisManager.ConnectRedis();
+
 			m_redisManager.NewNextActivityData += OnNewNextActivityData;
-			
+
+			ConnectToRedis();
 		}
 
 		private void OnMainScenarioComplete(XdeAsbStep p_arg0)
@@ -121,6 +129,12 @@ namespace PersonalizationTool
 			m_lastActivityTime = DateTime.Now;
 			m_redisManager.StopActivity(m_currentActivity);
 			m_currentActivity++;
+		}
+
+		public void ConnectToRedis()
+		{
+			m_redisIsConnected = m_redisManager.ConnectRedis();
+			m_redisConnectionPanel.SetActive(!m_redisIsConnected);
 		}
 		
 		public void OnStepActivated(XdeAsbStep p_step)
