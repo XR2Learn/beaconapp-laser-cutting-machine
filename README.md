@@ -36,3 +36,5 @@ Put the VR headset back on, and take the Touch controllers. You should be able t
 ## Licence 
 
 Please see the LICENSE file for more details.
+
+Additionnal Sounds: Joseph SARDIN - https://lasonotheque.org/
