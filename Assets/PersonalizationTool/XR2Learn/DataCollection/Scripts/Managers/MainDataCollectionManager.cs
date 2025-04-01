@@ -34,9 +34,20 @@ namespace XR2Learn.DataCollection.Managers
         public LipManager LipManager;
 
         [SerializeField] private UnityEvent _OnDataCollectionStopped;
-
-        [NonSerialized]
-        public bool IsRunning = false;
+        
+        private bool m_isRunning;
+        public event Action<bool> DataCollectionChanged;
+       
+        
+        public bool IsRunning
+        {
+            get => m_isRunning;
+            private set
+            {
+                m_isRunning = value;
+                DataCollectionChanged?.Invoke(value);
+            }
+        }
 
         [ContextMenu("Toggle Data Collection")]
         public void ToggleDataCollection()
@@ -55,9 +66,6 @@ namespace XR2Learn.DataCollection.Managers
         public void StartDataCollection()
         {
             if(IsRunning) return;
-            
-            SoundManager.PlaySound("DataCollectionToggle");
-            HapticsManager.Vibrate(HapticsManager.Controller.BOTH, 0, 0.1f, 120f, 0.8f);
 
             IOManager.Init();
             IOManager.AppendHeader(IOManager.Sensor.PROGRESS_EVENT, IData.Headers.EVENTS);
