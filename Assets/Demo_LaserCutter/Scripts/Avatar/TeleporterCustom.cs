@@ -98,6 +98,11 @@ namespace VMachina
 
 
       m_parabolaMaterial = Resources.Load("Teleport/Materials/Parabola") as Material;
+	  if (m_parabolaMaterial != null)
+	  {
+		  m_parabolaMaterial.enableInstancing = true;
+		  m_parabolaMaterial = Instantiate(m_parabolaMaterial);
+	  }
 
       if (!m_validTeleportPad)
       {
