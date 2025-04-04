@@ -39,8 +39,8 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.timeline": "1.0.0",
-        "com.autodesk.fbx": "2.0.1-preview.1"
+        "com.autodesk.fbx": "2.0.1-preview.1",
+        "com.unity.timeline": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },

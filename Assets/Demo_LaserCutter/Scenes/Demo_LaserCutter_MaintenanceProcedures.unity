@@ -1364,48 +1364,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 48544900}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &53306840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Close the acrylic top lid_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 1050}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 53306840}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 53306840}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22824
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1902207030}
 --- !u!1001 &56046745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2473,8 +2431,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopUpdate: 1
   dependencies: []
-  node: {fileID: 832223787}
-  nodePosition: {x: 0, y: 450}
+  node: {fileID: 1271698615}
+  nodePosition: {x: 0, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -3606,6 +3564,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
+--- !u!114 &195072565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the working table (put on table behind)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 2880, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 195072565}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1890960239}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 195072565}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 2054179383}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21210
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1554233868}
 --- !u!1001 &203599933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6008,48 +6014,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 239514220}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &244623206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Wipe the plate (with the sponge)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 244623206}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 244623206}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22386
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1586943623}
 --- !u!1001 &258183445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6130,48 +6094,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 258183445}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &268034023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Mount the lens back on the laser head_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 268034023}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 268034023}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22980
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 2028654110}
 --- !u!1 &273378950
 GameObject:
   m_ObjectHideFlags: 0
@@ -6557,9 +6479,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1658815806}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 2046427795}
+  node: {fileID: 1406194541}
+  nodePosition: {x: 1920, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -6761,6 +6684,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_pointValue: 1
   m_estimatedDuration: 30
+--- !u!114 &334185633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Open the acrylic top lid_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 960, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 334185633}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 838212366}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 334185633}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1924066709}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: Enabled
+  stepId: 20118
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 430468699}
 --- !u!1001 &334189241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7692,9 +7663,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1783016604}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 301764878}
+  node: {fileID: 1705575334}
+  nodePosition: {x: 2240, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -8059,9 +8031,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1543325772}
-  nodePosition: {x: 0, y: 1050}
+  dependencies:
+  - {fileID: 1411520794}
+  node: {fileID: 334185633}
+  nodePosition: {x: 960, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -8500,9 +8473,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 2086800187}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 430468699}
+  node: {fileID: 1924066709}
+  nodePosition: {x: 1280, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -9385,48 +9359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
---- !u!114 &508378143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Close the front panel_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 1050}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 508378143}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 508378143}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22852
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1915844872}
 --- !u!1001 &510379477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9672,48 +9604,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 518473953}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &519997186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Wipe the lens (with the fiber cloth)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 519997186}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 519997186}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 21054
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 635363815}
 --- !u!1 &522558927
 GameObject:
   m_ObjectHideFlags: 0
@@ -10096,7 +9986,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &531150768
+--- !u!114 &537244417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10105,39 +9995,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Place the working table back in the machine_OK
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Wipe the nozzle (with the fiber cloth)_OK
   m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
+  graph: {fileID: 1049817725}
+  position: {x: 6080, y: 0}
   ports:
     keys:
     - dependencies
     - step
     values:
     - _fieldName: dependencies
-      _node: {fileID: 531150768}
+      _node: {fileID: 537244417}
       _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: step
+        node: {fileID: 888901817}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: step
-      _node: {fileID: 531150768}
+      _node: {fileID: 537244417}
       _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1526997718}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  toolTip: Enabled
-  stepId: 22326
+  toolTip: 
+  stepId: 21268
   foldoutEvent: 0
   dependencies: {fileID: 0}
-  step: {fileID: 1541596577}
+  step: {fileID: 1597466432}
 --- !u!1 &563058082
 GameObject:
   m_ObjectHideFlags: 0
@@ -10202,48 +10098,6 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &581602836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Wipe the nozzle (with the fiber cloth)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 581602836}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 581602836}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22404
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1597466432}
 --- !u!1001 &590366983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10812,48 +10666,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613450911}
   m_Mesh: {fileID: -1572543346170788068, guid: 3b5e93c277aa4a8489c2c922e0967829, type: 3}
---- !u!114 &613818792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Vacuum the dust in the main enclosure_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 613818792}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 613818792}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 21714
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1094177808}
 --- !u!4 &618348606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6371522834335114848, guid: 8f0d4c5e1c8ff4846883953e91e1eeff,
@@ -11147,9 +10959,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 519997186}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 840788280}
+  node: {fileID: 1468031720}
+  nodePosition: {x: 5440, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -11337,48 +11150,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 646622225}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &648664324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Put the mirror screws back_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 648664324}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 648664324}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 21372
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 840788280}
 --- !u!1001 &655197794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12016,48 +11787,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &706978041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Remove the working table (put on table behind)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 706978041}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 706978041}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22332
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1554233868}
 --- !u!1 &726141015
 GameObject:
   m_ObjectHideFlags: 0
@@ -12104,9 +11833,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 860253196}
-  nodePosition: {x: 0, y: 1050}
+  dependencies:
+  - {fileID: 404818954}
+  node: {fileID: 1890960239}
+  nodePosition: {x: 2560, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -12546,6 +12276,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 748265772}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &748923779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the mirror (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 1600, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 748923779}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1924066709}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 748923779}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1406194541}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21702
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 2046427795}
 --- !u!1 &750433334
 GameObject:
   m_ObjectHideFlags: 0
@@ -12610,6 +12388,54 @@ MonoBehaviour:
   alignment: 0
   welding: 0
   showPreview: 1
+--- !u!114 &753710710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Wipe the plate (with the sponge)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 3840, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 753710710}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 954876907}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 753710710}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1971682783}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21250
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1586943623}
 --- !u!1 &754514645
 GameObject:
   m_ObjectHideFlags: 0
@@ -12735,40 +12561,6 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &754929830
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &756670412
 GameObject:
   m_ObjectHideFlags: 0
@@ -13483,48 +13275,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 800428926}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &832223787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Have the working table on the upper position_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 450}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 832223787}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 832223787}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 20220
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 104024329}
 --- !u!1 &834598808
 GameObject:
   m_ObjectHideFlags: 0
@@ -13649,6 +13399,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836577808}
   m_Mesh: {fileID: 2953986041977624499, guid: 3b5e93c277aa4a8489c2c922e0967829, type: 3}
+--- !u!114 &838212366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Turn off the switch behind the machine_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 640, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 838212366}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1916305243}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 838212366}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 334185633}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: Enabled
+  stepId: 21064
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1411520794}
 --- !u!1 &839843122
 GameObject:
   m_ObjectHideFlags: 0
@@ -13745,9 +13543,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 648664324}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1864281683}
+  node: {fileID: 1763370246}
+  nodePosition: {x: 5120, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -14170,48 +13969,6 @@ Transform:
   m_Father: {fileID: 668903421}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &860253196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Open the front panel_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 1050}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 860253196}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 860253196}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 21182
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 726141017}
 --- !u!1 &866692078
 GameObject:
   m_ObjectHideFlags: 0
@@ -14646,6 +14403,54 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 869927429}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &888901817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Mount the lens back on the laser head_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 5760, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 888901817}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1468031720}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 888901817}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 537244417}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21684
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 2028654110}
 --- !u!1 &891240557
 GameObject:
   m_ObjectHideFlags: 0
@@ -15102,6 +14907,54 @@ Transform:
   m_Father: {fileID: 203599963}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &954876907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Vacuum the dust in the main enclosure_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 3520, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 954876907}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 2054179383}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 954876907}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 753710710}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20788
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1094177808}
 --- !u!1 &955358325
 GameObject:
   m_ObjectHideFlags: 0
@@ -15882,6 +15735,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1010654089}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1016129165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Close the front panel_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 4480, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1016129165}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1971682783}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1016129165}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1709796373}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21592
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1915844872}
 --- !u!1001 &1018089400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16337,6 +16238,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetStep: {fileID: 1411520794}
   _canBePressed: 0
+--- !u!114 &1049817725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2146774389, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1271698615}
+  - {fileID: 1406194541}
+  - {fileID: 1705575334}
+  - {fileID: 334185633}
+  - {fileID: 1924066709}
+  - {fileID: 1468031720}
+  - {fileID: 1890960239}
+  - {fileID: 1763370246}
+  - {fileID: 954876907}
+  - {fileID: 2054179383}
+  - {fileID: 1916305243}
+  - {fileID: 1526997718}
+  - {fileID: 838212366}
+  - {fileID: 1971682783}
+  - {fileID: 195072565}
+  - {fileID: 753710710}
+  - {fileID: 537244417}
+  - {fileID: 1709796373}
+  - {fileID: 2046097838}
+  - {fileID: 1016129165}
+  - {fileID: 888901817}
+  - {fileID: 748923779}
+  showScenario: 0
+  showFullStepNames: 0
+  defaultScenario: -1
+  nodeStepsToAdd: []
+  nodeStepsToRemove: []
 --- !u!1 &1065726700
 GameObject:
   m_ObjectHideFlags: 0
@@ -16465,6 +16406,169 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 359.999}
+--- !u!43 &1071306300
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1090806825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16591,9 +16695,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 613818792}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1094236454}
+  node: {fileID: 954876907}
+  nodePosition: {x: 3520, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -16691,9 +16796,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1547256066}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1554233868}
+  node: {fileID: 2054179383}
+  nodePosition: {x: 3200, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -17014,9 +17120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 2143890298}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 104024329}
+  node: {fileID: 1916305243}
+  nodePosition: {x: 320, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -18242,6 +18349,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1269138390}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1271698615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Have the working table on the upper position_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 0, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1271698615}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1271698615}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1916305243}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: Enabled
+  stepId: 19798
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 104024329}
 --- !u!1 &1287798357
 GameObject:
   m_ObjectHideFlags: 0
@@ -19005,9 +19157,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1392309738}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1597466432}
+  node: {fileID: 1526997718}
+  nodePosition: {x: 6400, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -19987,48 +20140,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1381447755}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1392309738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Mount the nozzle back on the laser head_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1392309738}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1392309738}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22020
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1310909762}
 --- !u!1001 &1402748749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20129,6 +20240,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1402748749}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1406194541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the lens (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 1920, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1406194541}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 748923779}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1406194541}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1705575334}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20004
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 301764878}
 --- !u!1 &1411312711
 GameObject:
   m_ObjectHideFlags: 0
@@ -20252,9 +20411,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1484854918}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1163771288}
+  node: {fileID: 838212366}
+  nodePosition: {x: 640, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -20920,6 +21080,54 @@ Transform:
   m_Father: {fileID: 754514649}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1468031720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Wipe the lens (with the fiber cloth)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 5440, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1468031720}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1763370246}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1468031720}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 888901817}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20352
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 635363815}
 --- !u!1001 &1478556413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21044,48 +21252,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
---- !u!114 &1484854918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Turn off the switch behind the machine_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1484854918}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1484854918}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22102
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1411520794}
 --- !u!1001 &1486371723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21374,6 +21540,7 @@ GameObject:
   - component: {fileID: 1495277691}
   - component: {fileID: 1495277700}
   - component: {fileID: 1495277701}
+  - component: {fileID: 1495277702}
   m_Layer: 0
   m_Name: '[Scenario] Maintenance Procedures'
   m_TagString: Untagged
@@ -21524,7 +21691,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   StartOnHardMode: 0
-  setStepsFromHierarchy: 1
+  setStepsFromHierarchy: 0
   steps:
   - {fileID: 104024329}
   - {fileID: 1163771288}
@@ -21622,6 +21789,22 @@ MonoBehaviour:
   color: {r: 0, g: 0.5, b: 0.9, a: 0.8}
   referential: {fileID: 0}
   maxNbStepsDisplayed: 10
+--- !u!114 &1495277702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495277690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2748940, guid: 1d039633e74a61d4b94c2ac641f103c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskListGenerator: {fileID: 0}
+  timeElapsed: 0
+  color: {r: 0, g: 0.5, b: 0.9, a: 0.8}
+  referential: {fileID: 0}
 --- !u!1001 &1502302654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21846,6 +22029,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
+--- !u!114 &1526997718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Mount the nozzle back on the laser head_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 6400, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1526997718}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 537244417}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1526997718}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 2046097838}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20978
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1310909762}
 --- !u!1001 &1539349109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21972,9 +22203,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 531150768}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1586943623}
+  node: {fileID: 1971682783}
+  nodePosition: {x: 4160, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -22046,90 +22278,6 @@ MonoBehaviour:
   lastPlacedPart: {fileID: 0}
   lastUsedKeypoint: {fileID: 0}
   showOptions: 1
---- !u!114 &1543325772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Open the acrylic top lid_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 1050}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1543325772}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1543325772}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 20654
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 430468699}
---- !u!114 &1547256066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Vacuum the working table_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1547256066}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1547256066}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 21720
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1094236454}
 --- !u!1 &1554233866
 GameObject:
   m_ObjectHideFlags: 0
@@ -22176,9 +22324,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 706978041}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 726141017}
+  node: {fileID: 195072565}
+  nodePosition: {x: 2880, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -22525,169 +22674,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1573254435
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0.5, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010000000300
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 80
-    _typelessdata: 000000bf000000bf0000000000000000000000000000003f0000003f000000000000803f0000803f0000003f000000bf000000000000803f00000000000000bf0000003f00000000000000000000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0.5, z: 0}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &1577878521
 GameObject:
   m_ObjectHideFlags: 0
@@ -22942,9 +22928,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 244623206}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1094177808}
+  node: {fileID: 753710710}
+  nodePosition: {x: 3840, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -23012,48 +22999,6 @@ Transform:
   m_Father: {fileID: 1495277699}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1591108872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Remove the mirror (put on table)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1591108872}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1591108872}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 23016
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 2046427795}
 --- !u!1001 &1597129410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23281,9 +23226,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 581602836}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 2028654110}
+  node: {fileID: 537244417}
+  nodePosition: {x: 6080, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -23755,6 +23701,40 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1640041699
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1645478937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24018,48 +23998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pointValue: 1
---- !u!114 &1658815806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Remove the lens (put on table)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1658815806}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1658815806}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 20500
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 301764878}
 --- !u!1 &1664119763
 GameObject:
   m_ObjectHideFlags: 0
@@ -24351,46 +24289,6 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45.338}
---- !u!114 &1694071297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2146774389, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 832223787}
-  - {fileID: 1658815806}
-  - {fileID: 1783016604}
-  - {fileID: 1543325772}
-  - {fileID: 2086800187}
-  - {fileID: 519997186}
-  - {fileID: 860253196}
-  - {fileID: 648664324}
-  - {fileID: 613818792}
-  - {fileID: 1547256066}
-  - {fileID: 2143890298}
-  - {fileID: 1392309738}
-  - {fileID: 1484854918}
-  - {fileID: 531150768}
-  - {fileID: 706978041}
-  - {fileID: 244623206}
-  - {fileID: 581602836}
-  - {fileID: 1885841785}
-  - {fileID: 53306840}
-  - {fileID: 508378143}
-  - {fileID: 268034023}
-  - {fileID: 1591108872}
-  showScenario: 0
-  showFullStepNames: 0
-  defaultScenario: -1
-  nodeStepsToAdd: []
-  nodeStepsToRemove: []
 --- !u!1001 &1698799834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24551,6 +24449,102 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1702554391}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1705575334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the nozzle (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 2240, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1705575334}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1406194541}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1705575334}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1890960239}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20088
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 404818954}
+--- !u!114 &1709796373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Mount the mirror back on the laser head_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 4800, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1709796373}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1016129165}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1709796373}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1763370246}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21510
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1864281683}
 --- !u!1 &1717294423 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4964920221463014670, guid: 7a55a5494b55eb343895e8e5d881093d,
@@ -25265,6 +25259,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_pointValue: 1
   m_estimatedDuration: 30
+--- !u!114 &1763370246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Put the mirror screws back_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 5120, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1763370246}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1709796373}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1763370246}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1468031720}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20574
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 840788280}
 --- !u!1 &1772361936
 GameObject:
   m_ObjectHideFlags: 0
@@ -25690,48 +25732,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1780254130}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1783016604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Remove the nozzle (put on table)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1783016604}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1783016604}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 20626
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 404818954}
 --- !u!1 &1790860496
 GameObject:
   m_ObjectHideFlags: 0
@@ -26595,9 +26595,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1885841785}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 1915844872}
+  node: {fileID: 1709796373}
+  nodePosition: {x: 4800, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -27086,48 +27087,6 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1885841785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Mount the mirror back on the laser head_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 1885841785}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 1885841785}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 22742
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1864281683}
 --- !u!1 &1887778955
 GameObject:
   m_ObjectHideFlags: 0
@@ -27192,6 +27151,54 @@ MonoBehaviour:
   alignment: 0
   welding: 0
   showPreview: 1
+--- !u!114 &1890960239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Open the front panel_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 2560, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1890960239}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1705575334}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1890960239}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 195072565}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20424
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 726141017}
 --- !u!1001 &1898917380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27545,9 +27552,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 53306840}
-  nodePosition: {x: 0, y: 1050}
+  dependencies:
+  - {fileID: 1310909762}
+  node: {fileID: 2046097838}
+  nodePosition: {x: 6720, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -27808,9 +27816,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 508378143}
-  nodePosition: {x: 0, y: 1050}
+  dependencies:
+  - {fileID: 1541596577}
+  node: {fileID: 1016129165}
+  nodePosition: {x: 4480, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -27882,169 +27891,102 @@ MonoBehaviour:
   lastPlacedPart: {fileID: 0}
   lastUsedKeypoint: {fileID: 0}
   showOptions: 1
---- !u!43 &1921467240
-Mesh:
+--- !u!114 &1916305243
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Use the key to turn off the machine_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 320, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1916305243}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1271698615}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1916305243}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 838212366}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: Enabled
+  stepId: 20824
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1163771288}
+--- !u!114 &1924066709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Remove the mirror screws (put on table)_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 1280, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1924066709}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 334185633}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1924066709}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 748923779}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20144
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 456482825}
 --- !u!1001 &1924607649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28602,6 +28544,54 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.015
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1971682783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Place the working table back in the machine_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 4160, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 1971682783}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 753710710}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 1971682783}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 1016129165}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21204
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1541596577}
 --- !u!1001 &1979037260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28702,6 +28692,169 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1979037260}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &1982621168
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010000000300
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 80
+    _typelessdata: 000000bf000000bf0000000000000000000000000000003f0000003f000000000000803f0000803f0000003f000000bf000000000000803f00000000000000bf0000003f00000000000000000000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1984102595
 GameObject:
   m_ObjectHideFlags: 0
@@ -29176,9 +29329,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 268034023}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 635363815}
+  node: {fileID: 888901817}
+  nodePosition: {x: 5760, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -29460,6 +29614,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2045570345}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2046097838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Close the acrylic top lid_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 6720, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 2046097838}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 1526997718}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 2046097838}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 21570
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1902207030}
 --- !u!1 &2046427793
 GameObject:
   m_ObjectHideFlags: 0
@@ -29506,9 +29705,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopUpdate: 1
-  dependencies: []
-  node: {fileID: 1591108872}
-  nodePosition: {x: 0, y: 0}
+  dependencies:
+  - {fileID: 456482825}
+  node: {fileID: 748923779}
+  nodePosition: {x: 1600, y: 0}
   foldoutNode: 0
   foldoutEvents: 1
   hideInTaskList: 0
@@ -29665,6 +29865,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2053204110}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2054179383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1308762250, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
+  m_Name: Vacuum the working table_OK
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1049817725}
+  position: {x: 3200, y: 0}
+  ports:
+    keys:
+    - dependencies
+    - step
+    values:
+    - _fieldName: dependencies
+      _node: {fileID: 2054179383}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: step
+        node: {fileID: 195072565}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: step
+      _node: {fileID: 2054179383}
+      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dependencies
+        node: {fileID: 954876907}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  toolTip: 
+  stepId: 20794
+  foldoutEvent: 0
+  dependencies: {fileID: 0}
+  step: {fileID: 1094236454}
 --- !u!1001 &2067113422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30258,48 +30506,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085749461}
   m_Mesh: {fileID: 4300002, guid: c73606abb1c3a4e49b8bae82119efe29, type: 3}
---- !u!114 &2086800187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Remove the mirror screws (put on table)_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 2086800187}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 2086800187}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 20724
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 456482825}
 --- !u!1 &2097740955
 GameObject:
   m_ObjectHideFlags: 0
@@ -30728,48 +30934,6 @@ Transform:
   m_Father: {fileID: 101295066}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2143890298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 948059707, guid: badcbf0b8fd2f784a85396eab9393adf, type: 3}
-  m_Name: Use the key to turn off the machine_OK
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1694071297}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - dependencies
-    - step
-    values:
-    - _fieldName: dependencies
-      _node: {fileID: 2143890298}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: step
-      _node: {fileID: 2143890298}
-      _typeQualifiedName: XdeEngine.Assembly.XdeAsbStep, xsm_assembly_unity, Version=21.3.3.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  toolTip: Enabled
-  stepId: 21770
-  foldoutEvent: 0
-  dependencies: {fileID: 0}
-  step: {fileID: 1163771288}
 --- !u!33 &403883074476512530
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31614,12 +31778,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1921467240}
+      objectReference: {fileID: 1071306300}
     - target: {fileID: 5000894227947823014, guid: b56c6ac90fd9b824f982c45e806f8532,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 754929830}
+      objectReference: {fileID: 1640041699}
     - target: {fileID: 5000894227951967744, guid: b56c6ac90fd9b824f982c45e806f8532,
         type: 3}
       propertyPath: layers.refs.Array.data[0].matrix
