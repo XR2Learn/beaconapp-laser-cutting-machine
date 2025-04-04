@@ -21,9 +21,7 @@ namespace PersonalizationTool
 		
 		[SerializeField]
 		private TMP_Text m_difficultyText;
-
-		[SerializeField]
-		private int m_durationOfDisplay;
+		
 
 		[SerializeField]
 		private string m_easyText;
@@ -33,9 +31,6 @@ namespace PersonalizationTool
 
 		[SerializeField]
 		private string m_hardText;
-
-		
-		private Coroutine m_displayCoroutine;
 
 		private int m_currentActivityLevel;
 
@@ -79,17 +74,7 @@ namespace PersonalizationTool
 
 			SoundManager.PlaySound("ActivityLevelChanged");
 			m_popup.SetActive(true);
-
-			if(m_displayCoroutine != null)
-				StopCoroutine(m_displayCoroutine);
-
-			m_displayCoroutine = StartCoroutine(HideTextAfterTime());
 		}
 
-		private IEnumerator HideTextAfterTime()
-		{
-			yield return new WaitForSeconds(m_durationOfDisplay);
-			m_popup.SetActive(false);
-		}
 	}
 }
