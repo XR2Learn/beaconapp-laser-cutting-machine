@@ -29,12 +29,14 @@ namespace PersonalizationTool
 
 		private void SetGameAsHard()
 		{
+			m_helpController.ToggleNextButton(false);
 			m_helpController.DisplayToDoListContent(false);
 			m_helpController.HideVisualGuidelines();
 		}
 
 		private void SetGameAsMedium()
 		{
+			m_helpController.ToggleNextButton(false);
 			m_helpController.OnClickTodoList();
 			m_helpController.DisplayToDoListContent(true);
 			m_helpController.HideVisualGuidelines();
@@ -42,6 +44,7 @@ namespace PersonalizationTool
 
 		private void SetGameAsEasy()
 		{
+			m_helpController.ToggleNextButton(true);
 			m_helpController.OnClickVisualGuides();
 			m_helpController.OnClickTodoList();
 			m_helpController.DisplayToDoListContent(true);

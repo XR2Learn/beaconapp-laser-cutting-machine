@@ -32,6 +32,9 @@ namespace Gamification.Help
 		private XdeRigidBody m_todoListBtn = null;
 
 		[SerializeField] private XdeRigidBody m_nextBtn = null;
+		[SerializeField] private MeshRenderer m_nextBtnPress = null;
+		[SerializeField] private MeshRenderer m_nextBtnSupport = null;
+		[SerializeField] private GameObject m_nextBtnImage = null;
 		[SerializeField] private XdeRigidBody m_visualGuidesBtn = null;
 
 		private bool m_isNextStepRunning = false;
@@ -42,6 +45,7 @@ namespace Gamification.Help
 		private Func<Task> m_nextStepAction;
 		private Action m_todoListAction;
 
+		private bool m_clickButtonEnabled = false;
 
 		public HelpScoringScale HelpScoringScale => m_helpScoringScale;
 		public TodoList TodoList => m_todoList;
@@ -174,9 +178,16 @@ namespace Gamification.Help
 			NextStep();
 		}
 
+		public void ToggleNextButton(bool p_value)
+		{
+			m_nextBtnPress.enabled = p_value;
+			m_nextBtnSupport.enabled = p_value;
+			m_nextBtnImage.SetActive(p_value);
+			m_clickButtonEnabled = p_value;
+		}
 		public async Task NextStep()
 		{
-			if (!m_isNextStepRunning)
+			if (!m_isNextStepRunning && m_clickButtonEnabled)
 			{
 				try
 				{
