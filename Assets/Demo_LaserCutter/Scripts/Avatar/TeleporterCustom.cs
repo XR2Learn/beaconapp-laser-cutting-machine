@@ -613,6 +613,7 @@ namespace VMachina
 		{
 			Destroy(m_validTeleportPad);
 			Destroy(m_invalidTeleportPad);
+			Destroy(m_parabolaMaterial);
 		}
 	}
 }
