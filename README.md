@@ -7,7 +7,8 @@
 ## Introduction
 The Beacon Application "Laser Cutting Machine" is a sandbox application that demonstrates the creation of a virtual reality training scenario (maintenance tasks of a machine) through the use of the Enabler "INTERACT". With the application, the user is taught how to clean an industrial laser cutting machine in a step by step process and also validated with a score in the end. The application also illustrates the numerous possibilities such as creating interaction with objects, ease of configuring a scenario, visual effects to the machine etc 
 
-
+<img src="Images/BeaconApp1Overview.png" alt="Illustration of the Trotec laser cutting machine for Beacon Application 1">
+<img src="Images/BeaconApp1Tasks.png" alt="Unmounting and cleaning the machine components">
 
 ## Prerequisites
 Executable: the built application requires a VR-Ready PC on Windows with SteamVR installed, up-to-date drivers, and a PC VR headset.
@@ -43,6 +44,8 @@ ROOM SPACE : if possible have a free space of 4x4 m². Less is possible, but les
 - Use the motion controllers to interact with the virtual laser cutting machine. 
 - Follow the step-by-step instructions shown in the VR environment. 
 
+<img src="Images/BeaconApp1Controls.png" width="400px" alt="Controls">
+
 ## Expected Output
 
 When set up and launched correctly:
@@ -54,6 +57,24 @@ When set up and launched correctly:
 ✔ The application will guide you through the maintenance workflow with interactive objects. 
 
 ✔ After completing steps, you’ll receive a score based on accuracy and use of assist features. 
+
+<img src="Images/BeaconApp1Score.png" width="600px"  alt="Score calculation and goal achievement panel">
+
+## Unity project
+This Beacon App has been built using Enabler 1: INTERACT. It is a typical example of how INTERACT can be used as a framework to create step-by-step immersive learning procedures from industrial 3D CAD data. 
+The resulting Unity project has been delivered in the XR2Learn public repository. The community can therefore analyze the project structure and use it as a sandbox for learning how to produce similar use cases. In particular, XR authors opening Beacon application 1 project can :
+- Import new 3D models (native CAD file or 3D scan)
+- Define Interactable components. An interactable component is an object requiring physical interaction in order to be manipulated and assembled in the scenario 
+- Configure part to be assembled (kinematics and dynamic behavior)
+- Define part targets (keypoint) in the final assembly. These keypoints will also serve as helpers for the worker (displaying a ghost of the part destination)
+- Create a step by step scenario corresponding to the work sequence by configuring the order of keypoints. The scenario acts as a state machine defining when assembly steps should be activated/deactivated
+- Import extra media to provide further information on the training (pdf, images, videos, audio files)
+- Set up assistance and feedback
+
+The Unity project is organised into a structured hierarchy for easy exploration, modification, and facilitates onboarding. In the Asset section, separated folders contain scripts, 3D assets, textures, scenes, and prefabs.
+When opening the source project,  a particular attention should be given to the scene structure where physical objects (that can be interacted with) are materialised with a gear icon. Different physical behaviours are illustrated from free moving objects to constrained parts (ex : laser machine top lib with a revolute joint). Intrinsic part properties (mass, center of gravity, friction) are also displayed to fine tune object interaction and reach physical accuracy.
+
+<img src="Images/BeaconApp1Unity.png" width="600px" alt="Score calculation and goal achievement panel">
 
 
 ## Troubleshooting
