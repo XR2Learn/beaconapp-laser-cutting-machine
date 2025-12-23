@@ -2,6 +2,8 @@
 
 # Beacon Application "Laser Cutting Machine"
 
+Target audience: Educators / Instructional Designers / Software developers / XR enthusiastic
+
 The Beacon Application "Laser Cutting Machine" is a sandbox application that demonstrates the creation of a virtual reality training scenario (maintenance tasks of a machine) through the use of the Enabler "INTERACT". With the application, the user is taught how to clean an industrial laser cutting machine in a step by step process and also validated with a score in the end. The application also illustrates the numerous possibilities such as creating interaction with objects, ease of configuring a scenario, visual effects to the machine etc 
 
 ## Dependencies
