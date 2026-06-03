@@ -100,4 +100,4 @@ When opening the source project,  a particular attention should be given to the 
 
 
 ## Licence 
-Please see the LICENSE file for more details.
+Please see the [LICENSE](Assets/INTERACT/00_CORE/Editor/Assembly/xNode/LICENSE.md) file for more details.
